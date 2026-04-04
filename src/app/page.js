@@ -8,6 +8,8 @@ import Publications from "@/components/Publications";
 import Joining from "@/components/Joining";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import Teaching from "@/components/Teaching";
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
         <CoreExpertise />
         <Team />
         <Alumni />
+        <Teaching/>
+        <Projects/>
         <Publications />
         <Joining />
         <ContactSection />
