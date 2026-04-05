@@ -50,7 +50,7 @@ function IconGithub() {
 export default function Footer() {
   return (
     <footer
-      className={`${inter.className} border-t border-slate-200 bg-[#f6f8fb] px-6 py-10 md:px-10 md:py-12 lg:px-12`}
+      className={`${inter.className} border-t border-[#BF7AB4]/30 bg-[#F2F2F2] px-6 py-10 md:px-10 md:py-12 lg:px-12`}
     >
       <div className="mx-auto max-w-[1320px]">
         <div className="grid gap-8 md:grid-cols-[1.35fr_0.7fr_0.7fr] md:items-start md:gap-12 lg:gap-16">
@@ -63,12 +63,12 @@ export default function Footer() {
                 height={32}
                 className="h-7 w-auto"
               />
-              <span className="text-2xl font-bold tracking-tight text-[#0D1733]">
+              <span className="text-2xl font-bold tracking-tight text-[#A64195]">
                 VAMSI
               </span>
             </div>
 
-            <p className="mt-4 mr-16 max-w-[620px] text-[16px] leading-[1.55] text-[#355178] md:text-[17px]">
+            <p className="mt-4 mr-16 max-w-[620px] text-[16px] leading-[1.55] text-[#0D0D0D]/75 md:text-[17px]">
               Virtual Alloys Modelling, Simulation & Informatics Research
               Group at IIT Indore
             </p>
@@ -77,21 +77,21 @@ export default function Footer() {
               <a
                 href="#contact"
                 aria-label="LinkedIn"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 transition-colors hover:text-[#0D1733]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#A64195] transition-colors hover:text-[#964196]"
               >
                 <IconLinkedIn />
               </a>
               <a
                 href="#contact"
                 aria-label="Twitter"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 transition-colors hover:text-[#0D1733]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#A64195] transition-colors hover:text-[#964196]"
               >
                 <IconTwitter />
               </a>
               <a
                 href="#contact"
                 aria-label="GitHub"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 transition-colors hover:text-[#0D1733]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#A64195] transition-colors hover:text-[#964196]"
               >
                 <IconGithub />
               </a>
@@ -99,30 +99,30 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[15px] font-bold text-[#0D1733]">
+            <h3 className="text-[15px] font-bold text-[#A64195]">
               Quick Links
             </h3>
-            <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#355178]">
+            <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#0D0D0D]/75">
               <li>
-                <a href="#research" className="transition-colors hover:text-[#0D1733]">
+                <a href="#research" className="transition-colors hover:text-[#A64195]">
                   Research
                 </a>
               </li>
               <li>
-                <a href="#people" className="transition-colors hover:text-[#0D1733]">
+                <a href="#people" className="transition-colors hover:text-[#A64195]">
                   Team
                 </a>
               </li>
               <li>
                 <a
                   href="#publications"
-                  className="transition-colors hover:text-[#0D1733]"
+                  className="transition-colors hover:text-[#A64195]"
                 >
                   Publications
                 </a>
               </li>
               <li>
-                <a href="#contact" className="transition-colors hover:text-[#0D1733]">
+                <a href="#contact" className="transition-colors hover:text-[#A64195]">
                   Contact
                 </a>
               </li>
@@ -130,14 +130,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[15px] font-bold text-[#0D1733]">
+            <h3 className="text-[15px] font-bold text-[#A64195]">
               Resources
             </h3>
-            <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#355178]">
+            <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#0D0D0D]/75">
               <li>
                 <a
                   href="#publications"
-                  className="transition-colors hover:text-[#0D1733]"
+                  className="transition-colors hover:text-[#A64195]"
                 >
                   Google Scholar
                 </a>
@@ -145,18 +145,18 @@ export default function Footer() {
               <li>
                 <a
                   href="#publications"
-                  className="transition-colors hover:text-[#0D1733]"
+                  className="transition-colors hover:text-[#A64195]"
                 >
                   ResearchGate
                 </a>
               </li>
               <li>
-                <a href="#contact" className="transition-colors hover:text-[#0D1733]">
+                <a href="#contact" className="transition-colors hover:text-[#A64195]">
                   IIT Indore
                 </a>
               </li>
               <li>
-                <a href="#positions" className="transition-colors hover:text-[#0D1733]">
+                <a href="#positions" className="transition-colors hover:text-[#A64195]">
                   Join Us
                 </a>
               </li>
@@ -164,14 +164,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-slate-200 pt-5">
-          <div className="flex flex-col items-start justify-between gap-3 text-[14px] text-[#4B607E] sm:flex-row sm:items-center">
+        <div className="mt-10 border-t border-[#BF7AB4]/30 pt-5">
+          <div className="flex flex-col items-start justify-between gap-3 text-[14px] text-[#0D0D0D]/75 sm:flex-row sm:items-center">
             <p>© 2026 VAMSI Research Group, IIT Indore. All rights reserved.</p>
             <div className="flex items-center gap-6">
-              <a href="#" className="transition-colors hover:text-[#0D1733]">
+              <a href="#" className="transition-colors hover:text-[#A64195]">
                 Privacy Policy
               </a>
-              <a href="#" className="transition-colors hover:text-[#0D1733]">
+              <a href="#" className="transition-colors hover:text-[#A64195]">
                 Terms of Use
               </a>
             </div>

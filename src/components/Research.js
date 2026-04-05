@@ -103,12 +103,12 @@ export default function Research() {
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
           <h2
-            className={`${playfair.className} text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#0D1733] sm:text-[2.9rem]`}
+            className={`${playfair.className} text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[2.9rem]`}
           >
             Research
           </h2>
           <p
-            className={`${inter.className} mx-auto mt-3 max-w-3xl text-base text-[#355178] sm:text-lg `}
+            className={`${inter.className} mx-auto mt-3 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-lg `}
           >
             Advancing computational materials science through multi-scale modeling and simulation
           </p>
@@ -118,7 +118,7 @@ export default function Research() {
           {researchItems.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_2px_14px_rgba(15,23,42,0.06)]"
+              className="overflow-hidden rounded-2xl border border-[#BF7AB4]/30 bg-white shadow-[0_2px_14px_rgba(166,65,149,0.06)]"
             >
               <div className="relative h-[180px] sm:h-[195px]">
                 <Image
@@ -131,21 +131,25 @@ export default function Research() {
               </div>
 
               <div className="px-6 pb-6 pt-2">
-                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-slate-100 text-[#0D1733]">
+                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#BF7AB4]/15 text-[#A64195]">
                   <Icon type={item.icon} />
                 </div>
 
                 <h3
-                  className={`${playfair.className} text-[1.3rem] font-semibold leading-[1.2] text-[#0D1733] sm:text-[1.5rem]`}
+                  className={`${playfair.className} text-[1.3rem] font-semibold leading-[1.2] text-[#A64195] sm:text-[1.5rem]`}
                 >
                   {item.title}
                 </h3>
 
-                <p className={`${inter.className} mt-3 text-[0.95rem] leading-[1.5] text-[#355178]`}>
+                <p
+                  className={`${inter.className} mt-3 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75`}
+                >
                   {item.description}
                 </p>
 
-                <ul className={`${inter.className} mt-4 space-y-2.5 text-[0.98rem] leading-[1.5] text-[#355178]`}>
+                <ul
+                  className={`${inter.className} mt-4 space-y-2.5 text-[0.98rem] leading-[1.5] text-[#0D0D0D]/75`}
+                >
                   {item.bullets.map((point) => (
                     <li key={point} className="flex gap-2.5">
                       <span className="mt-1 text-[#6F87A8]">.</span>

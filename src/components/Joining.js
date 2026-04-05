@@ -63,7 +63,7 @@ function Icon({ type }) {
 export default function Joining() {
   return (
     <section id="positions" className={`${inter.className} relative left-1/2 w-screen -translate-x-1/2 py-14 sm:py-16 lg:py-20`}>
-      <div className="relative overflow-hidden bg-[#0f1d36] py-14 sm:py-16 lg:py-20">
+      <div className="relative overflow-hidden bg-[#A64195]/15 py-14 sm:py-16 lg:py-20">
         <Image
           src="/hero-placeholder.svg"
           alt="Laboratory background"
@@ -72,20 +72,20 @@ export default function Joining() {
           className="object-cover opacity-35"
         />
 
-        <div className="absolute inset-0 bg-[#0c1830]/78 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-[#A64195]/10 backdrop-blur-[2px]" />
 
         <div className="relative mx-auto max-w-[1180px] px-6 md:px-10 lg:px-16">
           <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-5 py-2 text-sm font-semibold text-slate-100">
-              <span className="h-2 w-2 rounded-full bg-emerald-400" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#A64195]/40 bg-[#A64195]/10 px-5 py-2 text-sm font-semibold text-[#A64195]">
+              <span className="h-2 w-2 rounded-full bg-[#F27405]" />
               Positions Available
             </span>
 
-            <h2 className="mt-7 text-3xl font-bold tracking-[-0.02em] text-white sm:text-4xl md:text-5xl">
+            <h2 className="mt-7 text-3xl font-bold tracking-[-0.02em] text-[#0D0D0D] sm:text-4xl md:text-5xl">
               Join Our Research Group
             </h2>
 
-            <p className="mt-6 max-w-3xl text-base leading-relaxed text-slate-200 sm:text-lg md:text-lg">
+            <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#0D0D0D]/75 sm:text-lg md:text-lg">
               We are seeking motivated PhD students and postdoctoral researchers passionate
               about computational materials science and high-temperature alloys.
             </p>
@@ -100,13 +100,13 @@ export default function Joining() {
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.38, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -3 }}
-                className="rounded-2xl border border-white/14 bg-white/8 px-5 py-6 text-center shadow-[0_12px_36px_rgba(8,13,24,0.22)] backdrop-blur-md"
+                className="rounded-2xl border border-[#BF7AB4]/40 bg-[#BF7AB4]/10 px-5 py-6 text-center shadow-[0_12px_36px_rgba(166,65,149,0.12)] backdrop-blur-md"
               >
-                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-white/95">
+                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#A64195]">
                   <Icon type={item.icon} />
                 </div>
-                <h3 className="text-xl font-semibold text-white">{item.title}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-slate-200">{item.description}</p>
+                <h3 className="text-xl font-semibold text-[#A64195]">{item.title}</h3>
+                <p className="mt-2.5 text-sm leading-relaxed text-[#0D0D0D]/75">{item.description}</p>
               </motion.article>
             ))}
           </div>
@@ -116,7 +116,7 @@ export default function Joining() {
               href="#contact"
               whileHover={{ y: -1 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="inline-flex h-12 items-center gap-2.5 rounded-full bg-white px-8 text-lg font-semibold text-[#0D1733] shadow-[0_6px_24px_rgba(0,0,0,0.16)]"
+              className="inline-flex h-12 items-center gap-2.5 rounded-full bg-[#A64195] px-8 text-lg font-semibold text-white shadow-[0_6px_24px_rgba(166,65,149,0.3)]"
             >
               Apply Now
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">

@@ -88,14 +88,14 @@ export default function Publications() {
   return (
     <section
       id="publications"
-      className={`${inter.className} bg-[#f6f8fb] px-6 py-16 md:px-10 md:py-20 lg:px-16`}
+      className={`${inter.className} bg-[#F2F2F2] px-6 py-16 md:px-10 md:py-20 lg:px-16`}
     >
       <div className="mx-auto w-full max-w-[1160px]">
         <div className="text-center">
-          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#0D1733] md:text-5xl">
+          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#A64195] md:text-5xl">
             Publications
           </h2>
-          <p className="mt-3 text-base font-medium text-slate-600 md:text-lg">
+          <p className="mt-3 text-base font-medium text-[#0D0D0D]/75 md:text-lg">
             Advancing the field through rigorous research and scientific contributions
           </p>
         </div>
@@ -111,32 +111,32 @@ export default function Publications() {
               viewport={{ once: true, amount: 0.22 }}
               whileHover={{ y: -2 }}
               transition={{ duration: 0.22, ease: "easeOut" }}
-              className="rounded-2xl border border-slate-200/80 bg-white px-5 py-5 shadow-[0_2px_14px_rgba(15,23,42,0.06)] hover:shadow-[0_8px_28px_rgba(15,23,42,0.08)] md:px-6 md:py-6"
+              className="rounded-2xl border border-[#BF7AB4]/30 bg-white px-5 py-5 shadow-[0_2px_14px_rgba(166,65,149,0.06)] hover:shadow-[0_8px_28px_rgba(166,65,149,0.08)] md:px-6 md:py-6"
             >
               <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
                 <div className="min-w-0 flex-1">
                   <div className="mb-3 flex flex-wrap items-center gap-2">
-                    <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold text-slate-600">
+                    <span className="rounded-full bg-[#BF7AB4]/15 px-2.5 py-1 text-[11px] font-semibold text-[#A64195]">
                       {item.year}
                     </span>
-                    <span className="rounded-full bg-blue-50 px-2.5 py-1 text-[11px] font-semibold text-blue-700">
+                    <span className="rounded-full bg-[#F27405]/15 px-2.5 py-1 text-[11px] font-semibold text-[#F27405]">
                       {item.status}
                     </span>
                   </div>
 
-                  <h3 className="text-[1.34rem] font-semibold leading-snug text-[#0D1733] md:text-[1.52rem]">
+                  <h3 className="text-[1.34rem] font-semibold leading-snug text-[#A64195] md:text-[1.52rem]">
                     {item.title}
                   </h3>
 
-                  <p className="mt-2 text-sm text-slate-600 md:text-[0.95rem]">{item.authors}</p>
+                  <p className="mt-2 text-sm text-[#0D0D0D]/75 md:text-[0.95rem]">{item.authors}</p>
 
-                  <p className="mt-1.5 text-sm italic text-slate-500 md:text-[0.95rem]">{item.journal}</p>
+                  <p className="mt-1.5 text-sm italic text-[#0D0D0D]/60 md:text-[0.95rem]">{item.journal}</p>
 
                   <a
                     href={`https://doi.org/${item.doi}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-3 inline-flex items-center gap-1.5 text-[0.79rem] font-medium text-slate-700 transition-colors hover:text-slate-900"
+                    className="mt-3 inline-flex items-center gap-1.5 text-[0.79rem] font-medium text-[#A64195] transition-colors hover:text-[#964196]"
                   >
                     <ExternalLinkIcon />
                     <span>DOI: {item.doi}</span>
@@ -148,7 +148,7 @@ export default function Publications() {
                     href={item.pdf}
                     whileHover={{ y: -1 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="inline-flex h-10 flex-1 items-center justify-center rounded-xl bg-[#0D1733] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#172650] md:flex-none"
+                    className="inline-flex h-10 flex-1 items-center justify-center rounded-xl bg-[#A64195] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#964196] md:flex-none"
                   >
                     View PDF
                   </motion.a>
@@ -156,7 +156,7 @@ export default function Publications() {
                     type="button"
                     whileHover={{ y: -1 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="inline-flex h-10 flex-1 items-center justify-center rounded-xl border border-slate-200 bg-white px-4 text-sm font-medium text-slate-700 transition-colors hover:bg-slate-50 md:flex-none"
+                    className="inline-flex h-10 flex-1 items-center justify-center rounded-xl border border-[#BF7AB4]/30 bg-white px-4 text-sm font-medium text-[#A64195] transition-colors hover:bg-[#BF7AB4]/10 md:flex-none"
                   >
                     Cite
                   </motion.button>
@@ -171,7 +171,7 @@ export default function Publications() {
             href="#"
             whileHover={{ y: -1 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
-            className="inline-flex h-12 items-center gap-2 rounded-full bg-[#0D1733] px-7 text-sm font-semibold text-white transition-colors hover:bg-[#172650] md:h-13 md:px-8"
+            className="inline-flex h-12 items-center gap-2 rounded-full bg-[#A64195] px-7 text-sm font-semibold text-white transition-colors hover:bg-[#964196] md:h-13 md:px-8"
           >
             <ScholarIcon />
             <span>View All Publications on Google Scholar</span>

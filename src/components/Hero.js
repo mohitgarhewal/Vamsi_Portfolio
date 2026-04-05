@@ -20,27 +20,27 @@ export default function Hero() {
           </div>
 
           <h1
-            className="text-[1.5rem] font-semibold leading-[1.06] tracking-[-0.02em] text-[#0D1733] sm:text-[1.85rem] lg:text-[2.6rem]"
+            className="text-[1.5rem] font-semibold leading-[1.06] tracking-[-0.02em] text-[#A64195] sm:text-[1.85rem] lg:text-[2.6rem]"
             style={{ fontFamily: '"Iowan Old Style", "Georgia", serif' }}
           >
             Welcome to Virtual Alloys Modelling, Simulation &amp; Informatics
             (VAMSI) Research Group
           </h1>
 
-          <p className="mt-3 text-sm font-normal leading-relaxed text-[#355178] sm:text-[0.97rem] lg:text-[1.15rem]">
+          <p className="mt-3 text-sm font-normal leading-relaxed text-[#0D0D0D]/75 sm:text-[0.97rem] lg:text-[1.15rem]">
             Advancing computational materials science at IIT Indore
           </p>
 
           <div className="mt-5 flex flex-wrap items-center gap-3">
             <a
               href="#research"
-              className="inline-flex min-h-[38px] items-center justify-center rounded-xl bg-[#0D1733] px-5 text-sm font-medium text-white transition-colors duration-300 hover:bg-[#1B2B53]"
+              className="inline-flex min-h-[38px] items-center justify-center rounded-xl bg-[#A64195] px-5 text-sm font-medium text-white transition-colors duration-300 hover:bg-[#964196]"
             >
               Explore Research
             </a>
             <a
               href="#publications"
-              className="inline-flex min-h-[38px] items-center justify-center rounded-xl border border-slate-300/90 bg-transparent px-5 text-sm font-medium text-[#0D1733] transition-colors duration-300 hover:border-[#0D1733] hover:bg-white/60"
+              className="inline-flex min-h-[38px] items-center justify-center rounded-xl border border-[#A64195]/30 bg-transparent px-5 text-sm font-medium text-[#A64195] transition-colors duration-300 hover:border-[#A64195] hover:bg-white/60"
             >
               Publications
             </a>
@@ -59,13 +59,13 @@ export default function Hero() {
           </div>
 
           <div className="absolute -bottom-4 right-2 rounded-xl border border-slate-200 bg-white/95 px-3.5 py-3 shadow-[0_10px_24px_rgba(15,23,42,0.12)] backdrop-blur-sm sm:-bottom-5 sm:right-3 sm:px-4 sm:py-3.5">
-            <p className="text-sm font-semibold leading-none text-[#0D1733]">
+            <p className="text-sm font-semibold leading-none text-[#0D0D0D]">
               Dr. K. V. Vamsi
             </p>
-            <p className="mt-1.5 text-xs leading-none text-[#3A5071]">
+            <p className="mt-1.5 text-xs leading-none text-[#0D0D0D]/75">
               Assistant Professor
             </p>
-            <p className="mt-1.5 text-xs leading-none text-[#3A5071]">
+            <p className="mt-1.5 text-xs leading-none text-[#0D0D0D]/75">
               MEMS, IIT Indore
             </p>
           </div>
@@ -74,7 +74,7 @@ export default function Hero() {
 
       <section className="relative left-1/2 w-screen -translate-x-1/2">
         <div className="mx-auto max-w-[1320px] px-6 py-12 sm:px-8 sm:py-14 lg:py-18">
-          <p className="mx-auto max-w-4xl text-center text-lg font-normal leading-[1.7] tracking-[0.005em] text-[#23436B] sm:text-xl">
+          <p className="mx-auto max-w-4xl text-center text-lg font-normal leading-[1.7] tracking-[0.005em] text-[#0D0D0D]/75 sm:text-xl">
             We develop computational frameworks for the design of advanced
             alloys by integrating atomistic simulations, thermodynamics, and
             data-driven approaches across multiple length scales.

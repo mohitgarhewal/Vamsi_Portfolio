@@ -91,7 +91,7 @@ function CourseCard({ course, index }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.38, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_2px_14px_rgba(15,23,42,0.06)] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(15,23,42,0.1)] hover:-translate-y-0.5"
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-[#BF7AB4]/30 bg-white shadow-[0_2px_14px_rgba(166,65,149,0.06)] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(166,65,149,0.12)] hover:-translate-y-0.5"
     >
       {/* Gradient top bar */}
       <div className={`h-1.5 w-full bg-gradient-to-r ${course.color}`} />
@@ -118,12 +118,12 @@ function CourseCard({ course, index }) {
         </p>
 
         {/* Title */}
-        <h3 className={`${playfair.className} mt-1 text-[1.22rem] font-semibold leading-snug text-[#0D1733] sm:text-[1.3rem]`}>
+        <h3 className={`${playfair.className} mt-1 text-[1.22rem] font-semibold leading-snug text-[#A64195] sm:text-[1.3rem]`}>
           {course.title}
         </h3>
 
         {/* Description */}
-        <p className={`${inter.className} mt-3 flex-1 text-[0.88rem] leading-relaxed text-[#4B607E]`}>
+        <p className={`${inter.className} mt-3 flex-1 text-[0.88rem] leading-relaxed text-[#0D0D0D]/75`}>
           {course.description}
         </p>
 
@@ -151,20 +151,20 @@ export default function Teaching() {
 
         {/* ── Section header ── */}
         <div className="text-center">
-          <h2 className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#0D1733] sm:text-[3rem]`}>
+          <h2 className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[3rem]`}>
             Teaching
           </h2>
-          <p className={`${inter.className} mx-auto mt-4 max-w-3xl text-base text-[#355178] sm:text-[1.05rem]`}>
+          <p className={`${inter.className} mx-auto mt-4 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}>
             Courses offered at IIT Indore — Department of Metallurgical Engineering &amp; Materials Science
           </p>
         </div>
 
         {/* ── Semester Toggle ── */}
         <div className="mt-10 flex justify-center">
-          <div className="relative flex rounded-2xl border border-slate-200 bg-slate-100/70 p-1.5 shadow-inner">
+            <div className="relative flex rounded-2xl border border-[#BF7AB4]/30 bg-[#BF7AB4]/10 p-1.5 shadow-inner">
             {/* Sliding pill */}
             <motion.div
-              className="absolute inset-y-1.5 rounded-xl bg-white shadow-[0_2px_8px_rgba(15,23,42,0.1)]"
+              className="absolute inset-y-1.5 rounded-xl bg-white shadow-[0_2px_8px_rgba(166,65,149,0.1)]"
               animate={{
                 x: active === "autumn" ? 0 : "100%",
                 width: "50%",

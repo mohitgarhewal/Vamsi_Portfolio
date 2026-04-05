@@ -38,12 +38,12 @@ export default function Alumni() {
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
           <h2
-            className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#0D1733] sm:text-[3rem]`}
+            className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[3rem]`}
           >
             Alumni
           </h2>
           <p
-            className={`${inter.className} mx-auto mt-4 max-w-3xl text-base text-[#355178] sm:text-[1.05rem]`}
+            className={`${inter.className} mx-auto mt-4 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}
           >
             Former members who have contributed to our research excellence
           </p>
@@ -64,7 +64,7 @@ export default function Alumni() {
                 style={{ objectPosition: `${34 + index * 14}% 35%` }}
               />
 
-              <h3 className={`${playfair.className} mt-5 text-[1.55rem] font-semibold leading-tight text-[#0D1733]`}>
+              <h3 className={`${playfair.className} mt-5 text-[1.55rem] font-semibold leading-tight text-[#A64195]`}>
                 {member.name}
               </h3>
 

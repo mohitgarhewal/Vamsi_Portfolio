@@ -111,12 +111,12 @@ export default function CoreExpertise() {
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
           <h2
-            className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#0D1733] sm:text-[3rem]`}
+            className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[3rem]`}
           >
             Core Expertise
           </h2>
           <p
-            className={`${inter.className} mx-auto mt-4 max-w-4xl text-base text-[#355178] sm:text-[1.05rem]`}
+            className={`${inter.className} mx-auto mt-4 max-w-4xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}
           >
             Integrating physics-based models with atomistic simulations and computational
             thermodynamics
@@ -127,20 +127,20 @@ export default function CoreExpertise() {
           {expertiseItems.map((item) => (
             <article
               key={item.title}
-              className="rounded-2xl bg-slate-100/70 px-6 py-6"
+              className="rounded-2xl bg-[#BF7AB4]/10 px-6 py-6"
             >
-              <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-slate-100 text-[#0D1733]">
+                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#BF7AB4]/20 text-[#A64195]">
                 <Icon type={item.icon} />
               </div>
 
               <h3
-                className={`${playfair.className} text-[1.35rem] font-semibold leading-[1.25] text-[#0D1733]`}
+                className={`${playfair.className} text-[1.35rem] font-semibold leading-[1.25] text-[#A64195]`}
               >
                 {item.title}
               </h3>
 
               <p
-                className={`${inter.className} mt-3 text-[0.95rem] leading-[1.5] text-[#355178]`}
+                className={`${inter.className} mt-3 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75`}
               >
                 {item.description}
               </p>
