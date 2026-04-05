@@ -12,6 +12,7 @@ const NAV_ITEMS = [
   { label: "People", href: "#people" },
   { label: "Teaching", href: "#teaching" },
   { label: "Projects", href: "#projects" },
+  { label: "Resources", href: "/resources" },
   { label: "Publications", href: "#publications" },
   { label: "Contact", href: "#contact" },
 ];
@@ -82,15 +83,25 @@ export default function Header() {
           <ul className="flex items-center gap-6 xl:gap-7">
             {NAV_ITEMS.map((item) => (
               <li key={item.label}>
-                <motion.a
-                  href={item.href}
-                  className="group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] text-slate-600/90 transition-colors duration-300 hover:text-slate-900"
-                  whileHover={{ y: -1 }}
-                  transition={{ duration: 0.22, ease: "easeOut" }}
-                >
-                  {item.label}
-                  <span className="pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] w-full origin-left scale-x-0 bg-[#0D1733] transition-transform duration-300 ease-out group-hover:scale-x-100" />
-                </motion.a>
+                <motion.div whileHover={{ y: -1 }} transition={{ duration: 0.22, ease: "easeOut" }}>
+                  {item.href.startsWith("#") ? (
+                    <a
+                      href={item.href}
+                      className="group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] text-slate-600/90 transition-colors duration-300 hover:text-slate-900"
+                    >
+                      {item.label}
+                      <span className="pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] w-full origin-left scale-x-0 bg-[#A64195] transition-transform duration-300 ease-out group-hover:scale-x-100" />
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] text-slate-600/90 transition-colors duration-300 hover:text-slate-900"
+                    >
+                      {item.label}
+                      <span className="pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] w-full origin-left scale-x-0 bg-[#A64195] transition-transform duration-300 ease-out group-hover:scale-x-100" />
+                    </Link>
+                  )}
+                </motion.div>
               </li>
             ))}
           </ul>
@@ -126,13 +137,23 @@ export default function Header() {
             <ul className="flex flex-col gap-4">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
-                  <a
-                    href={item.href}
-                    className="block text-sm font-medium tracking-[0.01em] text-slate-600 transition-colors hover:text-slate-900"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
+                  {item.href.startsWith("#") ? (
+                    <a
+                      href={item.href}
+                      className="block text-sm font-medium tracking-[0.01em] text-slate-600 transition-colors hover:text-slate-900"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={item.href}
+                      className="block text-sm font-medium tracking-[0.01em] text-slate-600 transition-colors hover:text-slate-900"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
