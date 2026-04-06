@@ -6,10 +6,10 @@ const playfair = Playfair_Display({ subsets: ["latin"], weight: ["600", "700"] }
 const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 const members = [
-  { name: "Burra Vijayusha", role: "Undergraduate Student", summary: "Computational modeling of alloy properties and phase stability", image: "/photo.png" },
-  { name: "Pohrselvan", role: "Undergraduate Student", summary: "Atomistic simulations and material deformation mechanisms", image: "/photo.png" },
-  { name: "Keerthan", role: "Undergraduate Student", summary: "High-throughput screening and machine learning for materials", image: "/photo.png" },
-  { name: "Arham Aneeq", role: "Undergraduate Student", summary: "Thermodynamic modeling of multi-component alloy systems", image: "/photo.png" },
+  { name: "Burra Vijayusha", role: "Undergraduate Student", summary: "Computational modeling of alloy properties and phase stability", image: "/vijusha.jpeg" },
+  { name: "Pohrselvan", role: "Undergraduate Student", summary: "Atomistic simulations and material deformation mechanisms", image: "/pohrselvan.jpg" },
+  { name: "Keerthan", role: "Undergraduate Student", summary: "High-throughput screening and machine learning for materials", image: "/kirtan.jpeg" },
+  { name: "Arham Aneeq", role: "Undergraduate Student", summary: "Thermodynamic modeling of multi-component alloy systems", image: "/arham.jpg" },
 ];
 
 function SocialIcons() {
