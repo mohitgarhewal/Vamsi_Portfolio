@@ -1,10 +1,5 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
+import Link from "next/link";
 
 function IconLinkedIn() {
   return (
@@ -50,7 +45,7 @@ function IconGithub() {
 export default function Footer() {
   return (
     <footer
-      className={`${inter.className} border-t border-[#BF7AB4]/30 bg-[#F2F2F2] px-6 py-10 md:px-10 md:py-12 lg:px-12`}
+      className="border-t border-[#BF7AB4]/30 bg-[#F2F2F2] px-6 py-10 md:px-10 md:py-12 lg:px-12"
     >
       <div className="mx-auto max-w-[1320px]">
         <div className="grid gap-8 md:grid-cols-[1.35fr_0.7fr_0.7fr] md:items-start md:gap-12 lg:gap-16">
@@ -104,61 +99,61 @@ export default function Footer() {
             </h3>
             <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#0D0D0D]/75">
               <li>
-                <a href="#research" className="transition-colors hover:text-[#A64195]">
-                  Research
-                </a>
+                <Link href="/about" className="transition-colors hover:text-[#A64195]">
+                  About
+                </Link>
               </li>
               <li>
-                <a href="#people" className="transition-colors hover:text-[#A64195]">
-                  Team
-                </a>
+                <Link href="/people" className="transition-colors hover:text-[#A64195]">
+                  People
+                </Link>
               </li>
               <li>
-                <a
-                  href="#publications"
+                <Link
+                  href="/research"
                   className="transition-colors hover:text-[#A64195]"
                 >
-                  Publications
-                </a>
+                  Research
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="transition-colors hover:text-[#A64195]">
-                  Contact
-                </a>
+                <Link href="/projects" className="transition-colors hover:text-[#A64195]">
+                  Projects
+                </Link>
               </li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-[15px] font-bold text-[#A64195]">
-              Resources
+              More
             </h3>
             <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#0D0D0D]/75">
               <li>
-                <a
-                  href="#publications"
+                <Link
+                  href="/publications"
                   className="transition-colors hover:text-[#A64195]"
                 >
-                  Google Scholar
-                </a>
+                  Publications
+                </Link>
               </li>
               <li>
-                <a
-                  href="#publications"
+                <Link
+                  href="/resources"
                   className="transition-colors hover:text-[#A64195]"
                 >
-                  ResearchGate
-                </a>
+                  Resources
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="transition-colors hover:text-[#A64195]">
-                  IIT Indore
-                </a>
+                <Link href="/#contact" className="transition-colors hover:text-[#A64195]">
+                  Contact
+                </Link>
               </li>
               <li>
-                <a href="#positions" className="transition-colors hover:text-[#A64195]">
-                  Join Us
-                </a>
+                <Link href="/#positions" className="transition-colors hover:text-[#A64195]">
+                  Open Roles
+                </Link>
               </li>
             </ul>
           </div>

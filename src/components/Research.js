@@ -103,7 +103,7 @@ export default function Research() {
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
           <h2
-            className={`${playfair.className} text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[2.9rem]`}
+            className={`${playfair.className} text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#1F2937] sm:text-[2.9rem]`}
           >
             Research
           </h2>
@@ -136,7 +136,7 @@ export default function Research() {
                 </div>
 
                 <h3
-                  className={`${playfair.className} text-[1.3rem] font-semibold leading-[1.2] text-[#A64195] sm:text-[1.5rem]`}
+                  className={`${playfair.className} text-[1.3rem] font-semibold leading-[1.2] text-[#1F2937] sm:text-[1.5rem]`}
                 >
                   {item.title}
                 </h3>

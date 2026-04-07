@@ -2,17 +2,14 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import { PROJECTS_DATA } from "@/lib/projectsData";
 
-const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
-
 export default function ProjectsPage() {
   return (
-    <div className={`${inter.className} min-h-screen bg-[#F2F2F2]`}>
+    <div className="min-h-screen bg-[#F2F2F2]">
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
@@ -23,7 +20,7 @@ export default function ProjectsPage() {
         </nav>
 
         <div className="mb-8 rounded-2xl border border-[#BF7AB4]/30 bg-white p-6 shadow-[0_8px_20px_rgba(166,65,149,0.08)] sm:p-7">
-          <h1 className="text-3xl font-bold tracking-tight text-[#0D0D0D] sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-[#1F2937] sm:text-4xl">
             Research Projects
           </h1>
           <p className="mt-3 max-w-4xl text-base text-[#0D0D0D]/75">

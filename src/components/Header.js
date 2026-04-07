@@ -6,15 +6,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const NAV_ITEMS = [
-  { label: "Research", href: "#research" },
-  { label: "News", href: "#news" },
-  { label: "Positions", href: "#positions" },
-  { label: "People", href: "#people" },
-  { label: "Teaching", href: "#teaching" },
-  { label: "Projects", href: "#projects" },
+  { label: "About", href: "/about" },
+  { label: "People", href: "/people" },
+  { label: "Research", href: "/research" },
+  { label: "Projects", href: "/projects" },
+  { label: "Publications", href: "/publications" },
   { label: "Resources", href: "/resources" },
-  { label: "Publications", href: "#publications" },
-  { label: "Contact", href: "#contact" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 export default function Header() {

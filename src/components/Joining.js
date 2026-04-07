@@ -2,12 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
 
 const opportunities = [
   {
@@ -62,32 +56,31 @@ function Icon({ type }) {
 
 export default function Joining() {
   return (
-    <section id="positions" className={`${inter.className} relative left-1/2 w-screen -translate-x-1/2 py-14 sm:py-16 lg:py-20`}>
-      <div className="relative overflow-hidden bg-[#A64195]/15 py-14 sm:py-16 lg:py-20">
+    <section id="positions" className="relative left-1/2 w-screen -translate-x-1/2 py-14 sm:py-16 lg:py-20">
+      <div className="relative overflow-hidden bg-[#f8fafc] py-14 sm:py-16 lg:py-20">
         <Image
           src="/hero-placeholder.svg"
           alt="Laboratory background"
           fill
           priority={false}
-          className="object-cover opacity-35"
+          className="object-cover opacity-8"
         />
 
-        <div className="absolute inset-0 bg-[#A64195]/10 backdrop-blur-[2px]" />
+        <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px]" />
 
         <div className="relative mx-auto max-w-[1180px] px-6 md:px-10 lg:px-16">
           <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
             <span className="inline-flex items-center gap-2 rounded-full border border-[#A64195]/40 bg-[#A64195]/10 px-5 py-2 text-sm font-semibold text-[#A64195]">
               <span className="h-2 w-2 rounded-full bg-[#F27405]" />
-              Positions Available
+              Open Roles
             </span>
 
-            <h2 className="mt-7 text-3xl font-bold tracking-[-0.02em] text-[#0D0D0D] sm:text-4xl md:text-5xl">
-              Join Our Research Group
+            <h2 className="mt-7 text-3xl font-bold tracking-[-0.02em] text-[#1F2937] sm:text-4xl md:text-5xl">
+              Available Positions
             </h2>
 
             <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#0D0D0D]/75 sm:text-lg md:text-lg">
-              We are seeking motivated PhD students and postdoctoral researchers passionate
-              about computational materials science and high-temperature alloys.
+              We are currently accepting applications for funded research roles in computational materials science.
             </p>
           </div>
 
@@ -100,12 +93,12 @@ export default function Joining() {
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.38, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -3 }}
-                className="rounded-2xl border border-[#BF7AB4]/40 bg-[#BF7AB4]/10 px-5 py-6 text-center shadow-[0_12px_36px_rgba(166,65,149,0.12)] backdrop-blur-md"
+                className="rounded-2xl border border-slate-200 bg-white px-5 py-6 text-center shadow-[0_8px_24px_rgba(15,23,42,0.08)] backdrop-blur-md"
               >
-                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#A64195]">
+                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#1F2937]">
                   <Icon type={item.icon} />
                 </div>
-                <h3 className="text-xl font-semibold text-[#A64195]">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-[#1F2937]">{item.title}</h3>
                 <p className="mt-2.5 text-sm leading-relaxed text-[#0D0D0D]/75">{item.description}</p>
               </motion.article>
             ))}

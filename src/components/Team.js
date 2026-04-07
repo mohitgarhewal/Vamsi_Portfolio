@@ -33,7 +33,7 @@ export default function Team() {
     <section id="people" className="py-14 sm:py-16 lg:py-20">
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
-          <h2 className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[3rem]`}>
+          <h2 className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#1F2937] sm:text-[3rem]`}>
             Our Team
           </h2>
           <p className={`${inter.className} mx-auto mt-4 max-w-4xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}>
@@ -52,7 +52,7 @@ export default function Team() {
                   Principal Investigator
                 </span>
                 <div className="mt-2 flex flex-wrap items-center gap-2">
-                  <h3 className={`${playfair.className} text-[2rem] font-semibold leading-tight text-[#A64195] transition-colors group-hover:text-[#964196] sm:text-[2.3rem]`}>
+                  <h3 className={`${playfair.className} text-[2rem] font-semibold leading-tight text-[#1F2937] transition-colors group-hover:text-[#111827] sm:text-[2.3rem]`}>
                     Dr. K. V. Vamsi
                   </h3>
                   <span className="inline-flex items-center gap-1 rounded-full border border-[#A64195]/30 bg-[#A64195]/10 px-2.5 py-0.5 text-[11px] font-medium text-[#A64195] opacity-0 transition-opacity group-hover:opacity-100">
@@ -80,7 +80,7 @@ export default function Team() {
               <Image src={member.image} alt={member.name} width={96} height={96}
                 className="mx-auto h-24 w-24 rounded-full object-cover"
                 style={{ objectPosition: `${35 + index * 10}% 35%` }} />
-              <h4 className={`${playfair.className} mt-5 text-[1.55rem] font-semibold leading-tight text-[#A64195]`}>
+              <h4 className={`${playfair.className} mt-5 text-[1.55rem] font-semibold leading-tight text-[#1F2937]`}>
                 {member.name}
               </h4>
               <p className={`${inter.className} mt-2 text-sm font-medium text-[#0D0D0D]/75`}>{member.role}</p>

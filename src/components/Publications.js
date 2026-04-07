@@ -92,7 +92,7 @@ export default function Publications() {
     >
       <div className="mx-auto w-full max-w-[1160px]">
         <div className="text-center">
-          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#A64195] md:text-5xl">
+          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#1F2937] md:text-5xl">
             Publications
           </h2>
           <p className="mt-3 text-base font-medium text-[#0D0D0D]/75 md:text-lg">
@@ -124,7 +124,7 @@ export default function Publications() {
                     </span>
                   </div>
 
-                  <h3 className="text-[1.34rem] font-semibold leading-snug text-[#A64195] md:text-[1.52rem]">
+                  <h3 className="text-[1.34rem] font-semibold leading-snug text-[#1F2937] md:text-[1.52rem]">
                     {item.title}
                   </h3>
 

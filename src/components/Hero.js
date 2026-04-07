@@ -20,8 +20,7 @@ export default function Hero() {
           </div>
 
           <h1
-            className="text-[1.5rem] font-semibold leading-[1.06] tracking-[-0.02em] text-[#A64195] sm:text-[1.85rem] lg:text-[2.6rem]"
-            style={{ fontFamily: '"Iowan Old Style", "Georgia", serif' }}
+            className="text-[1.5rem] font-semibold leading-[1.06] tracking-[-0.02em] text-[#1F2937] sm:text-[1.85rem] lg:text-[2.35rem]"
           >
             Welcome to Virtual Alloys Modelling, Simulation &amp; Informatics
             (VAMSI) Research Group
@@ -47,8 +46,8 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[400px] lg:-translate-y-3 lg:mx-0">
-          <div className="relative h-[240px] overflow-hidden rounded-[18px] shadow-[0_8px_28px_rgba(13,23,51,0.12)] sm:h-[290px] lg:h-[360px]">
+        <div className="relative mx-auto w-full max-w-[340px] lg:-translate-y-1 lg:mx-0">
+          <div className="relative h-[215px] overflow-hidden rounded-[18px] shadow-[0_8px_28px_rgba(13,23,51,0.12)] sm:h-[260px] lg:h-[320px]">
             <Image
               src="/photo.png"
               alt="Research group profile"
@@ -58,7 +57,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute -bottom-4 right-2 rounded-xl border border-slate-200 bg-white/95 px-3.5 py-3 shadow-[0_10px_24px_rgba(15,23,42,0.12)] backdrop-blur-sm sm:-bottom-5 sm:right-3 sm:px-4 sm:py-3.5">
+          <div className="absolute -bottom-3 right-2 rounded-xl border border-slate-200 bg-white/95 px-3 py-2.5 shadow-[0_10px_24px_rgba(15,23,42,0.12)] backdrop-blur-sm sm:-bottom-4 sm:right-3 sm:px-4 sm:py-3">
             <p className="text-sm font-semibold leading-none text-[#0D0D0D]">
               Dr. K. V. Vamsi
             </p>
@@ -72,7 +71,7 @@ export default function Hero() {
         </div>
       </section>
 
-      <section className="relative left-1/2 w-screen -translate-x-1/2">
+      <section id="about" className="relative left-1/2 w-screen -translate-x-1/2 scroll-mt-28">
         <div className="mx-auto max-w-[1320px] px-6 py-12 sm:px-8 sm:py-14 lg:py-18">
           <p className="mx-auto max-w-4xl text-center text-lg font-normal leading-[1.7] tracking-[0.005em] text-[#0D0D0D]/75 sm:text-xl">
             We develop computational frameworks for the design of advanced
