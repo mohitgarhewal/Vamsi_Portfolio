@@ -13,7 +13,7 @@ export default function AboutPage() {
 
           <div className="mt-6 flex justify-center">
             <Image
-              src="/photo.png"
+              src="/logo.png"
               alt="VAMSI research group"
               width={520}
               height={330}

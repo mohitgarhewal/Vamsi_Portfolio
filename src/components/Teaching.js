@@ -150,11 +150,11 @@ export default function Teaching() {
       <div className="mx-auto max-w-[1280px]">
 
         {/* ── Section header ── */}
-        <div className="text-center">
-          <h2 className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[3rem]`}>
+        <div>
+          <h2 className="text-2xl font-bold tracking-tight text-[#1F2937] sm:text-[1.9rem]">
             Teaching
           </h2>
-          <p className={`${inter.className} mx-auto mt-4 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}>
+          <p className={`${inter.className} mt-2 max-w-3xl text-sm text-[#0D0D0D]/75 sm:text-base`}>
             Courses offered at IIT Indore — Department of Metallurgical Engineering &amp; Materials Science
           </p>
         </div>
