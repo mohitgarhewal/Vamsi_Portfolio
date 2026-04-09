@@ -58,7 +58,7 @@ export default function Footer() {
                 height={32}
                 className="h-7 w-auto"
               />
-              <span className="text-2xl font-bold tracking-tight text-[#A64195]">
+              <span className="text-2xl font-bold tracking-tight text-[#4B5563]">
                 VAMSI
               </span>
             </div>
@@ -72,21 +72,21 @@ export default function Footer() {
               <a
                 href="#contact"
                 aria-label="LinkedIn"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#A64195] transition-colors hover:text-[#964196]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#4B5563] transition-colors hover:text-[#3D4556]"
               >
                 <IconLinkedIn />
               </a>
               <a
                 href="#contact"
                 aria-label="Twitter"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#A64195] transition-colors hover:text-[#964196]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#4B5563] transition-colors hover:text-[#3D4556]"
               >
                 <IconTwitter />
               </a>
               <a
                 href="#contact"
                 aria-label="GitHub"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#A64195] transition-colors hover:text-[#964196]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#BF7AB4]/30 bg-white text-[#4B5563] transition-colors hover:text-[#3D4556]"
               >
                 <IconGithub />
               </a>
@@ -94,7 +94,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[15px] font-bold text-[#A64195]">
+            <h3 className="text-[15px] font-bold text-[#4B5563]">
               Quick Links
             </h3>
             <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#0D0D0D]/75">
@@ -125,7 +125,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[15px] font-bold text-[#A64195]">
+            <h3 className="text-[15px] font-bold text-[#4B5563]">
               More
             </h3>
             <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#0D0D0D]/75">

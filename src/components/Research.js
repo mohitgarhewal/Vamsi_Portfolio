@@ -114,49 +114,50 @@ export default function Research() {
           </p>
         </div>
 
-        <div className="mt-8 grid gap-4 lg:grid-cols-3">
+        <div className="mt-8 space-y-5 lg:space-y-6">
           {researchItems.map((item) => (
             <article
               key={item.title}
               className="overflow-hidden rounded-2xl border border-[#BF7AB4]/30 bg-white shadow-[0_2px_14px_rgba(166,65,149,0.06)]"
             >
-              <div className="relative h-[180px] sm:h-[195px]">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-white via-white/90 to-transparent" />
-              </div>
-
-              <div className="px-6 pb-6 pt-2">
-                <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#BF7AB4]/15 text-[#A64195]">
-                  <Icon type={item.icon} />
+              <div className="grid gap-0 sm:grid-cols-[280px_1fr] lg:grid-cols-[320px_1fr]">
+                <div className="relative h-[220px] sm:h-[260px]">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
 
-                <h3
-                  className={`${playfair.className} text-[1.3rem] font-semibold leading-[1.2] text-[#1F2937] sm:text-[1.5rem]`}
-                >
-                  {item.title}
-                </h3>
+                <div className="px-6 py-7 sm:px-8 sm:py-8">
+                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#BF7AB4]/15 text-[#A64195]">
+                    <Icon type={item.icon} />
+                  </div>
 
-                <p
-                  className={`${inter.className} mt-3 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75`}
-                >
-                  {item.description}
-                </p>
+                  <h3
+                    className={`${playfair.className} text-[1.65rem] font-semibold leading-[1.2] text-[#1F2937] sm:text-[2rem]`}
+                  >
+                    {item.title}
+                  </h3>
 
-                <ul
-                  className={`${inter.className} mt-4 space-y-2.5 text-[0.98rem] leading-[1.5] text-[#0D0D0D]/75`}
-                >
-                  {item.bullets.map((point) => (
-                    <li key={point} className="flex gap-2.5">
-                      <span className="mt-1 text-[#6F87A8]">.</span>
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
+                  <p
+                    className={`${inter.className} mt-3 text-[0.98rem] leading-[1.6] text-[#0D0D0D]/75`}
+                  >
+                    {item.description}
+                  </p>
+
+                  <ul
+                    className={`${inter.className} mt-4 space-y-1.5 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75`}
+                  >
+                    {item.bullets.map((point) => (
+                      <li key={point} className="flex gap-2.5">
+                        <span className="text-[#6F87A8]">•</span>
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </article>
           ))}

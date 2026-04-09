@@ -35,16 +35,19 @@ const alumniMembers = [
     name: "Amirthan",
     role: "Undergraduate Student",
     batch: "Class of 2025",
+    image: "/Amirthan.avif",
   },
   {
     name: "Nitheesvar",
     role: "Undergraduate Student",
     batch: "Class of 2025",
+    image: "/Nitheesvar.avif",
   },
   {
     name: "Vamshi Krishna Rao",
     role: "Undergraduate Student",
     batch: "Class of 2025",
+    image: "/Vamshi Krishna Rao.avif",
   },
 ];
 
@@ -150,17 +153,19 @@ export default function PeoplePage() {
                 key={member.name}
                 className="rounded-2xl border border-slate-200 bg-white px-6 py-7 text-center shadow-[0_6px_18px_rgba(15,23,42,0.05)]"
               >
-                <div className="mx-auto flex h-[92px] w-[92px] items-center justify-center rounded-full bg-slate-100 text-3xl font-semibold text-[#1F2937]">
-                  {member.name.charAt(0)}
-                </div>
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={92}
+                  height={92}
+                  className="mx-auto h-[92px] w-[92px] rounded-full object-cover"
+                  style={{ objectPosition: `${35 + index * 10}% 35%` }}
+                />
                 <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#1F2937]">
                   {member.name}
                 </h3>
                 <p className="mt-2 text-sm font-medium text-[#0D0D0D]/75">{member.role}</p>
                 <p className="mt-1 text-[0.92rem] text-[#6A7D99]">{member.batch}</p>
-                <p className="mt-3 text-[0.92rem] text-[#0D0D0D]/70">
-                  Alumni member {index + 1}
-                </p>
               </article>
             ))}
           </div>

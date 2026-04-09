@@ -5,9 +5,9 @@ export default function Hero() {
     <>
       <section
         id="home"
-        className="grid items-center gap-6 py-4 lg:grid-cols-[1fr_0.9fr] lg:gap-8"
+        className="grid items-center justify-items-center gap-6 py-4 lg:grid-cols-[1fr_0.9fr] lg:gap-8"
       >
-        <div className="max-w-[560px]">
+        <div className="mx-auto max-w-[560px] ">
           <div className="mb-4">
             <Image
               src="/logo.png"
@@ -30,7 +30,7 @@ export default function Hero() {
             Advancing computational materials science at IIT Indore
           </p>
 
-          <div className="mt-5 flex flex-wrap items-center gap-3">
+          <div className="mt-5 flex flex-wrap items-start justify-start gap-3">
             <a
               href="#research"
               className="inline-flex min-h-[38px] items-center justify-center rounded-xl bg-[#A64195] px-5 text-sm font-medium text-white transition-colors duration-300 hover:bg-[#964196]"
@@ -46,7 +46,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[340px] lg:-translate-y-1 lg:mx-0">
+        <div className="relative mx-auto w-full max-w-[340px] lg:-translate-y-1">
           <div className="relative h-[215px] overflow-hidden rounded-[18px] shadow-[0_8px_28px_rgba(13,23,51,0.12)] sm:h-[260px] lg:h-[320px]">
             <Image
               src="/photo.png"
