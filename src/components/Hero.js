@@ -22,7 +22,7 @@ export default function Hero() {
           <h1
             className="text-[1.5rem] font-semibold leading-[1.06] tracking-[-0.02em] text-[#1F2937] sm:text-[1.85rem] lg:text-[2.35rem]"
           >
-            Welcome to Virtual Alloys Modelling, Simulation &amp; Informatics
+            Virtual Alloys Modelling, Simulation &amp; Informatics
             (VAMSI) Research Group
           </h1>
 
@@ -73,11 +73,28 @@ export default function Hero() {
 
       <section id="about" className="relative left-1/2 w-screen -translate-x-1/2 scroll-mt-28">
         <div className="mx-auto max-w-[1320px] px-6 py-12 sm:px-8 sm:py-14 lg:py-18">
-          <p className="mx-auto max-w-4xl text-center text-lg font-normal leading-[1.7] tracking-[0.005em] text-[#0D0D0D]/75 sm:text-xl">
-            We develop computational frameworks for the design of advanced
-            alloys by integrating atomistic simulations, thermodynamics, and
-            data-driven approaches across multiple length scales.
-          </p>
+          <div className="mx-auto max-w-4xl space-y-5 text-base font-normal leading-[1.75] text-[#0D0D0D]/75 sm:text-[1.05rem]">
+            <p>
+              I am pleased to introduce the Virtual Alloys Modelling, Simulation &amp; Informatics (VAMSI)
+              Research Group at the Indian Institute of Technology Indore (IITI). We warmly invite motivated
+              and curious students to join our research efforts.
+            </p>
+            <p>
+              Our group focuses on advancing materials science and engineering, with particular emphasis on
+              understanding deformation behaviour and developing high-throughput methods and tailored
+              computational frameworks for structural materials and beyond. A central goal of our work is to
+              establish Integrated Computational Materials Engineering (ICME) frameworks that connect models
+              across multiple processes and length scales, while incorporating tools to address complex
+              multi-physics challenges. This integrated approach has the potential to significantly accelerate
+              materials discovery and design.
+            </p>
+            <p>
+              At VAMSI, we aim to address fundamental questions in deformation by combining physics-based
+              models with underlying phenomenology. Our approach integrates atomistic simulations,
+              computational thermodynamics, analytical modelling, high-throughput modelling, and materials
+              informatics.
+            </p>
+          </div>
         </div>
       </section>
     </>

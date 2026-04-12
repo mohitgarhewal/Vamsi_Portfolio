@@ -11,30 +11,63 @@ const inter = Inter({
 const publications = [
   {
     year: "2024",
-    status: "High Impact",
-    title: "Integrated Computational Approach for Designing High-Temperature Ni-Based Superalloys",
-    authors: "Koruprolu, V.V., Smith, T.M., Pollock, T.M.",
+    status: "Physical Review Materials",
+    title: "Antiphase Boundaries in Intermetallics: Proximate Structures, Formation Energies, and Chemical Stability",
+    authors: "K.V. Vamsi, Ram Seshadri",
+    journal: "Physical Review Materials",
+    volume: "8, 013610",
+    doi: "10.1103/PhysRevMaterials.8.013610",
+    scholarUrl: "https://doi.org/10.1103/PhysRevMaterials.8.013610",
+  },
+  {
+    year: "2022",
+    status: "Metallurgical and Materials Transactions A",
+    title: "Phase Transformation Temperatures, γ–γ′ Lattice Parameter Misfit, and γ′ Precipitate Morphology in Co–Ti–V Alloys",
+    authors: "Verma, S.K., Pramanik, A., Jyothsna, K., ..., K.V. Vamsi, S. Karthikeyan",
+    journal: "Metallurgical and Materials Transactions A",
+    volume: "53, 4011–4022",
+    doi: "10.1007/s11661-022-06806-y",
+    scholarUrl: "https://doi.org/10.1007/s11661-022-06806-y",
+  },
+  {
+    year: "2021",
+    status: "Annual Review of Materials Research",
+    title: "Precipitate Shearing, Fault Energies, and Solute Segregation to Planar Faults in Ni-, CoNi-, and Co-Base Superalloys",
+    authors: "Y.M. Eggeler, K.V. Vamsi, T.M. Pollock",
+    journal: "Annual Review of Materials Research",
+    volume: "51, 209–240",
+    doi: "10.1146/annurev-matsci-102419-011433",
+    scholarUrl: "https://doi.org/10.1146/annurev-matsci-102419-011433",
+  },
+  {
+    year: "2020",
+    status: "Scripta Materialia",
+    title: "A New Proximate Structure for the APB (111) in L12 Compounds",
+    authors: "K.V. Vamsi, T.M. Pollock",
+    journal: "Scripta Materialia",
+    volume: "182, 38–42",
+    doi: "10.1016/j.scriptamat.2020.02.021",
+    scholarUrl: "https://doi.org/10.1016/j.scriptamat.2020.02.021",
+  },
+  {
+    year: "2018",
+    status: "Acta Materialia",
+    title: "High-Throughput Estimation of Planar Fault Energies in A3B Compounds with L12 Structure",
+    authors: "K.V. Vamsi, S. Karthikeyan",
     journal: "Acta Materialia",
-    doi: "10.1016/j.actamat.2024.xxxx",
-    pdf: "#",
+    volume: "145, 532–542",
+    doi: "10.1016/j.actamat.2017.11.051",
+    scholarUrl: "https://doi.org/10.1016/j.actamat.2017.11.051",
   },
   {
-    year: "2023",
-    status: "Featured",
-    title: "Modelling Planar Fault Energies in Multi-Component L12 Structures",
-    authors: "Koruprolu, V.V.",
-    journal: "Journal of Alloys and Compounds",
-    doi: "10.1016/j.jallcom.2023.xxxx",
-    pdf: "#",
-  },
-  {
-    year: "2024",
-    status: "Editor's Choice",
-    title: "High-Throughput Screening of Refractory High-Entropy Alloys for Structural Applications",
-    authors: "Koruprolu, V.V., Patel, A., Sharma, P.",
-    journal: "Materials & Design",
-    doi: "10.1016/j.matdes.2024.xxxxx",
-    pdf: "#",
+    year: "2017",
+    status: "Scripta Materialia",
+    title: "Yield Anomaly in L12 Co3AlxW1−x vis-à-vis Ni3Al",
+    authors: "K.V. Vamsi, S. Karthikeyan",
+    journal: "Scripta Materialia",
+    volume: "130, 269–273",
+    doi: "10.1016/j.scriptamat.2016.11.019",
+    scholarUrl: "https://doi.org/10.1016/j.scriptamat.2016.11.019",
   },
 ];
 
@@ -75,7 +108,7 @@ function ScholarIcon() {
       fill="none"
       stroke="currentColor"
       strokeWidth="1.9"
-      className="h-4.5 w-4.5"
+      className="h-4 w-4"
       aria-hidden="true"
     >
       <path d="m3 10 9-5 9 5-9 5-9-5Z" />
@@ -103,7 +136,7 @@ export default function Publications() {
         <div className="mt-12 space-y-6 md:mt-16 md:space-y-7">
           {publications.map((item, index) => (
             <motion.article
-              key={`${item.title}-${item.year}`}
+              key={`${item.doi}`}
               custom={index}
               variants={cardVariants}
               initial="hidden"
@@ -119,21 +152,23 @@ export default function Publications() {
                     <span className="rounded-full bg-[#BF7AB4]/15 px-2.5 py-1 text-[11px] font-semibold text-[#A64195]">
                       {item.year}
                     </span>
-                    <span className="rounded-full bg-[#F27405]/15 px-2.5 py-1 text-[11px] font-semibold text-[#F27405]">
+                    <span className="rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-semibold text-slate-600">
                       {item.status}
                     </span>
                   </div>
 
-                  <h3 className="text-[1.34rem] font-semibold leading-snug text-[#1F2937] md:text-[1.52rem]">
+                  <h3 className="text-[1.1rem] font-semibold leading-snug text-[#1F2937] md:text-[1.25rem]">
                     {item.title}
                   </h3>
 
                   <p className="mt-2 text-sm text-[#0D0D0D]/75 md:text-[0.95rem]">{item.authors}</p>
 
-                  <p className="mt-1.5 text-sm italic text-[#0D0D0D]/60 md:text-[0.95rem]">{item.journal}</p>
+                  <p className="mt-1.5 text-sm italic text-[#0D0D0D]/60 md:text-[0.95rem]">
+                    {item.journal}, {item.volume}
+                  </p>
 
                   <a
-                    href={`https://doi.org/${item.doi}`}
+                    href={item.scholarUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-3 inline-flex items-center gap-1.5 text-[0.79rem] font-medium text-[#A64195] transition-colors hover:text-[#964196]"
@@ -145,21 +180,15 @@ export default function Publications() {
 
                 <div className="flex w-full flex-row gap-2 md:w-auto md:min-w-[118px] md:flex-col">
                   <motion.a
-                    href={item.pdf}
+                    href={item.scholarUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ y: -1 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
                     className="inline-flex h-10 flex-1 items-center justify-center rounded-xl bg-[#A64195] px-4 text-sm font-semibold text-white transition-colors hover:bg-[#964196] md:flex-none"
                   >
-                    View PDF
+                    View Paper
                   </motion.a>
-                  <motion.button
-                    type="button"
-                    whileHover={{ y: -1 }}
-                    transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="inline-flex h-10 flex-1 items-center justify-center rounded-xl border border-[#BF7AB4]/30 bg-white px-4 text-sm font-medium text-[#A64195] transition-colors hover:bg-[#BF7AB4]/10 md:flex-none"
-                  >
-                    Cite
-                  </motion.button>
                 </div>
               </div>
             </motion.article>
@@ -168,7 +197,9 @@ export default function Publications() {
 
         <div className="mt-10 flex justify-center md:mt-12">
           <motion.a
-            href="#"
+            href="https://scholar.google.com/citations?user=ducGUjAAAAAJ&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
             whileHover={{ y: -1 }}
             transition={{ duration: 0.22, ease: "easeOut" }}
             className="inline-flex h-12 items-center gap-2 rounded-full bg-[#A64195] px-7 text-sm font-semibold text-white transition-colors hover:bg-[#964196] md:h-13 md:px-8"

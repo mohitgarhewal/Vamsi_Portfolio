@@ -15,9 +15,9 @@ const opportunities = [
     icon: "microscope",
   },
   {
-    title: "Collaborations",
-    description: "Open to academic and industrial research partnerships",
-    icon: "users",
+    title: "JRF",
+    description: "Junior Research Fellowship for motivated graduates to contribute to cutting-edge atomistic simulations and alloy design projects",
+    icon: "jrf",
   },
 ];
 

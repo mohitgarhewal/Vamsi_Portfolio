@@ -40,7 +40,6 @@ const softwareTools = [
     description: "Tools for atomistic dynamics and thermodynamic studies.",
     items: [
       { label: "LAMMPS", href: "https://www.lammps.org/#gsc.tab=0" },
-      { label: "pycalphad", href: "https://pycalphad.org/docs/latest/" },
     ],
   },
   {
