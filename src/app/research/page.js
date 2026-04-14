@@ -5,7 +5,7 @@ import CoreExpertise from "@/components/CoreExpertise";
 
 export default function ResearchPage() {
   return (
-    <div className="min-h-screen bg-[#F2F2F2] text-[#0D0D0D]">
+    <div className="min-h-screen bg-white text-[#0D0D0D]">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <Research />

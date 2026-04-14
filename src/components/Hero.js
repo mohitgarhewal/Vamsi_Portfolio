@@ -7,27 +7,20 @@ export default function Hero() {
         id="home"
         className="grid items-center justify-items-center gap-6 py-4 lg:grid-cols-[1fr_0.9fr] lg:gap-8"
       >
-        <div className="mx-auto max-w-[560px] ">
-          <div className="mb-4">
+        <div className="mx-auto w-full max-w-[560px]">
+          <div className="relative mx-auto w-full">
             <Image
-              src="/logo.png"
+              src="/Group_logo.png"
               alt="VAMSI Research Group"
-              width={160}
-              height={44}
+              width={560}
+              height={400}
               priority
-              className="h-8 w-auto"
+              style={{ width: "100%", height: "auto" }}
             />
           </div>
 
-          <h1
-            className="text-[1.5rem] font-semibold leading-[1.06] tracking-[-0.02em] text-[#1F2937] sm:text-[1.85rem] lg:text-[2.35rem]"
-          >
-            Virtual Alloys Modelling, Simulation &amp; Informatics
-            (VAMSI) Research Group
-          </h1>
-
-          <p className="mt-3 text-sm font-normal leading-relaxed text-[#0D0D0D]/75 sm:text-[0.97rem] lg:text-[1.15rem]">
-            Advancing computational materials science at IIT Indore
+          <p className="mt-6 text-sm font-normal leading-relaxed text-[#0D0D0D]/75 sm:text-[0.97rem] lg:text-[1.15rem]">
+            Advancing computational Materials Science and Engineering at IIT Indore
           </p>
 
           <div className="mt-5 flex flex-wrap items-start justify-start gap-3">
@@ -53,6 +46,7 @@ export default function Hero() {
               alt="Research group profile"
               fill
               priority
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 340px"
               className="object-cover"
             />
           </div>

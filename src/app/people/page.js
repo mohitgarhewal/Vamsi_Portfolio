@@ -53,7 +53,7 @@ const alumniMembers = [
 
 export default function PeoplePage() {
   return (
-    <div className="min-h-screen bg-[#F2F2F2] text-[#0D0D0D]">
+    <div className="min-h-screen bg-white text-[#0D0D0D]">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] sm:p-8">

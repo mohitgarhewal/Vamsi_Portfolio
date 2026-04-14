@@ -6,6 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const NAV_ITEMS = [
+  { label: "Home", href: "/" },
   { label: "People", href: "/people" },
   { label: "Research", href: "/research" },
   { label: "Projects", href: "/projects" },
@@ -49,29 +50,15 @@ export default function Header() {
     >
       <div className="mx-auto flex h-[68px] w-full max-w-[1320px] items-center justify-between px-5 md:px-10 xl:px-14">
 
-        {/* ── Dual Logo ── */}
+        {/* ── Logo ── */}
         <Link href="/" className="flex shrink-0 items-center gap-4 py-1">
-          {/* VAMSI wordmark */}
           <Image
-            src="/logo.png"
+            src="/Vamsi_iiti_informal.png"
             alt="VAMSI Research Group"
-            width={260}
-            height={70}
+            width={200}
+            height={80}
             priority
-            className="h-[44px] w-auto md:h-[50px]"
-          />
-
-          {/* Divider */}
-          <span className="hidden h-9 w-px bg-slate-200 sm:block" />
-
-          {/* IIT Indore logo image */}
-          <Image
-            src="/iiti-logo.jpg"
-            alt="IIT Indore"
-            width={120}
-            height={60}
-            priority
-            className="hidden h-[40px] w-auto object-contain sm:block md:h-[44px]"
+            className="h-[48px] w-auto md:h-[52px]"
           />
         </Link>
 

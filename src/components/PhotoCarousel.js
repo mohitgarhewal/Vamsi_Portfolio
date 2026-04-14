@@ -58,6 +58,7 @@ export default function PhotoCarousel() {
                   src={slides[active].image}
                   alt={slides[active].title}
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1180px"
                   className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/20 to-transparent" />

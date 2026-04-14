@@ -45,22 +45,19 @@ function IconGithub() {
 export default function Footer() {
   return (
     <footer
-      className="border-t border-[#BF7AB4]/30 bg-[#F2F2F2] px-6 py-10 md:px-10 md:py-12 lg:px-12"
+      className="border-t border-[#BF7AB4]/30 bg-white px-6 py-10 md:px-10 md:py-12 lg:px-12"
     >
       <div className="mx-auto max-w-[1320px]">
         <div className="grid gap-8 md:grid-cols-[1.35fr_0.7fr_0.7fr] md:items-start md:gap-12 lg:gap-16">
           <div>
             <div className="flex items-center gap-3">
               <Image
-                src="/vamsi-logo.svg"
+                src="/Vamsi_iiti_informal.png"
                 alt="VAMSI Research Group"
-                width={112}
-                height={32}
-                className="h-7 w-auto"
+                width={200}
+                height={80}
+                className="h-12 w-auto"
               />
-              <span className="text-2xl font-bold tracking-tight text-[#4B5563]">
-                VAMSI
-              </span>
             </div>
 
             <p className="mt-4 mr-16 max-w-[620px] text-[16px] leading-[1.55] text-[#0D0D0D]/75 md:text-[17px]">

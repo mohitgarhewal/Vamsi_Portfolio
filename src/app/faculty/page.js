@@ -202,7 +202,7 @@ const fadeUp = {
 
 export default function FacultyPage() {
   return (
-    <div className={`${inter.className} min-h-screen bg-[#f8fafc] text-slate-800`}>
+    <div className={`${inter.className} min-h-screen bg-white text-slate-800`}>
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">

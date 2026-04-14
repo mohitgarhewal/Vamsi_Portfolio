@@ -135,7 +135,7 @@ function SectionBlock({ title, subtitle, items }) {
                     href={linkItem.href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex items-center gap-2 rounded-full border border-[#BF7AB4]/25 bg-[#F2F2F2] px-3.5 py-2 text-sm font-medium text-[#1F2937] transition-colors hover:border-[#A64195] hover:bg-[#A64195] hover:text-white"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#BF7AB4]/25 bg-white px-3.5 py-2 text-sm font-medium text-[#1F2937] transition-colors hover:border-[#A64195] hover:bg-[#A64195] hover:text-white"
                   >
                     <span>{linkItem.label}</span>
                     <svg
@@ -185,7 +185,7 @@ function TemplateSection({ title, subtitle, items }) {
 
 export default function ResourcesPage() {
   return (
-    <div className="min-h-screen bg-[#F2F2F2] text-[#0D0D0D]">
+    <div className="min-h-screen bg-white text-[#0D0D0D]">
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
