@@ -131,7 +131,7 @@ export default function Footer() {
                   href="/publications"
                   className="transition-colors hover:text-[#A64195]"
                 >
-                  Publications
+                  Contributions
                 </Link>
               </li>
               <li>

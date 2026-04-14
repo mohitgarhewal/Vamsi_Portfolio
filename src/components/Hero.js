@@ -31,10 +31,10 @@ export default function Hero() {
               Explore Research
             </a>
             <a
-              href="#publications"
+              href="#contributions"
               className="inline-flex min-h-[38px] items-center justify-center rounded-xl border border-[#A64195]/30 bg-transparent px-5 text-sm font-medium text-[#A64195] transition-colors duration-300 hover:border-[#A64195] hover:bg-white/60"
             >
-              Publications
+              Contributions
             </a>
           </div>
         </div>

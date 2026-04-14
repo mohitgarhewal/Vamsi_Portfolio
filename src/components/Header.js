@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -10,14 +11,22 @@ const NAV_ITEMS = [
   { label: "People", href: "/people" },
   { label: "Research", href: "/research" },
   { label: "Projects", href: "/projects" },
-  { label: "Publications", href: "/publications" },
+  { label: "Contributions", href: "/publications", isDropdown: true },
   { label: "Resources", href: "/resources" },
   { label: "Contact", href: "/#contact" },
 ];
 
+const CONTRIBUTIONS_ITEMS = [
+  { label: "Publications", href: "/publications?tab=publications" },
+  { label: "Conference Proceedings", href: "/publications?tab=proceedings" },
+  { label: "Talks", href: "/publications?tab=talks" },
+];
+
 export default function Header() {
+  const pathname = usePathname();
   const [hasScrolled, setHasScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isContributionsOpen, setIsContributionsOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setHasScrolled(window.scrollY > 18);
@@ -33,6 +42,11 @@ export default function Header() {
     window.addEventListener("resize", closeOnResize);
     return () => window.removeEventListener("resize", closeOnResize);
   }, []);
+
+  const isActive = (href) => {
+    if (href === "/") return pathname === "/";
+    return pathname.startsWith(href.split("?")[0]);
+  };
 
   return (
     <motion.header
@@ -66,26 +80,101 @@ export default function Header() {
         <nav aria-label="Primary" className="hidden lg:block">
           <ul className="flex items-center gap-6 xl:gap-7">
             {NAV_ITEMS.map((item) => (
-              <li key={item.label}>
-                <motion.div whileHover={{ y: -1 }} transition={{ duration: 0.22, ease: "easeOut" }}>
-                  {item.href.startsWith("#") ? (
-                    <a
-                      href={item.href}
-                      className="group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] text-slate-600/90 transition-colors duration-300 hover:text-slate-900"
+              <li key={item.label} className="relative">
+                {item.isDropdown ? (
+                  <div
+                    className="relative"
+                    onMouseEnter={() => setIsContributionsOpen(true)}
+                    onMouseLeave={() => setIsContributionsOpen(false)}
+                  >
+                    <motion.button
+                      whileHover={{ y: -1 }}
+                      transition={{ duration: 0.22, ease: "easeOut" }}
+                      className={`group relative inline-flex items-center text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
+                        isActive(item.href)
+                          ? "text-slate-900"
+                          : "text-slate-600/90 hover:text-slate-900"
+                      }`}
                     >
                       {item.label}
-                      <span className="pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] w-full origin-left scale-x-0 bg-[#A64195] transition-transform duration-300 ease-out group-hover:scale-x-100" />
-                    </a>
-                  ) : (
-                    <Link
-                      href={item.href}
-                      className="group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] text-slate-600/90 transition-colors duration-300 hover:text-slate-900"
-                    >
-                      {item.label}
-                      <span className="pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] w-full origin-left scale-x-0 bg-[#A64195] transition-transform duration-300 ease-out group-hover:scale-x-100" />
-                    </Link>
-                  )}
-                </motion.div>
+                      <span
+                        className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#A64195] transition-transform duration-300 ease-out ${
+                          isActive(item.href)
+                            ? "w-full scale-x-100"
+                            : "w-full scale-x-0 group-hover:scale-x-100"
+                        }`}
+                      />
+                    </motion.button>
+
+                    <AnimatePresence>
+                      {isContributionsOpen && (
+                        <motion.div
+                          initial={{ opacity: 0, y: -8 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          exit={{ opacity: 0, y: -8 }}
+                          transition={{ duration: 0.22 }}
+                          className="absolute right-0 top-full mt-2 w-56 rounded-lg border border-[#BF7AB4]/30 bg-white shadow-[0_10px_32px_rgba(15,23,42,0.12)] backdrop-blur-md"
+                        >
+                          <ul className="space-y-1 p-2">
+                            {CONTRIBUTIONS_ITEMS.map((subItem) => (
+                              <li key={subItem.label}>
+                                <Link
+                                  href={subItem.href}
+                                  className="block rounded-md px-4 py-2.5 text-sm font-medium text-slate-700 transition-colors hover:bg-[#A64195]/10 hover:text-[#A64195]"
+                                >
+                                  {subItem.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </motion.div>
+                      )}
+                    </AnimatePresence>
+                  </div>
+                ) : (
+                  <motion.div
+                    whileHover={{ y: -1 }}
+                    transition={{ duration: 0.22, ease: "easeOut" }}
+                  >
+                    {item.href.startsWith("#") ? (
+                      <a
+                        href={item.href}
+                        className={`group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
+                          isActive(item.href)
+                            ? "text-slate-900"
+                            : "text-slate-600/90 hover:text-slate-900"
+                        }`}
+                      >
+                        {item.label}
+                        <span
+                          className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#A64195] transition-transform duration-300 ease-out ${
+                            isActive(item.href)
+                              ? "w-full scale-x-100"
+                              : "w-full scale-x-0 group-hover:scale-x-100"
+                          }`}
+                        />
+                      </a>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className={`group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
+                          isActive(item.href)
+                            ? "text-slate-900"
+                            : "text-slate-600/90 hover:text-slate-900"
+                        }`}
+                      >
+                        {item.label}
+                        <span
+                          className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#A64195] transition-transform duration-300 ease-out ${
+                            isActive(item.href)
+                              ? "w-full scale-x-100"
+                              : "w-full scale-x-0 group-hover:scale-x-100"
+                          }`}
+                        />
+                      </Link>
+                    )}
+                  </motion.div>
+                )}
               </li>
             ))}
           </ul>
@@ -121,22 +210,70 @@ export default function Header() {
             <ul className="flex flex-col gap-4">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
-                  {item.href.startsWith("#") ? (
-                    <a
-                      href={item.href}
-                      className="block text-sm font-medium tracking-[0.01em] text-slate-600 transition-colors hover:text-slate-900"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </a>
+                  {item.isDropdown ? (
+                    <div className="space-y-2">
+                      <button
+                        onClick={() => setIsContributionsOpen(!isContributionsOpen)}
+                        className={`flex w-full items-center text-sm font-medium tracking-[0.01em] transition-colors ${
+                          isActive(item.href)
+                            ? "text-slate-900"
+                            : "text-slate-600 hover:text-slate-900"
+                        }`}
+                      >
+                        {item.label}
+                      </button>
+                      <AnimatePresence>
+                        {isContributionsOpen && (
+                          <motion.ul
+                            initial={{ opacity: 0, height: 0 }}
+                            animate={{ opacity: 1, height: "auto" }}
+                            exit={{ opacity: 0, height: 0 }}
+                            transition={{ duration: 0.2 }}
+                            className="flex flex-col gap-2 pl-4"
+                          >
+                            {CONTRIBUTIONS_ITEMS.map((subItem) => (
+                              <li key={subItem.label}>
+                                <Link
+                                  href={subItem.href}
+                                  className="block text-sm font-medium text-slate-600 transition-colors hover:text-[#A64195]"
+                                  onClick={() => setIsMobileMenuOpen(false)}
+                                >
+                                  {subItem.label}
+                                </Link>
+                              </li>
+                            ))}
+                          </motion.ul>
+                        )}
+                      </AnimatePresence>
+                    </div>
                   ) : (
-                    <Link
-                      href={item.href}
-                      className="block text-sm font-medium tracking-[0.01em] text-slate-600 transition-colors hover:text-slate-900"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
+                    <>
+                      {item.href.startsWith("#") ? (
+                        <a
+                          href={item.href}
+                          className={`block text-sm font-medium tracking-[0.01em] transition-colors ${
+                            isActive(item.href)
+                              ? "text-slate-900"
+                              : "text-slate-600 hover:text-slate-900"
+                          }`}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <Link
+                          href={item.href}
+                          className={`block text-sm font-medium tracking-[0.01em] transition-colors ${
+                            isActive(item.href)
+                              ? "text-slate-900"
+                              : "text-slate-600 hover:text-slate-900"
+                          }`}
+                          onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                          {item.label}
+                        </Link>
+                      )}
+                    </>
                   )}
                 </li>
               ))}
