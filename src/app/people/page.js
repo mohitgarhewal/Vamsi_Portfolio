@@ -58,9 +58,6 @@ export default function PeoplePage() {
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] sm:p-8">
           <h1 className="text-3xl font-bold tracking-tight text-[#1F2937] sm:text-4xl">People</h1>
-          <p className="mt-2 max-w-4xl text-[#0D0D0D]/75">
-            Group leader, current team members, and alumni of the VAMSI Research Group.
-          </p>
         </section>
 
         <section className="mt-8">

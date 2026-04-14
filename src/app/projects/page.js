@@ -23,10 +23,6 @@ export default function ProjectsPage() {
           <h1 className="text-3xl font-bold tracking-tight text-[#1F2937] sm:text-4xl">
             Research Projects
           </h1>
-          <p className="mt-3 max-w-4xl text-base text-[#0D0D0D]/75">
-            A complete listing of funded projects at the VAMSI Research Group, organized with clear project metadata,
-            current status, and position availability.
-          </p>
         </div>
 
         <p className="mb-6 text-sm text-[#0D0D0D]/70">

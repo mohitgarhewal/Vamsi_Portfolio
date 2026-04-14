@@ -54,16 +54,24 @@ export default function ProjectCard({ project, index = 0 }) {
               </dd>
             </div>
             {hasPositions && (
-              <div className="flex items-center justify-between gap-3">
-                <dt className="font-semibold text-[#A64195]">Positions</dt>
-                <dd>
-                  <span
-                    className="inline-flex items-center rounded-full bg-[#F27405] px-2.5 py-1 text-xs font-semibold text-white"
-                    aria-label="Positions available"
-                  >
-                    Available
-                  </span>
-                </dd>
+              <div className="space-y-2">
+                <div className="flex items-center justify-between gap-3">
+                  <dt className="font-semibold text-[#A64195]">Positions</dt>
+                  <dd>
+                    <span
+                      className="inline-flex items-center rounded-full bg-[#F27405] px-2.5 py-1 text-xs font-semibold text-white"
+                      aria-label="Positions available"
+                    >
+                      Available
+                    </span>
+                  </dd>
+                </div>
+                <a
+                  href="/join"
+                  className="block w-full rounded-lg bg-[#A64195] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#964196]"
+                >
+                  Apply here
+                </a>
               </div>
             )}
             {isOngoing && !hasPositions && (
