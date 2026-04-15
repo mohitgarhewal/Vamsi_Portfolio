@@ -249,7 +249,7 @@ export default function FacultyPage() {
             <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
               <div className="min-w-0">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h1 className={`${playfair.className} text-2xl font-bold text-[#0D1733] sm:text-3xl`}>
+                  <h1 className={`${playfair.className} text-2xl font-bold text-[#800020] sm:text-3xl`}>
                     Dr. K. V. Vamsi
                   </h1>
                   <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-blue-700 border border-blue-200">
@@ -327,7 +327,7 @@ export default function FacultyPage() {
               transition={{ duration: 0.5, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               className="rounded-2xl border border-slate-200 bg-white px-6 py-6 shadow-[0_2px_14px_rgba(15,23,42,0.06)] sm:px-8"
             >
-              <h2 className={`${playfair.className} mb-4 text-xl font-semibold text-[#0D1733]`}>About</h2>
+              <h2 className={`${playfair.className} mb-4 text-xl font-semibold text-[#800020]`}>About</h2>
               <div className="space-y-3 text-[0.97rem] leading-relaxed text-[#4B607E]">
                 <p>
                   Welcome to my profile! I am Dr. K. V. Vamsi, an Assistant Professor in the Department of
@@ -365,7 +365,7 @@ export default function FacultyPage() {
                 <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100 text-[#0D1733]">
                   <IconBriefcase />
                 </div>
-                <h2 className={`${playfair.className} text-xl font-semibold text-[#0D1733]`}>Work Experience</h2>
+                <h2 className={`${playfair.className} text-xl font-semibold text-[#800020]`}>Work Experience</h2>
               </div>
 
               <div className="relative">
@@ -388,7 +388,7 @@ export default function FacultyPage() {
                         <div className="flex flex-wrap items-start justify-between gap-2">
                           <div className="min-w-0">
                             <div className="flex flex-wrap items-center gap-2">
-                              <h3 className="text-[1rem] font-semibold text-[#0D1733]">{item.title}</h3>
+                              <h3 className="text-[1rem] font-semibold text-[#800020]">{item.title}</h3>
                               {item.current && (
                                 <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700 uppercase tracking-wide">
                                   Current
@@ -425,7 +425,7 @@ export default function FacultyPage() {
                 <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100 text-[#0D1733]">
                   <IconGraduate />
                 </div>
-                <h2 className={`${playfair.className} text-xl font-semibold text-[#0D1733]`}>Education</h2>
+                <h2 className={`${playfair.className} text-xl font-semibold text-[#800020]`}>Education</h2>
               </div>
 
               <div className="relative">
@@ -445,7 +445,7 @@ export default function FacultyPage() {
                       <div className="rounded-xl border border-slate-100 bg-slate-50/60 px-4 py-4 hover:border-slate-200 hover:bg-white transition-all duration-200">
                         <div className="flex flex-wrap items-start justify-between gap-2">
                           <div className="min-w-0">
-                            <h3 className="text-[1rem] font-semibold text-[#0D1733]">{item.degree}</h3>
+                            <h3 className="text-[1rem] font-semibold text-[#800020]">{item.degree}</h3>
                             <p className="mt-0.5 text-sm font-medium text-[#355178]">{item.institution}</p>
                           </div>
                           <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600 shrink-0">
@@ -472,7 +472,7 @@ export default function FacultyPage() {
               transition={{ duration: 0.5, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
               className="rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-[0_2px_14px_rgba(15,23,42,0.06)]"
             >
-              <h2 className={`${playfair.className} mb-4 text-lg font-semibold text-[#0D1733]`}>Research Interests</h2>
+              <h2 className={`${playfair.className} mb-4 text-lg font-semibold text-[#800020]`}>Research Interests</h2>
               <ul className="space-y-2.5">
                 {[
                   "Superalloys & High-Temperature Structural Materials",
@@ -524,7 +524,7 @@ export default function FacultyPage() {
               transition={{ duration: 0.5, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
               className="rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-[0_2px_14px_rgba(15,23,42,0.06)]"
             >
-              <h2 className={`${playfair.className} mb-4 text-lg font-semibold text-[#0D1733]`}>External Profiles</h2>
+              <h2 className={`${playfair.className} mb-4 text-lg font-semibold text-[#800020]`}>External Profiles</h2>
               <div className="space-y-2.5">
                 {[
                   { label: "Google Scholar", href: "https://scholar.google.co.in/citations?user=ducGUjAAAAAJ&hl=en", icon: <IconScholar /> },
@@ -557,7 +557,7 @@ export default function FacultyPage() {
               transition={{ duration: 0.5, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
               className="rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-[0_2px_14px_rgba(15,23,42,0.06)]"
             >
-              <h2 className={`${playfair.className} mb-2 text-lg font-semibold text-[#0D1733]`}>Interested in joining?</h2>
+              <h2 className={`${playfair.className} mb-2 text-lg font-semibold text-[#800020]`}>Interested in joining?</h2>
               <p className="mb-4 text-sm text-[#4B607E] leading-relaxed">
                 We are actively looking for PhD students and postdoctoral researchers in computational materials science.
               </p>

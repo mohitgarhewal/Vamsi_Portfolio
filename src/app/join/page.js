@@ -103,7 +103,7 @@ export default function JoinPage() {
                     <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#1F2937]">
                       <Icon type={item.icon} />
                     </div>
-                    <h3 className="text-xl font-semibold text-[#1F2937]">{item.title}</h3>
+                    <h3 className="text-xl font-semibold text-[#800020]">{item.title}</h3>
                     <p className="mt-2.5 text-sm leading-relaxed text-[#0D0D0D]/75">{item.description}</p>
                   </motion.article>
                 ))}

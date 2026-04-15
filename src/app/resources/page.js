@@ -198,7 +198,7 @@ export default function ResourcesPage() {
         </nav>
 
         <section className="rounded-2xl border border-[#BF7AB4]/30 bg-white p-6 shadow-[0_10px_22px_rgba(166,65,149,0.08)] sm:p-7">
-          <h1 className="text-3xl font-bold tracking-tight text-[#1F2937] sm:text-4xl">Resources</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">Resources</h1>
           <p className="mt-3 max-w-4xl text-base leading-relaxed text-[#0D0D0D]/75">
             Software, teaching material, and templates to support research activities and collaboration.
           </p>

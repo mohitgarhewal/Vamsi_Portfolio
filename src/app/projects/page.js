@@ -20,7 +20,7 @@ export default function ProjectsPage() {
         </nav>
 
         <div className="mb-8 rounded-2xl border border-[#BF7AB4]/30 bg-white p-6 shadow-[0_8px_20px_rgba(166,65,149,0.08)] sm:p-7">
-          <h1 className="text-3xl font-bold tracking-tight text-[#1F2937] sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">
             Research Projects
           </h1>
         </div>

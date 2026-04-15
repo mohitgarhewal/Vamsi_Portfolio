@@ -57,7 +57,7 @@ export default function PeoplePage() {
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] sm:p-8">
-          <h1 className="text-3xl font-bold tracking-tight text-[#1F2937] sm:text-4xl">People</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">People</h1>
         </section>
 
         <section className="mt-8">

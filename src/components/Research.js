@@ -1,15 +1,4 @@
 import Image from "next/image";
-import { Inter, Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-});
 
 const researchItems = [
   {
@@ -103,12 +92,12 @@ export default function Research() {
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
           <h2
-            className={`${playfair.className} text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#1F2937] sm:text-[2.9rem]`}
+            className="text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#800020] sm:text-[2.9rem]"
           >
             Research
           </h2>
           <p
-            className={`${inter.className} mx-auto mt-3 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-lg `}
+            className="mx-auto mt-3 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-lg"
           >
             Advancing computational materials science through multi-scale modeling and simulation
           </p>
@@ -136,19 +125,19 @@ export default function Research() {
                   </div>
 
                   <h3
-                    className={`${playfair.className} text-[1.65rem] font-semibold leading-[1.2] text-[#1F2937] sm:text-[2rem]`}
+                    className="text-[1.65rem] font-semibold leading-[1.2] text-[#800020] sm:text-[2rem]"
                   >
                     {item.title}
                   </h3>
 
                   <p
-                    className={`${inter.className} mt-3 text-[0.98rem] leading-[1.6] text-[#0D0D0D]/75`}
+                    className="mt-3 text-[0.98rem] leading-[1.6] text-[#0D0D0D]/75"
                   >
                     {item.description}
                   </p>
 
                   <ul
-                    className={`${inter.className} mt-4 space-y-1.5 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75`}
+                    className="mt-4 space-y-1.5 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75"
                   >
                     {item.bullets.map((point) => (
                       <li key={point} className="flex gap-2.5">

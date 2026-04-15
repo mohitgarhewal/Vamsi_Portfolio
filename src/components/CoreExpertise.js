@@ -1,15 +1,3 @@
-import { Inter, Playfair_Display } from "next/font/google";
-
-const playfair = Playfair_Display({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-});
-
 const expertiseItems = [
   {
     title: "Atomistic Simulations",
@@ -111,12 +99,12 @@ export default function CoreExpertise() {
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
           <h2
-            className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[3rem]`}
+            className="text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#800020] sm:text-[3rem]"
           >
             Core Expertise
           </h2>
           <p
-            className={`${inter.className} mx-auto mt-4 max-w-4xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}
+            className="mx-auto mt-4 max-w-4xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]"
           >
             Integrating physics-based models with atomistic simulations and computational
             thermodynamics
@@ -134,13 +122,13 @@ export default function CoreExpertise() {
               </div>
 
               <h3
-                className={`${playfair.className} text-[1.35rem] font-semibold leading-[1.25] text-[#A64195]`}
+                className="text-[1.35rem] font-semibold leading-[1.25] text-[#800020]"
               >
                 {item.title}
               </h3>
 
               <p
-                className={`${inter.className} mt-3 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75`}
+                className="mt-3 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75"
               >
                 {item.description}
               </p>

@@ -37,7 +37,7 @@ export default function PhotoCarousel() {
     <section className="py-14 sm:py-16 lg:py-20" aria-label="News and events gallery">
       <div className="mx-auto max-w-[1180px]">
         <div className="mb-7 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-[#1F2937] sm:text-4xl">News and Events</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">News and Events</h2>
           <p className="mt-3 text-sm text-[#0D0D0D]/75 sm:text-base">
             Gallery updates from group activities, milestones, and announcements.
           </p>

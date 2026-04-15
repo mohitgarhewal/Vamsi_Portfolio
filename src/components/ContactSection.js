@@ -66,7 +66,7 @@ export default function ContactSection() {
     <section id="contact" className="bg-white px-6 py-16 md:px-10 md:py-20 lg:px-16">
       <div className="mx-auto max-w-[1180px]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#1F2937] md:text-5xl">Get in Touch</h2>
+          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#800020] md:text-5xl">Get in Touch</h2>
           <p className="mt-3 text-base font-medium leading-relaxed text-[#0D0D0D]/75 md:text-lg">
             Interested in joining our research group or collaborating? We&apos;d love to hear from you.
           </p>
@@ -74,7 +74,7 @@ export default function ContactSection() {
 
         <div className="mt-12 grid gap-10 md:mt-14 md:grid-cols-2 md:gap-16">
           <motion.div {...columnMotion}>
-            <h3 className="text-[1.95rem] font-semibold text-[#1F2937]">Contact Information</h3>
+            <h3 className="text-[1.95rem] font-semibold text-[#800020]">Contact Information</h3>
 
             <div className="mt-7 space-y-6">
               <div className="flex items-start gap-4">
@@ -119,7 +119,7 @@ export default function ContactSection() {
             </div>
 
             <div className="mt-8 border-t border-[#BF7AB4]/30 pt-7">
-              <h4 className="text-[1.1rem] font-semibold text-[#1F2937]">Connect With Us</h4>
+              <h4 className="text-[1.1rem] font-semibold text-[#800020]">Connect With Us</h4>
               <div className="mt-4 flex items-center gap-3">
                 <motion.a
                   href="#contact"
@@ -158,7 +158,7 @@ export default function ContactSection() {
               transition={{ duration: 0.22, ease: "easeOut" }}
               className="rounded-3xl border border-[#BF7AB4]/30 bg-[#BF7AB4]/5 p-6 shadow-[0_6px_26px_rgba(166,65,149,0.05)] md:p-8"
             >
-              <h3 className="text-[2rem] font-semibold text-[#1F2937]">Send a Message</h3>
+              <h3 className="text-[2rem] font-semibold text-[#800020]">Send a Message</h3>
 
               <form className="mt-6 space-y-4" onSubmit={(e) => e.preventDefault()}>
                 <div>

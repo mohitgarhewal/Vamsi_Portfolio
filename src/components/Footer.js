@@ -92,12 +92,12 @@ export default function Footer() {
 
           <div>
             <h3 className="text-[15px] font-bold text-[#4B5563]">
-              Quick Links
+              Navigation
             </h3>
             <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#0D0D0D]/75">
               <li>
-                <Link href="/about" className="transition-colors hover:text-[#A64195]">
-                  About
+                <Link href="/" className="transition-colors hover:text-[#A64195]">
+                  Home
                 </Link>
               </li>
               <li>
@@ -123,7 +123,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-[15px] font-bold text-[#4B5563]">
-              More
+              Resources
             </h3>
             <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#0D0D0D]/75">
               <li>
@@ -145,11 +145,6 @@ export default function Footer() {
               <li>
                 <Link href="/#contact" className="transition-colors hover:text-[#A64195]">
                   Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/#positions" className="transition-colors hover:text-[#A64195]">
-                  Open Roles
                 </Link>
               </li>
             </ul>

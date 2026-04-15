@@ -104,7 +104,7 @@ export default function Publications() {
     >
       <div className="mx-auto w-full max-w-[1160px]">
         <div className="text-center">
-          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#1F2937] md:text-5xl">
+          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#800020] md:text-5xl">
             {activeTab === "publications" && "Publications"}
             {activeTab === "proceedings" && "Conference Proceedings"}
             {activeTab === "talks" && "Talks"}
@@ -133,7 +133,7 @@ export default function Publications() {
               >
                 <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-[1.1rem] font-semibold leading-snug text-[#1F2937] md:text-[1.25rem]">
+                    <h3 className="text-[1.1rem] font-semibold leading-snug text-[#800020] md:text-[1.25rem]">
                       {item.title}
                     </h3>
                     <p className="mt-2 text-sm text-[#0D0D0D]/75 md:text-[0.95rem]">{item.authors}</p>

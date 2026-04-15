@@ -151,7 +151,7 @@ export default function Teaching() {
 
         {/* ── Section header ── */}
         <div>
-          <h2 className="text-2xl font-bold tracking-tight text-[#1F2937] sm:text-[1.9rem]">
+          <h2 className="text-2xl font-bold tracking-tight text-[#800020] sm:text-[1.9rem]">
             Teaching
           </h2>
           <p className={`${inter.className} mt-2 max-w-3xl text-sm text-[#0D0D0D]/75 sm:text-base`}>

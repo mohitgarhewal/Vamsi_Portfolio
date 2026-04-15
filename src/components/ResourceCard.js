@@ -15,7 +15,7 @@ export default function ResourceCard({ title, description, href, actionLabel = "
       whileHover={{ y: -4 }}
       className="rounded-xl border border-[#BF7AB4]/30 bg-white p-5 shadow-[0_6px_18px_rgba(13,13,13,0.06)] transition-all duration-300 hover:shadow-[0_14px_24px_rgba(13,13,13,0.12)]"
     >
-      <h3 className="text-lg font-semibold text-[#0D0D0D]">{title}</h3>
+      <h3 className="text-lg font-semibold text-[#800020]">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-[#0D0D0D]/75">{description}</p>
 
       <div className="mt-5">

@@ -22,7 +22,7 @@ export default function ProjectCard({ project, index = 0 }) {
     >
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
         <div className="min-w-0 flex-1 lg:max-w-[68%]">
-          <h3 className="text-xl font-bold leading-snug text-[#0D0D0D] sm:text-2xl">{project.title}</h3>
+          <h3 className="text-xl font-bold leading-snug text-[#800020] sm:text-2xl">{project.title}</h3>
 
           <dl className="mt-4 grid gap-3 text-sm text-[#0D0D0D]/85 sm:grid-cols-2">
             <div>
