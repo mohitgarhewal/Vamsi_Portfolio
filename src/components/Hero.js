@@ -46,6 +46,7 @@ export default function Hero() {
               alt="Research group profile"
               fill
               priority
+              loading="eager"
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 340px"
               className="object-cover"
             />

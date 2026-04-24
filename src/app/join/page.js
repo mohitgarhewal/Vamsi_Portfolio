@@ -79,14 +79,6 @@ export default function JoinPage() {
                   <span className="h-2 w-2 rounded-full bg-[#F27405]" />
                   Open Roles
                 </span>
-
-                <h2 className="mt-7 text-3xl font-bold tracking-[-0.02em] text-[#1F2937] sm:text-4xl md:text-5xl">
-                  Available Positions
-                </h2>
-
-                <p className="mt-6 max-w-3xl text-base leading-relaxed text-[#0D0D0D]/75 sm:text-lg md:text-lg">
-                  We are currently accepting applications for funded research roles in computational materials science.
-                </p>
               </div>
 
               <div className="mx-auto mt-10 grid max-w-[1020px] gap-4 md:mt-12 md:grid-cols-3">

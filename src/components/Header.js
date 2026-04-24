@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { label: "Projects", href: "/projects" },
   { label: "Contributions", href: "/publications", isDropdown: true },
   { label: "Resources", href: "/resources" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Contact", href: "/#contact" },
 ];
 

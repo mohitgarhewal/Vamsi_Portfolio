@@ -4,8 +4,8 @@ import Footer from "@/components/Footer";
 import ResourceCard from "@/components/ResourceCard";
 import Teaching from "@/components/Teaching";
 
-const sectionHeadingClass = "text-2xl font-bold tracking-tight text-[#1F2937] sm:text-[1.9rem]";
-const sectionSubtextClass = "mt-2 max-w-3xl text-sm text-[#0D0D0D]/75 sm:text-base";
+const sectionHeadingClass = "text-xl font-semibold tracking-tight text-[#1F2937] sm:text-2xl";
+const sectionSubtextClass = "mt-1 max-w-3xl text-xs text-[#0D0D0D]/70 sm:text-sm";
 
 const softwareTools = [
   {
@@ -189,20 +189,21 @@ export default function ResourcesPage() {
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
-        <nav className="mb-8 flex items-center gap-2 text-sm text-[#0D0D0D]/60">
+        {/* <nav className="mb-8 flex items-center gap-2 text-sm text-[#0D0D0D]/60">
           <Link href="/" className="transition-colors hover:text-[#A64195]">
             Home
           </Link>
           <span>/</span>
           <span className="font-medium text-[#0D0D0D]">Resources</span>
-        </nav>
+        </nav> */}
 
-        <section className="rounded-2xl border border-[#BF7AB4]/30 bg-white p-6 shadow-[0_10px_22px_rgba(166,65,149,0.08)] sm:p-7">
+        <section className="my-4 py-2">
           <h1 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">Resources</h1>
-          <p className="mt-3 max-w-4xl text-base leading-relaxed text-[#0D0D0D]/75">
+          {/* <p className="mt-3 max-w-4xl text-base leading-relaxed text-[#0D0D0D]/75">
             Software, teaching material, and templates to support research activities and collaboration.
-          </p>
+          </p> */}
         </section>
+        <Teaching />
 
         <SectionBlock
           title="Software / Tools"
@@ -210,13 +211,13 @@ export default function ResourcesPage() {
           items={softwareTools}
         />
 
-        <Teaching />
+        
 
-        <TemplateSection
+        {/* <TemplateSection
           title="Templates"
           subtitle="Reference files and documents for presentations, reporting, and internal workflows."
           items={templates}
-        />
+        /> */}
       </main>
 
       <Footer />

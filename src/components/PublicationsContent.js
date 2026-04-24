@@ -12,46 +12,60 @@ const inter = Inter({
 
 const publications = [
   {
-    year: "2024",
-    title: "Antiphase Boundaries in Intermetallics: Proximate Structures, Formation Energies, and Chemical Stability",
-    authors: "K.V. Vamsi, Ram Seshadri",
-    doi: "10.1103/PhysRevMaterials.8.013610",
-    scholarUrl: "https://doi.org/10.1103/PhysRevMaterials.8.013610",
-  },
-  {
-    year: "2022",
-    title: "Phase Transformation Temperatures, γ–γ′ Lattice Parameter Misfit, and γ′ Precipitate Morphology in Co–Ti–V Alloys",
-    authors: "Verma, S.K., Pramanik, A., Jyothsna, K., ..., K.V. Vamsi, S. Karthikeyan",
-    doi: "10.1007/s11661-022-06806-y",
-    scholarUrl: "https://doi.org/10.1007/s11661-022-06806-y",
-  },
-  {
     year: "2021",
-    title: "Precipitate Shearing, Fault Energies, and Solute Segregation to Planar Faults in Ni-, CoNi-, and Co-Base Superalloys",
+    title: "Precipitate shearing, fault energies, and solute segregation to planar faults in Ni-, CoNi-, and Co-base superalloys",
     authors: "Y.M. Eggeler, K.V. Vamsi, T.M. Pollock",
     doi: "10.1146/annurev-matsci-102419-011433",
     scholarUrl: "https://doi.org/10.1146/annurev-matsci-102419-011433",
   },
   {
-    year: "2020",
-    title: "A New Proximate Structure for the APB (111) in L12 Compounds",
-    authors: "K.V. Vamsi, T.M. Pollock",
-    doi: "10.1016/j.scriptamat.2020.02.021",
-    scholarUrl: "https://doi.org/10.1016/j.scriptamat.2020.02.021",
+    year: "2021",
+    title: "Modeling APB energies in multicomponent Ni-base superalloys",
+    authors: "K.V. Vamsi, S. Karthikeyan",
+    doi: "10.1016/j.intermet.2020.107124",
+    scholarUrl: "https://doi.org/10.1016/j.intermet.2020.107124",
+  },
+  {
+    year: "2017",
+    title: "Yield anomaly in L12 Co3AlxW1− x vis-à-vis Ni3Al",
+    authors: "K.V. Vamsi, S. Karthikeyan",
+    doi: "10.1016/j.scriptamat.2016.11.019",
+    scholarUrl: "https://doi.org/10.1016/j.scriptamat.2016.11.019",
+  },
+  {
+    year: "2012",
+    title: "Effect of off-stoichiometry and ternary additions on planar fault energies in Ni3Al",
+    authors: "K.V. Vamsi, S. Karthikeyan",
+    doi: "10.7449/2012/superalloys_2012_521_530",
+    scholarUrl: "https://doi.org/10.7449/2012/superalloys_2012_521_530",
   },
   {
     year: "2018",
-    title: "High-Throughput Estimation of Planar Fault Energies in A3B Compounds with L12 Structure",
+    title: "High-throughput estimation of planar fault energies in A3B compounds with L12 structure",
     authors: "K.V. Vamsi, S. Karthikeyan",
     doi: "10.1016/j.actamat.2017.11.051",
     scholarUrl: "https://doi.org/10.1016/j.actamat.2017.11.051",
   },
   {
-    year: "2017",
-    title: "Yield Anomaly in L12 Co3AlxW1−x vis-à-vis Ni3Al",
+    year: "2023",
+    title: "Tensile behavior of single crystal nickel-based superalloys at 650° C",
+    authors: "B. Mansoz, L.M.B. Ormastroni, J. Rame, C. Schwalbe, K.V. Vamsi, P. Caron, ...",
+    doi: "10.1016/j.intermet.2023.107976",
+    scholarUrl: "https://doi.org/10.1016/j.intermet.2023.107976",
+  },
+  {
+    year: "2021",
+    title: "Deformation modes and yield strength anomaly in L12 compounds",
     authors: "K.V. Vamsi, S. Karthikeyan",
-    doi: "10.1016/j.scriptamat.2016.11.019",
-    scholarUrl: "https://doi.org/10.1016/j.scriptamat.2016.11.019",
+    doi: "10.1016/j.jallcom.2021.158411",
+    scholarUrl: "https://doi.org/10.1016/j.jallcom.2021.158411",
+  },
+  {
+    year: "2020",
+    title: "A new proximate structure for the APB (111) in L12 compounds",
+    authors: "K.V. Vamsi, T.M. Pollock",
+    doi: "10.1016/j.scriptamat.2020.02.021",
+    scholarUrl: "https://doi.org/10.1016/j.scriptamat.2020.02.021",
   },
 ];
 
@@ -102,23 +116,23 @@ export default function PublicationsContent() {
       className={`${inter.className} bg-white px-6 py-16 md:px-10 md:py-20 lg:px-16`}
     >
       <div className="mx-auto w-full max-w-[1160px]">
-        <div className="text-center">
+        <div>
           <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#800020] md:text-5xl">
             {activeTab === "publications" && "Publications"}
             {activeTab === "proceedings" && "Conference Proceedings"}
             {activeTab === "talks" && "Talks"}
           </h2>
           <p className="mt-3 text-base font-medium text-[#0D0D0D]/75 md:text-lg">
-            {activeTab === "publications" && "Our research publications"}
-            {activeTab === "proceedings" && "Conference proceedings and presentations"}
-            {activeTab === "talks" && "Invited talks and seminars"}
+            {activeTab === "publications" }
+            {activeTab === "proceedings" }
+            {activeTab === "talks" }
           </p>
         </div>
 
         {/* Publications Tab */}
         {activeTab === "publications" && (
           <div className="mt-12 space-y-6 md:mt-16 md:space-y-7">
-            {publications.slice(0, 6).map((item, index) => (
+            {publications.slice(-8).map((item, index) => (
               <motion.article
                 key={`${item.doi}`}
                 custom={index}
@@ -160,7 +174,7 @@ export default function PublicationsContent() {
               </motion.article>
             ))}
 
-            {publications.length > 6 && (
+            {publications.length > 8 && (
               <div className="mt-8 flex justify-center">
                 <a
                   href="https://scholar.google.com/citations?user=ducGUjAAAAAJ&hl=en"
@@ -173,6 +187,30 @@ export default function PublicationsContent() {
                 </a>
               </div>
             )}
+
+            <div className="mt-12 flex justify-center border-t border-[#BF7AB4]/20 pt-12">
+              <motion.a
+                href="https://scholar.google.com/citations?user=ducGUjAAAAAJ&hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ y: -2 }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                className="inline-flex items-center gap-2 rounded-full bg-[#A64195] px-8 py-3 text-base font-semibold text-white shadow-[0_4px_12px_rgba(166,65,149,0.25)] transition-all hover:bg-[#964196] hover:shadow-[0_8px_20px_rgba(166,65,149,0.35)]"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  className="h-5 w-5"
+                  aria-hidden="true"
+                >
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.35-4.35"></path>
+                </svg>
+                <span>View on Google Scholar</span>
+              </motion.a>
+            </div>
           </div>
         )}
 

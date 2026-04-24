@@ -90,17 +90,17 @@ export default function Research() {
   return (
     <section id="research" className="py-12 sm:py-14 lg:py-16">
       <div className="mx-auto max-w-[1280px]">
-        <div className="text-center">
+        <div className="ml-2 sm:ml-4 lg:ml-6">
           <h2
             className="text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#800020] sm:text-[2.9rem]"
           >
             Research
           </h2>
-          <p
+          {/* <p
             className="mx-auto mt-3 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-lg"
           >
             Advancing computational materials science through multi-scale modeling and simulation
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-8 space-y-5 lg:space-y-6">

@@ -17,10 +17,10 @@ const autumnCourses = [
     description:
       "Introduces numerical methods and computational techniques applied to materials science problems. Topics include finite difference methods, molecular dynamics fundamentals, Monte Carlo simulations, and data analysis using Python/MATLAB.",
     topics: ["Numerical Methods", "Molecular Dynamics", "Monte Carlo", "Python / MATLAB"],
-    color: "from-amber-400 to-orange-500",
-    bg: "bg-amber-50",
-    accent: "text-amber-700",
-    chip: "bg-amber-100 text-amber-700",
+    color: "from-[#800020] to-[#A64195]",
+    bg: "bg-[#F5ECEF]",
+    accent: "text-[#800020]",
+    chip: "bg-[#E8D5E0] text-[#800020]",
   },
 ];
 
@@ -34,10 +34,10 @@ const springCourses = [
     description:
       "Covers mechanisms governing plastic deformation at elevated temperatures in metals and alloys. Focuses on creep, dislocation dynamics, planar fault energies, and deformation pathways in superalloys and intermetallics.",
     topics: ["Creep Mechanisms", "Dislocation Dynamics", "Planar Fault Energies", "Superalloys"],
-    color: "from-sky-400 to-blue-500",
-    bg: "bg-sky-50",
-    accent: "text-sky-700",
-    chip: "bg-sky-100 text-sky-700",
+    color: "from-[#A64195] to-[#C4A5B8]",
+    bg: "bg-[#F5ECEF]",
+    accent: "text-[#800020]",
+    chip: "bg-[#E8D5E0] text-[#800020]",
   },
   {
     code: "MM 644",
@@ -48,10 +48,10 @@ const springCourses = [
     description:
       "Explores the ICME paradigm for accelerated alloy design. Integrates DFT, CALPHAD thermodynamics, phase-field modelling, and data-driven methods to link processing–structure–property–performance relationships.",
     topics: ["DFT", "CALPHAD", "Phase-field Modelling", "Materials Informatics"],
-    color: "from-indigo-400 to-violet-500",
-    bg: "bg-indigo-50",
-    accent: "text-indigo-700",
-    chip: "bg-indigo-100 text-indigo-700",
+    color: "from-[#800020] to-[#600015]",
+    bg: "bg-[#F5ECEF]",
+    accent: "text-[#800020]",
+    chip: "bg-[#E8D5E0] text-[#800020]",
   },
 ];
 
@@ -74,9 +74,9 @@ const prevTeaching = [
 
 function LevelBadge({ level }) {
   const map = {
-    UG: "bg-violet-100 text-violet-700 border-violet-200",
-    PG: "bg-emerald-100 text-emerald-700 border-emerald-200",
-    "UG / PG": "bg-indigo-100 text-indigo-700 border-indigo-200",
+    UG: "bg-[#E8D5E0] text-[#800020] border-[#C4A5B8]",
+    PG: "bg-[#E8D5E0] text-[#800020] border-[#C4A5B8]",
+    "UG / PG": "bg-[#E8D5E0] text-[#800020] border-[#C4A5B8]",
   };
   return (
     <span className={`inline-flex rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${map[level] || map["UG / PG"]}`}>
@@ -91,7 +91,7 @@ function CourseCard({ course, index }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.38, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-[#BF7AB4]/30 bg-white shadow-[0_2px_14px_rgba(166,65,149,0.06)] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(166,65,149,0.12)] hover:-translate-y-0.5"
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-[#C4A5B8]/50 bg-white shadow-[0_2px_14px_rgba(128,0,32,0.08)] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(128,0,32,0.15)] hover:-translate-y-0.5"
     >
       {/* Gradient top bar */}
       <div className={`h-1.5 w-full bg-gradient-to-r ${course.color}`} />
@@ -101,24 +101,24 @@ function CourseCard({ course, index }) {
         <div className="flex items-start justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2">
             <LevelBadge level={course.level} />
-            <span className="text-[11px] text-slate-400">Since {course.since}</span>
+            <span className="text-[11px] text-[#A64195]/70">Since {course.since}</span>
             {course.credits && (
-              <span className="text-[11px] text-slate-400">· {course.credits} credits</span>
+              <span className="text-[11px] text-[#A64195]/70">· {course.credits} credits</span>
             )}
           </div>
           {/* Watermark number */}
-          <span className={`${playfair.className} select-none text-[2.4rem] font-bold leading-none text-slate-100`}>
+          <span className={`${playfair.className} select-none text-[2.4rem] font-bold leading-none text-[#E8D5E0]/60`}>
             {course.code.replace(/\s/g, "").replace(/MM/g, "").split("/")[0]}
           </span>
         </div>
 
         {/* Course code */}
-        <p className={`${inter.className} mt-3 text-[11px] font-bold uppercase tracking-[0.12em] text-slate-400`}>
+        <p className={`${inter.className} mt-3 text-[11px] font-bold uppercase tracking-[0.12em] text-[#A64195]/70`}>
           {course.code}
         </p>
 
         {/* Title */}
-        <h3 className={`${playfair.className} mt-1 text-[1.22rem] font-semibold leading-snug text-[#A64195] sm:text-[1.3rem]`}>
+        <h3 className={`${playfair.className} mt-1 text-[1.22rem] font-semibold leading-snug text-[#800020] sm:text-[1.3rem]`}>
           {course.title}
         </h3>
 
@@ -146,12 +146,12 @@ export default function Teaching() {
   const courses = active === "autumn" ? autumnCourses : springCourses;
 
   return (
-    <section id="teaching" className="scroll-mt-24 py-14 sm:py-16 lg:py-20">
+    <section id="teaching" className="scroll-mt-24 py-4 sm:py-8 lg:py-4">
       <div className="mx-auto max-w-[1280px]">
 
         {/* ── Section header ── */}
         <div>
-          <h2 className="text-2xl font-bold tracking-tight text-[#800020] sm:text-[1.9rem]">
+          <h2 className="text-2xl font-semibold tracking-tight sm:text-[1.9rem]">
             Teaching
           </h2>
           <p className={`${inter.className} mt-2 max-w-3xl text-sm text-[#0D0D0D]/75 sm:text-base`}>
@@ -161,10 +161,10 @@ export default function Teaching() {
 
         {/* ── Semester Toggle ── */}
         <div className="mt-10 flex justify-center">
-            <div className="relative flex rounded-2xl border border-[#BF7AB4]/30 bg-[#BF7AB4]/10 p-1.5 shadow-inner">
+            <div className="relative flex rounded-2xl border border-[#C4A5B8]/40 bg-[#E8D5E0]/30 p-1.5 shadow-inner">
             {/* Sliding pill */}
             <motion.div
-              className="absolute inset-y-1.5 rounded-xl bg-white shadow-[0_2px_8px_rgba(166,65,149,0.1)]"
+              className="absolute inset-y-1.5 rounded-xl bg-white shadow-[0_2px_8px_rgba(128,0,32,0.12)]"
               animate={{
                 x: active === "autumn" ? 0 : "100%",
                 width: "50%",
@@ -182,7 +182,7 @@ export default function Teaching() {
                     <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
                   </svg>
                 ),
-                activeColor: "text-amber-600",
+                activeColor: "text-[#800020]",
                 count: autumnCourses.length,
               },
               {
@@ -194,7 +194,7 @@ export default function Teaching() {
                     <path d="M12 22V12M12 12C12 7 7 4 2 6M12 12C12 7 17 4 22 6M12 12C9 10 6 11 4 14M12 12C15 10 18 11 20 14" />
                   </svg>
                 ),
-                activeColor: "text-sky-600",
+                activeColor: "text-[#800020]",
                 count: springCourses.length,
               },
             ].map((tab) => (
@@ -202,15 +202,15 @@ export default function Teaching() {
                 key={tab.id}
                 onClick={() => setActive(tab.id)}
                 className={`relative z-10 flex min-w-[160px] items-center justify-center gap-2.5 rounded-xl px-5 py-3 text-sm font-semibold transition-colors duration-200 sm:min-w-[200px] ${
-                  active === tab.id ? tab.activeColor : "text-slate-500 hover:text-slate-700"
+                  active === tab.id ? tab.activeColor : "text-[#A64195] hover:text-[#800020]"
                 }`}
               >
-                <span className={active === tab.id ? tab.activeColor : "text-slate-400"}>
+                <span className={active === tab.id ? tab.activeColor : "text-[#A64195]"}>
                   {tab.icon}
                 </span>
                 <span className="flex flex-col items-start leading-none">
                   <span className="text-[13px]">{tab.label}</span>
-                  <span className={`mt-0.5 text-[10px] font-normal ${active === tab.id ? "opacity-70" : "text-slate-400"}`}>
+                  <span className={`mt-0.5 text-[10px] font-normal ${active === tab.id ? "opacity-70" : "text-[#A64195]/60"}`}>
                     {tab.sub} · {tab.count} {tab.count === 1 ? "course" : "courses"}
                   </span>
                 </span>
@@ -243,34 +243,34 @@ export default function Teaching() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-10 rounded-2xl border border-slate-200 bg-slate-50/70 px-6 py-6 sm:px-8"
+          className="mt-10 rounded-2xl border border-[#C4A5B8] bg-[#F5ECEF]/70 px-6 py-6 sm:px-8"
         >
           <div className="flex items-center gap-3 mb-5">
-            <div className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-slate-200 text-slate-600">
+            <div className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#E8D5E0] text-[#800020]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" className="h-4 w-4">
                 <path d="m3 10 9-5 9 5-9 5-9-5Z"/>
                 <path d="M7 12v4c0 1.1 2.2 2 5 2s5-.9 5-2v-4"/>
               </svg>
             </div>
             <div>
-              <h3 className={`${playfair.className} text-lg font-semibold text-[#0D1733]`}>
+              <h3 className={`${playfair.className} text-lg font-semibold text-[#800020]`}>
                 Previous Teaching Experience
               </h3>
-              <p className={`${inter.className} text-xs text-slate-500`}>@ Indian Institute of Science, Bangalore</p>
+              <p className={`${inter.className} text-xs text-[#A64195]/70`}>@ Indian Institute of Science, Bangalore</p>
             </div>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2">
             {prevTeaching.map((group) => (
               <div key={group.role}>
-                <p className={`${inter.className} mb-3 text-[11px] font-bold uppercase tracking-widest text-[#355178]`}>
+                <p className={`${inter.className} mb-3 text-[11px] font-bold uppercase tracking-widest text-[#800020]`}>
                   {group.role}
                 </p>
                 <ul className="space-y-2.5">
                   {group.items.map((item) => (
                     <li key={item} className="flex items-start gap-2.5">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
-                      <span className={`${inter.className} text-[0.875rem] leading-snug text-[#4B607E]`}>
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#A64195]" />
+                      <span className={`${inter.className} text-[0.875rem] leading-snug text-[#0D0D0D]/75`}>
                         {item}
                       </span>
                     </li>

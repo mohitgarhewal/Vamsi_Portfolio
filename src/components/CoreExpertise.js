@@ -103,12 +103,12 @@ export default function CoreExpertise() {
           >
             Core Expertise
           </h2>
-          <p
+          {/* <p
             className="mx-auto mt-4 max-w-4xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]"
           >
             Integrating physics-based models with atomistic simulations and computational
             thermodynamics
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-10 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">

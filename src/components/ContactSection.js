@@ -156,75 +156,39 @@ export default function ContactSection() {
             <motion.div
               whileHover={{ y: -2 }}
               transition={{ duration: 0.22, ease: "easeOut" }}
-              className="rounded-3xl border border-[#BF7AB4]/30 bg-[#BF7AB4]/5 p-6 shadow-[0_6px_26px_rgba(166,65,149,0.05)] md:p-8"
+              className="rounded-3xl border border-[#BF7AB4]/30 bg-white overflow-hidden shadow-[0_6px_26px_rgba(166,65,149,0.05)] md:p-0"
             >
-              <h3 className="text-[2rem] font-semibold text-[#800020]">Send a Message</h3>
+              <h3 className="text-[2rem] font-semibold text-[#800020] p-6 md:p-8 pb-2">Location</h3>
+              
+              {/* Map */}
+              <div className="w-full h-80">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  loading="lazy"
+                  allowFullScreen=""
+                  referrerPolicy="no-referrer-when-downgrade"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.156484099486!2d75.88208!3d22.309301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396446cc4cd6a9e5%3A0xfe9eaa7e0d1e8d89!2sIndian%20Institute%20of%20Technology%20Indore!5e0!3m2!1sen!2sin!4v1608550000000"
+                  title="IIT Indore Location"
+                />
+              </div>
 
-              <form className="mt-6 space-y-4" onSubmit={(e) => e.preventDefault()}>
-                <div>
-                  <label htmlFor="fullName" className="mb-2 block text-sm font-semibold text-[#A64195]">
-                    Full Name
-                  </label>
-                  <input
-                    id="fullName"
-                    name="fullName"
-                    type="text"
-                    placeholder="John Doe"
-                    className="h-11 w-full rounded-xl border border-[#BF7AB4]/30 bg-white px-4 text-sm text-[#0D0D0D] outline-none transition focus:border-[#A64195] focus:ring-2 focus:ring-[#A64195]/20"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="emailAddress" className="mb-2 block text-sm font-semibold text-[#A64195]">
-                    Email Address
-                  </label>
-                  <input
-                    id="emailAddress"
-                    name="emailAddress"
-                    type="email"
-                    placeholder="john@example.com"
-                    className="h-11 w-full rounded-xl border border-[#BF7AB4]/30 bg-white px-4 text-sm text-[#0D0D0D] outline-none transition focus:border-[#A64195] focus:ring-2 focus:ring-[#A64195]/20"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="subject" className="mb-2 block text-sm font-semibold text-[#A64195]">
-                    Subject
-                  </label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    className="h-11 w-full rounded-xl border border-[#BF7AB4]/30 bg-white px-4 text-sm text-[#0D0D0D] outline-none transition focus:border-[#A64195] focus:ring-2 focus:ring-[#A64195]/20"
-                    defaultValue="PhD Application"
-                  >
-                    <option>PhD Application</option>
-                    <option>Postdoctoral Fellowship</option>
-                    <option>Collaboration Inquiry</option>
-                    <option>General Question</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label htmlFor="message" className="mb-2 block text-sm font-semibold text-[#A64195]">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    placeholder="Tell us about your research interests and background..."
-                    className="h-28 w-full resize-none rounded-xl border border-[#BF7AB4]/30 bg-white px-4 py-3 text-sm text-[#0D0D0D] outline-none transition focus:border-[#A64195] focus:ring-2 focus:ring-[#A64195]/20"
-                  />
-                </div>
-
-                <motion.button
-                  type="submit"
+              {/* Gallery Link */}
+              <div className="p-6 md:p-8">
+                <motion.a
+                  href="/gallery"
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
-                  className="mt-2 inline-flex h-12 w-full items-center justify-center rounded-xl bg-[#A64195] text-base font-semibold text-white transition-colors hover:bg-[#964196]"
+                  className="flex items-center justify-between rounded-xl border border-[#A64195]/30 bg-[#BF7AB4]/5 px-4 py-3 text-center font-semibold text-[#800020] transition-all hover:border-[#A64195] hover:bg-[#A64195]/10"
                 >
-                  Send Message
-                </motion.button>
-              </form>
+                  <span className="flex-1">Explore Our Gallery</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 ml-2">
+                    <path d="M5 12h14" />
+                    <path d="m13 6 6 6-6 6" />
+                  </svg>
+                </motion.a>
+              </div>
             </motion.div>
           </motion.div>
         </div>

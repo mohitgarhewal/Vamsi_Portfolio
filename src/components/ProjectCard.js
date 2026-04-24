@@ -66,12 +66,21 @@ export default function ProjectCard({ project, index = 0 }) {
                     </span>
                   </dd>
                 </div>
-                <a
-                  href="/join"
-                  className="block w-full rounded-lg bg-[#A64195] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#964196]"
-                >
-                  Apply here
-                </a>
+                <div className="space-y-2">
+                  <a
+                    href="/Vamsi_iit_indore_JRF_advertisement.pdf"
+                    download="advertisement.pdf"
+                    className="block w-full rounded-lg bg-[#F27405] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#D66A04]"
+                  >
+                    Download Advertisement
+                  </a>
+                  <a
+                    href="/people#available-positions"
+                    className="block w-full rounded-lg bg-[#A64195] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#964196]"
+                  >
+                    How to Apply
+                  </a>
+                </div>
               </div>
             )}
             {isOngoing && !hasPositions && (

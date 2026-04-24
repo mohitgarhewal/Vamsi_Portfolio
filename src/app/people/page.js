@@ -1,7 +1,10 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { motion } from "framer-motion";
 
 const currentMembers = [
   {
@@ -14,7 +17,7 @@ const currentMembers = [
     name: "Pohrselvan",
     role: "Undergraduate Student",
     summary: "Atomistic simulations and material deformation mechanisms",
-    image: "/pohrselvan.jpg",
+    image: "/pohrselvan.svg",
   },
   {
     name: "Keerthan",
@@ -51,19 +54,71 @@ const alumniMembers = [
   },
 ];
 
+const opportunities = [
+  {
+    title: "PhD Positions",
+    description: "Full funding available for computational materials science research",
+    icon: "cap",
+    href: "https://academic.iiti.ac.in/phdadvt.php",
+  },
+  {
+    title: "Postdoctoral Fellows",
+    description: "Advanced research opportunities in MPEAs and superalloys",
+    icon: "microscope",
+  },
+  {
+    title: "JRF",
+    description: "Junior Research Fellowship for motivated graduates to contribute to cutting-edge atomistic simulations and alloy design projects",
+    icon: "jrf",
+  },
+];
+
+function Icon({ type }) {
+  if (type === "cap") {
+    return (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" className="h-9 w-9">
+        <path d="m3 10 9-5 9 5-9 5-9-5Z" />
+        <path d="M7 12v4c0 1.1 2.2 2 5 2s5-.9 5-2v-4" />
+      </svg>
+    );
+  }
+
+  if (type === "microscope") {
+    return (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" className="h-9 w-9">
+        <path d="M6 21h12" />
+        <path d="M8 21a4 4 0 0 0 4-4v-1" />
+        <path d="M9 3h4v4H9z" />
+        <path d="M13 5l3 3" />
+        <path d="M11 7l-2 2v3" />
+        <path d="M9 12h5" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" className="h-9 w-9">
+      <path d="M16 11c1.7 0 3-1.3 3-3s-1.3-3-3-3-3 1.3-3 3 1.3 3 3 3Z" />
+      <path d="M8 11c1.7 0 3-1.3 3-3S9.7 5 8 5 5 6.3 5 8s1.3 3 3 3Z" />
+      <path d="M8 13c-2.8 0-5 2.2-5 5v1h10v-1c0-2.8-2.2-5-5-5Z" />
+      <path d="M16 13c-1 0-2 .3-2.8.8A6.9 6.9 0 0 1 15 19v1h6v-1c0-3.3-2.7-6-6-6Z" />
+    </svg>
+  );
+}
+
 export default function PeoplePage() {
   return (
-    <div className="min-h-screen bg-white text-[#0D0D0D]">
+    <div className="min-h-screen bg-white text-[#0D0D0D] mb-2 pb-2">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
-        <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-[0_8px_24px_rgba(15,23,42,0.06)] sm:p-8">
-          <h1 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">People</h1>
+        <section className="my-4 py-2 ">
+          <h1 className="text-5xl font-bold tracking-tight text-[#800020] sm:text-4xl">People</h1>
         </section>
 
         <section className="mt-8">
           <div className="mb-5 flex items-center justify-between gap-4">
             <div>
-              <h2 className="text-2xl font-semibold text-[#1F2937] sm:text-[1.8rem]">Group Leader</h2>
+              <h2 className="text-xl font-semibold text-[#1F2937] sm:text-[1.8rem]">Group Leader</h2>
               <p className="mt-1 text-sm text-[#0D0D0D]/75">Dr. Vamsi</p>
             </div>
             <Link
@@ -82,6 +137,7 @@ export default function PeoplePage() {
                     src="/photo.png"
                     alt="Dr. K. V. Vamsi"
                     fill
+                    sizes="(max-width: 1024px) 100vw, 280px"
                     className="object-cover"
                   />
                 </div>
@@ -165,6 +221,54 @@ export default function PeoplePage() {
                 <p className="mt-1 text-[0.92rem] text-[#6A7D99]">{member.batch}</p>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="mt-12 border-t border-slate-200 pt-12">
+          <div className="mb-8">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#A64195]/40 bg-[#A64195]/10 px-5 py-2 text-sm font-semibold text-[#A64195]">
+              <span className="h-2 w-2 rounded-full bg-[#F27405]" />
+              Open Roles
+            </span>
+            {/* <h2 id="available-positions" className="mt-6 text-2xl font-bold tracking-[-0.02em] text-[#1F2937] sm:text-3xl">Available Positions</h2> */}
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-3">
+            {opportunities.map((item, index) => (
+              <motion.a
+                href={item.href}
+                target={item.href ? "_blank" : undefined}
+                rel={item.href ? "noopener noreferrer" : undefined}
+                key={item.title}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.25 }}
+                transition={{ duration: 0.38, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
+                whileHover={{ y: -3 }}
+                className="rounded-2xl border border-slate-200 bg-white px-6 py-8 text-center shadow-[0_8px_24px_rgba(15,23,42,0.08)] transition-colors hover:border-[#800020]/30 hover:shadow-[0_8px_24px_rgba(128,0,32,0.12)]"
+              >
+                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#1F2937]">
+                  <Icon type={item.icon} />
+                </div>
+                <h3 className="text-xl font-semibold text-[#800020]">{item.title}</h3>
+                <p className="mt-2.5 text-sm leading-relaxed text-[#0D0D0D]/75">{item.description}</p>
+              </motion.a>
+            ))}
+          </div>
+
+          <div className="mb-8">
+            {/* <motion.a
+              href="/#contact"
+              whileHover={{ y: -1 }}
+              transition={{ duration: 0.2, ease: "easeOut" }}
+              className="inline-flex h-12 items-center gap-2.5 rounded-full bg-[#A64195] px-8 text-lg font-semibold text-white shadow-[0_6px_24px_rgba(166,65,149,0.3)]"
+            >
+              Apply Now
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">
+                <path d="M5 12h14" />
+                <path d="m13 6 6 6-6 6" />
+              </svg>
+            </motion.a> */}
           </div>
         </section>
       </main>
