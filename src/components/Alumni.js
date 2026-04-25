@@ -43,7 +43,7 @@ export default function Alumni() {
             Alumni
           </h2>
           <p
-            className={`${inter.className} mx-auto mt-4 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}
+            className={`${inter.className} mx-auto mt-4 max-w-3xl text-base text-black sm:text-[1.05rem]`}
           >
             Former members who have contributed to our research excellence
           </p>
@@ -68,11 +68,11 @@ export default function Alumni() {
                 {member.name}
               </h3>
 
-              <p className={`${inter.className} mt-2 text-sm font-medium text-[#6F3141]`}>
+              <p className={`${inter.className} mt-2 text-sm font-medium text-black`}>
                 {member.role}
               </p>
 
-              <p className={`${inter.className} mt-1 text-[0.92rem] text-[#8A5A67]`}>
+              <p className={`${inter.className} mt-1 text-[0.92rem] text-black`}>
                 {member.batch}
               </p>
             </article>

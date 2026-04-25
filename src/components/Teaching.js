@@ -101,9 +101,9 @@ function CourseCard({ course, index }) {
         <div className="flex items-start justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2">
             <LevelBadge level={course.level} />
-            <span className="text-[11px] text-[#8A5A67]/70">Since {course.since}</span>
+            <span className="text-[11px] text-black">Since {course.since}</span>
             {course.credits && (
-              <span className="text-[11px] text-[#8A5A67]/70">· {course.credits} credits</span>
+              <span className="text-[11px] text-black">· {course.credits} credits</span>
             )}
           </div>
           {/* Watermark number */}
@@ -113,7 +113,7 @@ function CourseCard({ course, index }) {
         </div>
 
         {/* Course code */}
-        <p className={`${inter.className} mt-3 text-[11px] font-bold uppercase tracking-[0.12em] text-[#8A5A67]/70`}>
+        <p className={`${inter.className} mt-3 text-[11px] font-bold uppercase tracking-[0.12em] text-black`}>
           {course.code}
         </p>
 
@@ -123,7 +123,7 @@ function CourseCard({ course, index }) {
         </h3>
 
         {/* Description */}
-        <p className={`${inter.className} mt-3 flex-1 text-[0.88rem] leading-relaxed text-[#0D0D0D]/75`}>
+        <p className={`${inter.className} mt-3 flex-1 text-[0.88rem] leading-relaxed text-black`}>
           {course.description}
         </p>
 
@@ -154,7 +154,7 @@ export default function Teaching() {
           <h2 className="text-2xl font-semibold tracking-tight sm:text-[1.9rem]">
             Teaching
           </h2>
-          <p className={`${inter.className} mt-2 max-w-3xl text-sm text-[#0D0D0D]/75 sm:text-base`}>
+          <p className={`${inter.className} mt-2 max-w-3xl text-sm text-black sm:text-base`}>
             Courses offered at IIT Indore — Department of Metallurgical Engineering &amp; Materials Science
           </p>
         </div>
@@ -256,7 +256,7 @@ export default function Teaching() {
               <h3 className={`${playfair.className} text-lg font-semibold text-[#800020]`}>
                 Previous Teaching Experience
               </h3>
-              <p className={`${inter.className} text-xs text-[#8A5A67]/70`}>@ Indian Institute of Science, Bangalore</p>
+              <p className={`${inter.className} text-xs text-black`}>@ Indian Institute of Science, Bangalore</p>
             </div>
           </div>
 
@@ -270,7 +270,7 @@ export default function Teaching() {
                   {group.items.map((item) => (
                     <li key={item} className="flex items-start gap-2.5">
                       <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#800020]" />
-                      <span className={`${inter.className} text-[0.875rem] leading-snug text-[#0D0D0D]/75`}>
+                      <span className={`${inter.className} text-[0.875rem] leading-snug text-black`}>
                         {item}
                       </span>
                     </li>

@@ -36,7 +36,7 @@ export default function Team() {
           <h2 className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#800020] sm:text-[3rem]`}>
             Our Team
           </h2>
-          <p className={`${inter.className} mx-auto mt-4 max-w-4xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}>
+          <p className={`${inter.className} mx-auto mt-4 max-w-4xl text-base text-black sm:text-[1.05rem]`}>
             A multidisciplinary team pushing the frontiers of computational materials science
           </p>
         </div>
@@ -60,10 +60,10 @@ export default function Team() {
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-3 w-3"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                   </span>
                 </div>
-                <p className={`${inter.className} mt-2 text-[1.05rem] leading-relaxed text-[#0D0D0D]/75`}>
+                <p className={`${inter.className} mt-2 text-[1.05rem] leading-relaxed text-black`}>
                   Assistant Professor, Department of Metallurgical Engineering and Materials Science, IIT Indore
                 </p>
-                <p className={`${inter.className} mt-4 max-w-4xl text-[1rem] leading-relaxed text-[#0D0D0D]/75`}>
+                <p className={`${inter.className} mt-4 max-w-4xl text-[1rem] leading-relaxed text-black`}>
                   Leading the VAMSI Research Group with expertise in computational materials science,
                   high-temperature alloys, and ICME frameworks. Previously postdoctoral researcher at UC Santa Barbara.
                 </p>
@@ -83,8 +83,8 @@ export default function Team() {
               <h4 className={`${playfair.className} mt-5 text-[1.55rem] font-semibold leading-tight text-[#800020]`}>
                 {member.name}
               </h4>
-              <p className={`${inter.className} mt-2 text-sm font-medium text-[#0D0D0D]/75`}>{member.role}</p>
-              <p className={`${inter.className} mt-3 min-h-[56px] text-[0.98rem] leading-relaxed text-[#0D0D0D]/75`}>{member.summary}</p>
+              <p className={`${inter.className} mt-2 text-sm font-medium text-black`}>{member.role}</p>
+              <p className={`${inter.className} mt-3 min-h-[56px] text-[0.98rem] leading-relaxed text-black`}>{member.summary}</p>
               <div className="mt-4 border-t border-[#E4B5C0] pt-3">
                 <div className="flex items-center justify-center gap-3"><SocialIcons /></div>
               </div>

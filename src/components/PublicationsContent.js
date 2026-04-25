@@ -122,7 +122,7 @@ export default function PublicationsContent() {
             {activeTab === "proceedings" && "Conference Proceedings"}
             {activeTab === "talks" && "Talks"}
           </h2>
-          <p className="mt-3 text-base font-medium text-[#0D0D0D]/75 md:text-lg">
+          <p className="mt-3 text-base font-medium text-black md:text-lg">
             {activeTab === "publications" }
             {activeTab === "proceedings" }
             {activeTab === "talks" }
@@ -149,7 +149,7 @@ export default function PublicationsContent() {
                     <h3 className="text-[1.1rem] font-semibold leading-snug text-[#800020] md:text-[1.25rem]">
                       {item.title}
                     </h3>
-                    <p className="mt-2 text-sm text-[#0D0D0D]/75 md:text-[0.95rem]">{item.authors}</p>
+                    <p className="mt-2 text-sm text-black md:text-[0.95rem]">{item.authors}</p>
                     <a
                       href={item.scholarUrl}
                       target="_blank"
@@ -217,7 +217,7 @@ export default function PublicationsContent() {
         {/* Conference Proceedings Tab */}
         {activeTab === "proceedings" && (
           <div className="mt-12">
-            <p className="text-center text-[#0D0D0D]/75">
+            <p className="text-center text-black">
               Conference proceedings data coming soon. <br />
               <a
                 href="https://scholar.google.com/citations?user=ducGUjAAAAAJ&hl=en"
@@ -234,7 +234,7 @@ export default function PublicationsContent() {
         {/* Talks Tab */}
         {activeTab === "talks" && (
           <div className="mt-12">
-            <p className="text-center text-[#0D0D0D]/75">
+            <p className="text-center text-black">
               Talks data coming soon. Please provide the list.
             </p>
           </div>

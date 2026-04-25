@@ -60,7 +60,7 @@ export default function Footer() {
               />
             </div>
 
-            <p className="mt-4 mr-16 max-w-[620px] text-[16px] leading-[1.55] text-[#6F3141] md:text-[17px]">
+            <p className="mt-4 mr-16 max-w-[620px] text-[16px] leading-[1.55] text-black md:text-[17px]">
               Virtual Alloys Modelling, Simulation & Informatics Research
               Group at IIT Indore
             </p>
@@ -94,7 +94,7 @@ export default function Footer() {
             <h3 className="text-[15px] font-bold text-[#800020]">
               Navigation
             </h3>
-            <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#6F3141]">
+            <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-black">
               <li>
                 <Link href="/" className="transition-colors hover:text-[#800020]">
                   Home
@@ -125,7 +125,7 @@ export default function Footer() {
             <h3 className="text-[15px] font-bold text-[#800020]">
               Resources
             </h3>
-            <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-[#6F3141]">
+            <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-black">
               <li>
                 <Link
                   href="/publications"
@@ -152,7 +152,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-[#E4B5C0] pt-5">
-          <div className="flex flex-col items-start justify-between gap-3 text-[14px] text-[#6F3141] sm:flex-row sm:items-center">
+          <div className="flex flex-col items-start justify-between gap-3 text-[14px] text-black sm:flex-row sm:items-center">
             <p>© 2026 VAMSI Research Group, IIT Indore. All rights reserved.</p>
             <div className="flex items-center gap-6">
               <a href="#" className="transition-colors hover:text-[#800020]">

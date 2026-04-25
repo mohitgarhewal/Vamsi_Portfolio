@@ -9,14 +9,14 @@ import { PROJECTS_DATA } from "@/lib/projectsData";
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-white text-[#4A0013]">
+    <div className="min-h-screen bg-white text-black">
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
         {/* <nav className="mb-8 flex items-center gap-2 text-sm text-slate-500">
           <Link href="/" className="hover:text-slate-800 transition-colors">Home</Link>
           <span>/</span>
-          <span className="font-medium text-[#0D0D0D]">Projects</span>
+          <span className="font-medium text-black">Projects</span>
         </nav> */}
 
         <div className="my-4 py-2 ">
@@ -25,7 +25,7 @@ export default function ProjectsPage() {
           </h1>
         </div>
 
-        {/* <p className="mb-6 text-sm text-[#0D0D0D]/70">
+        {/* <p className="mb-6 text-sm text-black">
           Showing <span className="font-semibold text-[#800020]">{PROJECTS_DATA.length}</span> funded projects
         </p> */}
 

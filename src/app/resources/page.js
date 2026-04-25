@@ -5,7 +5,7 @@ import ResourceCard from "@/components/ResourceCard";
 import Teaching from "@/components/Teaching";
 
 const sectionHeadingClass = "text-xl font-semibold tracking-tight text-[#800020] sm:text-2xl";
-const sectionSubtextClass = "mt-1 max-w-3xl text-xs text-[#0D0D0D]/70 sm:text-sm";
+const sectionSubtextClass = "mt-1 max-w-3xl text-xs text-black sm:text-sm";
 
 const softwareTools = [
   {
@@ -126,7 +126,7 @@ function SectionBlock({ title, subtitle, items }) {
               </div>
             </div>
 
-            <p className="mt-3 text-sm leading-relaxed text-[#0D0D0D]/75">{item.description}</p>
+            <p className="mt-3 text-sm leading-relaxed text-black">{item.description}</p>
 
             <ul className="mt-5 flex flex-wrap gap-2">
               {item.items.map((linkItem) => (
@@ -185,21 +185,21 @@ function TemplateSection({ title, subtitle, items }) {
 
 export default function ResourcesPage() {
   return (
-    <div className="min-h-screen bg-white text-[#4A0013]">
+    <div className="min-h-screen bg-white text-black">
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
-        {/* <nav className="mb-8 flex items-center gap-2 text-sm text-[#0D0D0D]/60">
+        {/* <nav className="mb-8 flex items-center gap-2 text-sm text-black">
             <Link href="/" className="transition-colors hover:text-[#800020]">
             Home
           </Link>
           <span>/</span>
-          <span className="font-medium text-[#0D0D0D]">Resources</span>
+          <span className="font-medium text-black">Resources</span>
         </nav> */}
 
         <section className="my-4 py-2">
           <h1 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">Resources</h1>
-          {/* <p className="mt-3 max-w-4xl text-base leading-relaxed text-[#0D0D0D]/75">
+          {/* <p className="mt-3 max-w-4xl text-base leading-relaxed text-black">
             Software, teaching material, and templates to support research activities and collaboration.
           </p> */}
         </section>

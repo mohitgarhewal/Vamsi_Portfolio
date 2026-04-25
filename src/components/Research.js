@@ -97,7 +97,7 @@ export default function Research() {
             Research
           </h2>
           {/* <p
-            className="mx-auto mt-3 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-lg"
+            className="mx-auto mt-3 max-w-3xl text-base text-black sm:text-lg"
           >
             Advancing computational materials science through multi-scale modeling and simulation
           </p> */}
@@ -131,13 +131,13 @@ export default function Research() {
                   </h3>
 
                   <p
-                    className="mt-3 text-[0.98rem] leading-[1.6] text-[#0D0D0D]/75"
+                    className="mt-3 text-[0.98rem] leading-[1.6] text-black"
                   >
                     {item.description}
                   </p>
 
                   <ul
-                    className="mt-4 space-y-1.5 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75"
+                    className="mt-4 space-y-1.5 text-[0.95rem] leading-[1.5] text-black"
                   >
                     {item.bullets.map((point) => (
                       <li key={point} className="flex gap-2.5">

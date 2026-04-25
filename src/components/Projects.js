@@ -17,10 +17,10 @@ export default function Projects() {
 
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h2 className="text-[2rem] font-bold leading-tight tracking-tight text-[#0D0D0D] sm:text-[2.5rem]">
+            <h2 className="text-[2rem] font-bold leading-tight tracking-tight text-black sm:text-[2.5rem]">
               Projects
             </h2>
-            <p className={`${inter.className} mt-3 max-w-3xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]`}>
+            <p className={`${inter.className} mt-3 max-w-3xl text-base text-black sm:text-[1.05rem]`}>
               Ongoing and completed research projects with focus on superalloys, computational materials science,
               and heritage materials characterization.
             </p>
@@ -49,8 +49,8 @@ export default function Projects() {
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
           className="mt-8 flex flex-col items-start justify-between gap-3 rounded-2xl border border-[#E4B5C0] bg-[#FFF8FA] px-6 py-5 sm:flex-row sm:items-center"
         >
-          <p className={`${inter.className} text-sm text-[#0D0D0D]/80`}>
-            <span className="font-semibold text-[#0D0D0D]">{PROJECTS_DATA.length - 3} more projects</span> are available with full funding, duration, and role details.
+          <p className={`${inter.className} text-sm text-black`}>
+            <span className="font-semibold text-black">{PROJECTS_DATA.length - 3} more projects</span> are available with full funding, duration, and role details.
           </p>
           <Link
             href="/projects"

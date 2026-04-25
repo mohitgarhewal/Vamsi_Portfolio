@@ -58,7 +58,7 @@ function Icon({ type }) {
 
 export default function JoinPage() {
   return (
-    <div className="min-h-screen bg-white text-[#4A0013]">
+    <div className="min-h-screen bg-white text-black">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <section className="relative left-1/2 w-screen -translate-x-1/2 py-14 sm:py-16 lg:py-20">
@@ -96,7 +96,7 @@ export default function JoinPage() {
                       <Icon type={item.icon} />
                     </div>
                     <h3 className="text-xl font-semibold text-[#800020]">{item.title}</h3>
-                    <p className="mt-2.5 text-sm leading-relaxed text-[#0D0D0D]/75">{item.description}</p>
+                    <p className="mt-2.5 text-sm leading-relaxed text-black">{item.description}</p>
                   </motion.article>
                 ))}
               </div>

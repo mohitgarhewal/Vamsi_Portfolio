@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const statusClasses = {
   Ongoing: "border-[#E4B5C0] bg-[#F6E4E8] text-[#800020]",
-  Completed: "border-[#E4B5C0] bg-[#FFF8FA] text-[#6F3141]",
+  Completed: "border-[#E4B5C0] bg-[#FFF8FA] text-black",
 };
 
 export default function ProjectCard({ project, index = 0 }) {
@@ -24,7 +24,7 @@ export default function ProjectCard({ project, index = 0 }) {
         <div className="min-w-0 flex-1 lg:max-w-[68%]">
           <h3 className="text-xl font-bold leading-snug text-[#800020] sm:text-2xl">{project.title}</h3>
 
-          <dl className="mt-4 grid gap-3 text-sm text-[#0D0D0D]/85 sm:grid-cols-2">
+          <dl className="mt-4 grid gap-3 text-sm text-black sm:grid-cols-2">
             <div>
               <dt className="font-semibold text-[#800020]">Funding</dt>
               <dd className="mt-0.5">{project.funding}</dd>
@@ -37,7 +37,7 @@ export default function ProjectCard({ project, index = 0 }) {
         </div>
 
         <aside className="w-full rounded-xl bg-[#FFF8FA] p-4 lg:w-[30%]" aria-label="Project metadata">
-          <dl className="space-y-3 text-sm text-[#0D0D0D]">
+          <dl className="space-y-3 text-sm text-black">
             <div className="flex items-center justify-between gap-3">
               <dt className="font-semibold text-[#800020]">Role</dt>
               <dd className="font-medium">{project.role}</dd>

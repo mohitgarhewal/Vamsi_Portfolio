@@ -108,7 +108,7 @@ function Icon({ type }) {
 
 export default function PeoplePage() {
   return (
-    <div className="min-h-screen bg-white text-[#4A0013] mb-2 pb-2">
+    <div className="min-h-screen bg-white text-black mb-2 pb-2">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <section className="my-4 py-2 ">
@@ -119,7 +119,7 @@ export default function PeoplePage() {
           <div className="mb-5 flex items-center justify-between gap-4">
             <div>
               <h2 className="text-xl font-semibold text-[#800020] sm:text-[1.8rem]">Group Leader</h2>
-              <p className="mt-1 text-sm text-[#0D0D0D]/75">Dr. Vamsi</p>
+              <p className="mt-1 text-sm text-black">Dr. Vamsi</p>
             </div>
             <Link
               href="/faculty"
@@ -149,10 +149,10 @@ export default function PeoplePage() {
                   <h3 className="mt-3 text-2xl font-bold tracking-tight text-[#800020] sm:text-[2.25rem]">
                     Dr. K. V. Vamsi
                   </h3>
-                  <p className="mt-2 text-sm font-medium text-[#0D0D0D]/75">
+                  <p className="mt-2 text-sm font-medium text-black">
                     Assistant Professor, Department of Metallurgical Engineering and Materials Science, IIT Indore
                   </p>
-                  <p className="mt-4 max-w-3xl text-[0.98rem] leading-relaxed text-[#0D0D0D]/75">
+                  <p className="mt-4 max-w-3xl text-[0.98rem] leading-relaxed text-black">
                     Leading the VAMSI Research Group with expertise in computational materials science,
                     high-temperature alloys, and ICME frameworks.
                   </p>
@@ -165,7 +165,7 @@ export default function PeoplePage() {
         <section className="mt-10">
           <div className="mb-5">
             <h2 className="text-2xl font-semibold text-[#800020] sm:text-[1.8rem]">Current Team Members</h2>
-            <p className="mt-1 text-sm text-[#0D0D0D]/75">Active students and researchers in the group.</p>
+            <p className="mt-1 text-sm text-black">Active students and researchers in the group.</p>
           </div>
 
           <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
@@ -185,8 +185,8 @@ export default function PeoplePage() {
                 <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#800020]">
                   {member.name}
                 </h3>
-                <p className="mt-2 text-sm font-medium text-[#0D0D0D]/75">{member.role}</p>
-                <p className="mt-3 min-h-[56px] text-[0.98rem] leading-relaxed text-[#0D0D0D]/75">
+                <p className="mt-2 text-sm font-medium text-black">{member.role}</p>
+                <p className="mt-3 min-h-[56px] text-[0.98rem] leading-relaxed text-black">
                   {member.summary}
                 </p>
               </article>
@@ -197,7 +197,7 @@ export default function PeoplePage() {
         <section className="mt-10 pb-6">
           <div className="mb-5">
             <h2 className="text-2xl font-semibold text-[#800020] sm:text-[1.8rem]">Alumni</h2>
-            <p className="mt-1 text-sm text-[#0D0D0D]/75">Former members of the group.</p>
+            <p className="mt-1 text-sm text-black">Former members of the group.</p>
           </div>
 
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -217,8 +217,8 @@ export default function PeoplePage() {
                 <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#800020]">
                   {member.name}
                 </h3>
-                <p className="mt-2 text-sm font-medium text-[#0D0D0D]/75">{member.role}</p>
-                <p className="mt-1 text-[0.92rem] text-[#6A7D99]">{member.batch}</p>
+                <p className="mt-2 text-sm font-medium text-black">{member.role}</p>
+                <p className="mt-1 text-[0.92rem] text-black">{member.batch}</p>
               </article>
             ))}
           </div>
@@ -251,7 +251,7 @@ export default function PeoplePage() {
                   <Icon type={item.icon} />
                 </div>
                 <h3 className="text-xl font-semibold text-[#800020]">{item.title}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-[#0D0D0D]/75">{item.description}</p>
+                <p className="mt-2.5 text-sm leading-relaxed text-black">{item.description}</p>
               </motion.a>
             ))}
           </div>

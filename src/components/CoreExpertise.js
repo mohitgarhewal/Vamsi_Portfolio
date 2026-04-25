@@ -104,7 +104,7 @@ export default function CoreExpertise() {
             Core Expertise
           </h2>
           {/* <p
-            className="mx-auto mt-4 max-w-4xl text-base text-[#0D0D0D]/75 sm:text-[1.05rem]"
+            className="mx-auto mt-4 max-w-4xl text-base text-black sm:text-[1.05rem]"
           >
             Integrating physics-based models with atomistic simulations and computational
             thermodynamics
@@ -128,7 +128,7 @@ export default function CoreExpertise() {
               </h3>
 
               <p
-                className="mt-3 text-[0.95rem] leading-[1.5] text-[#0D0D0D]/75"
+                className="mt-3 text-[0.95rem] leading-[1.5] text-black"
               >
                 {item.description}
               </p>

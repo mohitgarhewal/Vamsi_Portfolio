@@ -16,7 +16,7 @@ export default function ResourceCard({ title, description, href, actionLabel = "
       className="rounded-xl border border-[#E4B5C0] bg-white p-5 shadow-[0_6px_18px_rgba(128,0,32,0.06)] transition-all duration-300 hover:shadow-[0_14px_24px_rgba(128,0,32,0.12)]"
     >
       <h3 className="text-lg font-semibold text-[#800020]">{title}</h3>
-      <p className="mt-2 text-sm leading-relaxed text-[#0D0D0D]/75">{description}</p>
+      <p className="mt-2 text-sm leading-relaxed text-black">{description}</p>
 
       <div className="mt-5">
         <Link

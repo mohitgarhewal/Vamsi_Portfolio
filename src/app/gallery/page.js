@@ -83,13 +83,13 @@ function GalleryCard({ image, index }) {
 
 export default function GalleryPage() {
   return (
-    <div className="min-h-screen bg-white text-[#4A0013]">
+    <div className="min-h-screen bg-white text-black">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 py-12 sm:px-6 md:px-8 lg:px-10">
         {/* Header Section */}
         <section className="mb-12">
           <h1 className="text-4xl font-bold tracking-tight text-[#800020] sm:text-5xl">Gallery</h1>
-          <p className="mt-3 max-w-2xl text-base leading-relaxed text-[#0D0D0D]/75 sm:text-lg">
+          <p className="mt-3 max-w-2xl text-base leading-relaxed text-black sm:text-lg">
             Explore our research group activities, collaborations, and moments from our journey in computational materials science.
           </p>
         </section>

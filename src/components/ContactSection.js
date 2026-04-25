@@ -67,9 +67,9 @@ export default function ContactSection() {
       <div className="mx-auto max-w-[1180px]">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#800020] md:text-5xl">Get in Touch</h2>
-          <p className="mt-3 text-base font-medium leading-relaxed text-[#0D0D0D]/75 md:text-lg">
+          {/* <p className="mt-3 text-base font-medium leading-relaxed text-black md:text-lg">
             Interested in joining our research group or collaborating? We&apos;d love to hear from you.
-          </p>
+          </p> */}
         </div>
 
         <div className="mt-12 grid gap-10 md:mt-14 md:grid-cols-2 md:gap-16">
@@ -83,7 +83,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-base font-semibold text-[#800020]">Email</p>
-                  <p className="mt-1 text-base text-[#0D0D0D]/75">kvamsi@iiti.ac.in</p>
+                  <p className="mt-1 text-base text-black">kvamsi@iiti.ac.in</p>
                 </div>
               </div>
 
@@ -93,7 +93,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-base font-semibold text-[#800020]">Office Address</p>
-                  <p className="mt-1 text-base leading-relaxed text-[#0D0D0D]/75">
+                  <p className="mt-1 text-base leading-relaxed text-black">
                     FC-504, 4th Floor<br />
                     Learning Resource Centre<br />
                     IIT Indore, Simrol-453552<br />
@@ -108,7 +108,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="text-base font-semibold text-[#800020]">Department Office</p>
-                  <p className="mt-1 text-base leading-relaxed text-[#0D0D0D]/75">
+                  <p className="mt-1 text-base leading-relaxed text-black">
                     Metallurgical Engineering and Materials Science<br />
                     Indian Institute of Technology Indore<br />
                     Khandwa Road, Simrol-453552<br />

@@ -96,18 +96,21 @@ const education = [
   {
     degree: "Ph.D. in Materials Engineering",
     institution: "Indian Institute of Science, Bangalore",
+    logo: "/logos/pspm.jpeg",
     year: "2018",
     description: "Doctoral research on superalloys and high-temperature structural materials, focusing on deformation pathways and alloy design principles.",
   },
   {
     degree: "M.E. in Materials Engineering",
     institution: "Indian Institute of Science, Bangalore",
+    logo: "/logos/pspm.jpeg",
     year: "2009",
     description: "Advanced coursework and research in materials engineering, laying the foundation for computational materials science.",
   },
   {
     degree: "B.E. in Metallurgical Engineering",
     institution: "Andhra University College of Engineering",
+    logo: "/logos/andhrauni.jpg",
     year: "2006",
     description: "Undergraduate studies in metallurgical engineering, building core competencies in materials science and engineering.",
   },
@@ -159,14 +162,6 @@ function IconScholar() {
   );
 }
 
-function IconResearchGate() {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4" aria-hidden="true">
-      <path d="M19.586 0H4.414A4.414 4.414 0 0 0 0 4.414v15.172A4.414 4.414 0 0 0 4.414 24h15.172A4.414 4.414 0 0 0 24 19.586V4.414A4.414 4.414 0 0 0 19.586 0zm-7.04 17.544c-.26 0-.52-.03-.78-.075l-1.664 1.664a.52.52 0 0 1-.37.153h-1.39a.52.52 0 0 1-.519-.52v-1.39a.52.52 0 0 1 .153-.37l1.664-1.664a4.17 4.17 0 0 1-.075-.78c0-2.303 1.867-4.17 4.17-4.17s4.17 1.867 4.17 4.17-1.867 4.17-4.17 4.17h.01zm0-6.775a2.605 2.605 0 1 0 0 5.21 2.605 2.605 0 0 0 0-5.21zm-5.94-2.035V6.68c0-.287.233-.52.52-.52h2.035c.287 0 .52.233.52.52v2.054c0 .287-.233.52-.52.52H7.126a.52.52 0 0 1-.52-.52z" />
-    </svg>
-  );
-}
-
 function IconTwitter() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" className="h-4 w-4" aria-hidden="true">
@@ -202,12 +197,12 @@ const fadeUp = {
 
 export default function FacultyPage() {
   return (
-    <div className={`${inter.className} min-h-screen bg-white text-[#4A0013]`}>
+    <div className={`${inter.className} min-h-screen bg-white text-black`}>
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
         {/* Breadcrumb */}
-        {/* <nav className="mb-8 flex items-center gap-2 text-sm text-[#8A5A67]">
+        {/* <nav className="mb-8 flex items-center gap-2 text-sm text-black">
           <Link href="/" className="transition-colors hover:text-[#800020]">Home</Link>
           <span>/</span>
           <Link href="/#people" className="transition-colors hover:text-[#800020]">Team</Link>
@@ -221,66 +216,42 @@ export default function FacultyPage() {
           initial="initial"
           animate="animate"
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-8 overflow-hidden rounded-2xl border border-[#E4B5C0] bg-white shadow-[0_2px_20px_rgba(128,0,32,0.08)]"
+          className="mb-8 overflow-hidden rounded-2xl border border-[#5F0017] bg-[#5F0017]"
         >
-          {/* Banner */}
-          <div className="relative h-32 bg-gradient-to-br from-[#5F0017] via-[#800020] to-[#B24A67]">
-            <div
-              className="absolute inset-0 opacity-18"
-              style={{
-                backgroundImage: "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 40%)",
-              }}
-            />
-          </div>
 
-          <div className="px-6 pb-6 sm:px-8 sm:pb-8">
-            {/* Avatar */}
-            <div className="relative -mt-14 mb-4">
-              <div className="h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-[#F3DDE3] shadow-md sm:h-28 sm:w-28">
-                <Image
-                  src="/vamsi_pfp.jpeg"
-                  alt="Dr. K. V. Vamsi"
-                  width={112}
-                  height={112}
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
-              <div className="min-w-0">
+          <div className="px-6 pb-6 pt-6 sm:px-8 sm:pb-8 sm:pt-8">
+            <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+              <div className="min-w-0 sm:max-w-[calc(100%-11.5rem)]">
                 <div className="flex flex-wrap items-center gap-2">
-                  <h1 className={`${playfair.className} text-2xl font-bold text-[#800020] sm:text-3xl`}>
+                  <h1 className={`${playfair.className} text-2xl font-bold text-white sm:text-3xl`}>
                     Dr. K. V. Vamsi
                   </h1>
-                  <span className="rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-2.5 py-0.5 text-xs font-semibold text-[#800020]">
+                  <span className="rounded-full border border-white/35 bg-white/12 px-2.5 py-0.5 text-xs font-semibold text-white">
                     Principal Investigator
                   </span>
                 </div>
 
-                <p className="mt-1 text-base font-medium text-[#6F3141]">
+                <p className="mt-1 text-base font-medium text-white/90">
                   Assistant Professor · Department of Metallurgical Engineering and Materials Science
                 </p>
-                <p className="text-sm text-[#8A5A67]">Indian Institute of Technology Indore</p>
+                <p className="text-sm text-white/80">Indian Institute of Technology Indore</p>
 
-                <div className="mt-4 flex flex-wrap gap-4 text-sm text-[#7F4B59]">
-                  <a href="mailto:kvvamsi@iiti.ac.in" className="flex items-center gap-1.5 transition-colors hover:text-[#800020]">
+                <div className="mt-4 flex flex-wrap gap-4 text-sm text-white/90">
+                  <a href="mailto:kvvamsi@iiti.ac.in" className="flex items-center gap-1.5 transition-colors hover:text-white">
                     <IconMail /> kvvamsi@iiti.ac.in
                   </a>
                   <span className="flex items-center gap-1.5">
                     <IconPhone /> +91-731-660-3333 ext. 5568
                   </span>
                 </div>
-              </div>
 
-              {/* Social Links */}
-              <div className="flex items-center gap-2.5 shrink-0">
+                <div className="mt-4 flex items-center gap-2.5">
                 <a
                   href="https://www.linkedin.com/in/kvvamsi/"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F5E3E7] text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/14 text-white transition-all hover:bg-white hover:text-[#800020]"
                 >
                   <IconLinkedIn />
                 </a>
@@ -289,7 +260,7 @@ export default function FacultyPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Google Scholar"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F5E3E7] text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/14 text-white transition-all hover:bg-white hover:text-[#800020]"
                 >
                   <IconScholar />
                 </a>
@@ -298,19 +269,40 @@ export default function FacultyPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="ResearchGate"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F5E3E7] text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
+                  className="group inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/14 text-white transition-all hover:bg-white hover:text-[#800020]"
                 >
-                  <IconResearchGate />
+                  <Image
+                    src="/Researchgate--Streamline-Simple-Icons.svg"
+                    alt=""
+                    width={16}
+                    height={16}
+                    aria-hidden="true"
+                    className="h-4 w-4 brightness-0 invert group-hover:invert-0"
+                  />
                 </a>
                 <a
                   href="https://twitter.com/kvvamsi"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter / X"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F5E3E7] text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-white/14 text-white transition-all hover:bg-white hover:text-[#800020]"
                 >
                   <IconTwitter />
                 </a>
+              </div>
+              </div>
+
+              {/* Avatar */}
+              <div className="shrink-0 self-end sm:self-start">
+                <div className="h-32 w-32 overflow-hidden rounded-full border-4 border-white/80 bg-white/10 sm:h-40 sm:w-40">
+                  <Image
+                    src="/vamsi_pfp.jpeg"
+                    alt="Dr. K. V. Vamsi"
+                    width={160}
+                    height={160}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -329,7 +321,7 @@ export default function FacultyPage() {
               className="rounded-2xl border border-[#E4B5C0] bg-white px-6 py-6 shadow-[0_2px_14px_rgba(128,0,32,0.06)] sm:px-8"
             >
               <h2 className={`${playfair.className} mb-4 text-xl font-semibold text-[#800020]`}>About</h2>
-              <div className="space-y-3 text-[0.97rem] leading-relaxed text-[#6F3141]">
+              <div className="space-y-3 text-[0.97rem] leading-relaxed text-black">
                 <p>
                   Welcome to my profile! I am Dr. K. V. Vamsi, an Assistant Professor in the Department of
                   Metallurgical Engineering and Materials Science at the Indian Institute of Technology Indore, India.
@@ -371,7 +363,7 @@ export default function FacultyPage() {
 
               <div className="relative">
                 {/* Vertical line */}
-                <div className="absolute left-[15px] top-2 bottom-2 w-[2px] bg-[#E4B5C0]" />
+                <div className="absolute left-[23px] top-2 bottom-2 w-[2px] bg-[#E4B5C0]" />
 
                 <ol className="space-y-0">
                   {workExperience.map((item, index) => (
@@ -380,15 +372,15 @@ export default function FacultyPage() {
                       initial={{ opacity: 0, x: -12 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: 0.2 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
-                      className="relative pl-10 pb-8 last:pb-0"
+                      className="relative pl-14 pb-8 last:pb-0"
                     >
                       {/* Organization logo marker */}
-                      <div className={`absolute left-0 top-1 inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-full border border-[#E4B5C0] bg-white p-0.5 shadow-sm ${item.current ? "ring-2 ring-offset-1 ring-[#800020]/35" : ""}`}>
+                      <div className={`absolute left-0 top-0.5 inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-[#E4B5C0] bg-white p-0.5 shadow-sm ${item.current ? "ring-2 ring-offset-1 ring-[#800020]/35" : ""}`}>
                         <Image
                           src={item.logo}
                           alt={`${item.org} logo`}
-                          width={28}
-                          height={28}
+                          width={40}
+                          height={40}
                           className="h-full w-full object-contain"
                         />
                       </div>
@@ -404,17 +396,17 @@ export default function FacultyPage() {
                                 </span>
                               )}
                             </div>
-                            <p className="mt-0.5 text-sm font-medium text-[#6F3141]">{item.org}</p>
-                            <p className="text-xs text-[#8A5A67]">{item.dept}</p>
+                            <p className="mt-0.5 text-sm font-medium text-black">{item.org}</p>
+                            <p className="text-xs text-black">{item.dept}</p>
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
                             <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${typeColors[item.type]}`}>
                               {typeLabels[item.type]}
                             </span>
-                            <span className="whitespace-nowrap text-xs text-[#A06A78]">{item.period}</span>
+                            <span className="whitespace-nowrap text-xs text-black">{item.period}</span>
                           </div>
                         </div>
-                        <p className="mt-2.5 text-[0.88rem] leading-relaxed text-[#6F3141]">{item.description}</p>
+                        <p className="mt-2.5 text-[0.88rem] leading-relaxed text-black">{item.description}</p>
                       </div>
                     </motion.li>
                   ))}
@@ -438,7 +430,7 @@ export default function FacultyPage() {
               </div>
 
               <div className="relative">
-                <div className="absolute left-[9px] top-2 bottom-2 w-[2px] bg-[#E4B5C0]" />
+                <div className="absolute left-[23px] top-2 bottom-2 w-[2px] bg-[#E4B5C0]" />
 
                 <ol className="space-y-0">
                   {education.map((item, index) => (
@@ -447,21 +439,29 @@ export default function FacultyPage() {
                       initial={{ opacity: 0, x: -12 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: 0.3 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
-                      className="relative pl-8 pb-8 last:pb-0"
+                      className="relative pl-14 pb-8 last:pb-0"
                     >
-                      <div className="absolute left-0 top-1 h-5 w-5 rounded-full border-[3px] border-white bg-[#800020] shadow-sm" />
+                      <div className="absolute left-0 top-0.5 inline-flex h-12 w-12 items-center justify-center overflow-hidden rounded-full border border-[#E4B5C0] bg-white p-0.5 shadow-sm">
+                        <Image
+                          src={item.logo}
+                          alt={`${item.institution} logo`}
+                          width={40}
+                          height={40}
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
 
                       <div className="rounded-xl border border-[#F1DCE2] bg-[#FFF8FA] px-4 py-4 transition-all duration-200 hover:border-[#E4B5C0] hover:bg-white">
                         <div className="flex flex-wrap items-start justify-between gap-2">
                           <div className="min-w-0">
                             <h3 className="text-[1rem] font-semibold text-[#800020]">{item.degree}</h3>
-                            <p className="mt-0.5 text-sm font-medium text-[#6F3141]">{item.institution}</p>
+                            <p className="mt-0.5 text-sm font-medium text-black">{item.institution}</p>
                           </div>
                           <span className="shrink-0 rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-2.5 py-0.5 text-xs font-semibold text-[#800020]">
                             {item.year}
                           </span>
                         </div>
-                        <p className="mt-2.5 text-[0.88rem] leading-relaxed text-[#6F3141]">{item.description}</p>
+                        <p className="mt-2.5 text-[0.88rem] leading-relaxed text-black">{item.description}</p>
                       </div>
                     </motion.li>
                   ))}
@@ -495,14 +495,14 @@ export default function FacultyPage() {
                 ].map((interest) => (
                   <li key={interest} className="flex items-start gap-2.5">
                     <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#800020]" />
-                    <span className="text-[0.875rem] leading-snug text-[#6F3141]">{interest}</span>
+                    <span className="text-[0.875rem] leading-snug text-black">{interest}</span>
                   </li>
                 ))}
               </ul>
             </motion.aside>
 
             {/* Quick Stats */}
-            <motion.aside
+            {/* <motion.aside
               variants={fadeUp}
               initial="initial"
               animate="animate"
@@ -523,7 +523,7 @@ export default function FacultyPage() {
                   </div>
                 ))}
               </div>
-            </motion.aside>
+            </motion.aside> */}
 
             {/* External Links */}
             <motion.aside
@@ -537,7 +537,20 @@ export default function FacultyPage() {
               <div className="space-y-2.5">
                 {[
                   { label: "Google Scholar", href: "https://scholar.google.co.in/citations?user=ducGUjAAAAAJ&hl=en", icon: <IconScholar /> },
-                  { label: "ResearchGate", href: "https://www.researchgate.net/profile/K-V-Vamsi", icon: <IconResearchGate /> },
+                  {
+                    label: "ResearchGate",
+                    href: "https://www.researchgate.net/profile/K-V-Vamsi",
+                    icon: (
+                      <Image
+                        src="/Researchgate--Streamline-Simple-Icons.svg"
+                        alt=""
+                        width={16}
+                        height={16}
+                        aria-hidden="true"
+                        className="h-4 w-4"
+                      />
+                    ),
+                  },
                   { label: "LinkedIn", href: "https://www.linkedin.com/in/kvvamsi/", icon: <IconLinkedIn /> },
                   { label: "IIT Indore – MEMS Dept.", href: "http://mems.iiti.ac.in/", icon: <IconGraduate /> },
                 ].map((link) => (
@@ -546,7 +559,7 @@ export default function FacultyPage() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 rounded-lg border border-[#F1DCE2] bg-[#FFF8FA] px-3 py-2.5 text-sm font-medium text-[#6F3141] transition-all hover:border-[#E4B5C0] hover:bg-white hover:text-[#800020]"
+                    className="flex items-center gap-3 rounded-lg border border-[#F1DCE2] bg-[#FFF8FA] px-3 py-2.5 text-sm font-medium text-black transition-all hover:border-[#E4B5C0] hover:bg-white hover:text-[#800020]"
                   >
                     <span className="text-[#800020]">{link.icon}</span>
                     {link.label}
@@ -567,7 +580,7 @@ export default function FacultyPage() {
               className="rounded-2xl border border-[#E4B5C0] bg-white px-5 py-5 shadow-[0_2px_14px_rgba(128,0,32,0.06)]"
             >
               <h2 className={`${playfair.className} mb-2 text-lg font-semibold text-[#800020]`}>Interested in joining?</h2>
-              <p className="mb-4 text-sm leading-relaxed text-[#6F3141]">
+              <p className="mb-4 text-sm leading-relaxed text-black">
                 We are actively looking for PhD students and postdoctoral researchers in computational materials science.
               </p>
               <a

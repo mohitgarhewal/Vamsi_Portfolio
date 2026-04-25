@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const gallerySlides = [
   {
@@ -45,23 +46,32 @@ export default function Hero() {
     <>
       <section
         id="home"
-        className="grid items-center justify-items-center gap-6 py-4 lg:grid-cols-[0.7fr_1.3fr] lg:gap-8"
+        className="grid items-center justify-items-center gap-6 py-4 lg:grid-cols-[0.55fr_1.45fr] lg:gap-8"
       >
-        <div className="mx-auto w-full max-w-[380px]">
+        <div className="mx-auto w-full max-w-[310px]">
           <div className="relative mx-auto w-full">
             <Image
               src="/Group_logo.png"
               alt="VAMSI Research Group"
-              width={380}
-              height={265}
+              width={300}
+              height={210}
               priority
               style={{ width: "100%", height: "auto" }}
             />
           </div>
+
+          <div className="mx-auto mt-3 w-full px-1 sm:mt-4">
+            <Link
+              href="/projects"
+              className="block rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-4 py-2 text-center text-sm font-semibold tracking-wide text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
+            >
+              JRF position available
+            </Link>
+          </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-[700px] lg:-translate-y-1">
-          <div className="relative h-[260px] overflow-hidden rounded-[20px] border border-[#E4B5C0] shadow-[0_10px_28px_rgba(128,0,32,0.12)] sm:h-[320px] lg:h-[360px]">
+        <div className="relative mx-auto w-full max-w-[820px] lg:-translate-y-1">
+          <div className="relative h-[290px] overflow-hidden rounded-[20px] border border-[#E4B5C0] shadow-[0_10px_28px_rgba(128,0,32,0.12)] sm:h-[360px] lg:h-[420px]">
             {gallerySlides.map((slide, index) => (
               <Image
                 key={slide.src}
@@ -123,15 +133,9 @@ export default function Hero() {
         </div>
       </section>
 
-      <div className="mx-auto mt-3 w-full max-w-[760px] px-2 sm:mt-4">
-        <div className="rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-4 py-2 text-center text-sm font-semibold tracking-wide text-[#800020] shadow-[0_6px_16px_rgba(128,0,32,0.08)]">
-          JRF position available
-        </div>
-      </div>
-
       <section id="about" className="scroll-mt-28">
         <div className="mx-auto max-w-[1160px] px-2 py-12 sm:py-14 lg:py-18">
-          <div className="mx-auto max-w-5xl space-y-6 text-justify text-base font-normal leading-[1.85] text-[#6F3141] sm:text-[1.05rem]">
+          <div className="mx-auto max-w-5xl space-y-6 text-justify text-base font-normal leading-[1.85] text-black sm:text-[1.05rem]">
             <p>
               I am pleased to introduce the Virtual Alloys Modelling, Simulation &amp; Informatics (VAMSI)
               Research Group at the Indian Institute of Technology Indore (IITI). We warmly invite motivated

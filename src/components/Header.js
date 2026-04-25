@@ -94,7 +94,7 @@ export default function Header() {
                       className={`group relative inline-flex items-center text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
                         isActive(item.href)
                           ? "text-[#800020]"
-                          : "text-[#6F3141]/90 hover:text-[#800020]"
+                          : "text-black hover:text-[#800020]"
                       }`}
                     >
                       {item.label}
@@ -121,7 +121,7 @@ export default function Header() {
                               <li key={subItem.label}>
                                 <Link
                                   href={subItem.href}
-                                  className="block rounded-md px-4 py-2.5 text-sm font-medium text-[#6F3141] transition-colors hover:bg-[#F6E4E8] hover:text-[#800020]"
+                                  className="block rounded-md px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-[#F6E4E8] hover:text-[#800020]"
                                 >
                                   {subItem.label}
                                 </Link>
@@ -143,7 +143,7 @@ export default function Header() {
                         className={`group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
                           isActive(item.href)
                             ? "text-[#800020]"
-                            : "text-[#6F3141]/90 hover:text-[#800020]"
+                            : "text-black hover:text-[#800020]"
                         }`}
                       >
                         {item.label}
@@ -161,7 +161,7 @@ export default function Header() {
                         className={`group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
                           isActive(item.href)
                             ? "text-[#800020]"
-                            : "text-[#6F3141]/90 hover:text-[#800020]"
+                            : "text-black hover:text-[#800020]"
                         }`}
                       >
                         {item.label}
@@ -218,7 +218,7 @@ export default function Header() {
                         className={`flex w-full items-center text-sm font-medium tracking-[0.01em] transition-colors ${
                           isActive(item.href)
                             ? "text-[#800020]"
-                            : "text-[#6F3141] hover:text-[#800020]"
+                            : "text-black hover:text-[#800020]"
                         }`}
                       >
                         {item.label}
@@ -236,7 +236,7 @@ export default function Header() {
                               <li key={subItem.label}>
                                 <Link
                                   href={subItem.href}
-                                  className="block text-sm font-medium text-[#6F3141] transition-colors hover:text-[#800020]"
+                                  className="block text-sm font-medium text-black transition-colors hover:text-[#800020]"
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                   {subItem.label}
@@ -255,7 +255,7 @@ export default function Header() {
                           className={`block text-sm font-medium tracking-[0.01em] transition-colors ${
                             isActive(item.href)
                               ? "text-[#800020]"
-                              : "text-[#6F3141] hover:text-[#800020]"
+                              : "text-black hover:text-[#800020]"
                           }`}
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -267,7 +267,7 @@ export default function Header() {
                           className={`block text-sm font-medium tracking-[0.01em] transition-colors ${
                             isActive(item.href)
                               ? "text-[#800020]"
-                              : "text-[#6F3141] hover:text-[#800020]"
+                              : "text-black hover:text-[#800020]"
                           }`}
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
