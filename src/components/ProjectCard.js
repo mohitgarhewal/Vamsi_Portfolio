@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 const statusClasses = {
-  Ongoing: "border-[#BF7AB4] bg-[#BF7AB4]/15 text-[#0D0D0D]",
-  Completed: "border-slate-300 bg-slate-100 text-slate-700",
+  Ongoing: "border-[#E4B5C0] bg-[#F6E4E8] text-[#800020]",
+  Completed: "border-[#E4B5C0] bg-[#FFF8FA] text-[#6F3141]",
 };
 
 export default function ProjectCard({ project, index = 0 }) {
@@ -18,7 +18,7 @@ export default function ProjectCard({ project, index = 0 }) {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.35, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -4, scale: 1.01 }}
-      className="rounded-2xl border border-[#BF7AB4]/30 bg-white p-5 shadow-[0_6px_16px_rgba(166,65,149,0.08)] transition-shadow duration-300 hover:shadow-[0_14px_24px_rgba(13,13,13,0.12)] sm:p-6"
+      className="rounded-2xl border border-[#E4B5C0] bg-white p-5 shadow-[0_6px_16px_rgba(128,0,32,0.08)] transition-shadow duration-300 hover:shadow-[0_14px_24px_rgba(128,0,32,0.12)] sm:p-6"
     >
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
         <div className="min-w-0 flex-1 lg:max-w-[68%]">
@@ -26,24 +26,24 @@ export default function ProjectCard({ project, index = 0 }) {
 
           <dl className="mt-4 grid gap-3 text-sm text-[#0D0D0D]/85 sm:grid-cols-2">
             <div>
-              <dt className="font-semibold text-[#A64195]">Funding</dt>
+              <dt className="font-semibold text-[#800020]">Funding</dt>
               <dd className="mt-0.5">{project.funding}</dd>
             </div>
             <div>
-              <dt className="font-semibold text-[#A64195]">Duration</dt>
+              <dt className="font-semibold text-[#800020]">Duration</dt>
               <dd className="mt-0.5">{project.duration}</dd>
             </div>
           </dl>
         </div>
 
-        <aside className="w-full rounded-xl bg-[#F2F2F2] p-4 lg:w-[30%]" aria-label="Project metadata">
+        <aside className="w-full rounded-xl bg-[#FFF8FA] p-4 lg:w-[30%]" aria-label="Project metadata">
           <dl className="space-y-3 text-sm text-[#0D0D0D]">
             <div className="flex items-center justify-between gap-3">
-              <dt className="font-semibold text-[#A64195]">Role</dt>
+              <dt className="font-semibold text-[#800020]">Role</dt>
               <dd className="font-medium">{project.role}</dd>
             </div>
             <div className="flex items-center justify-between gap-3">
-              <dt className="font-semibold text-[#A64195]">Status</dt>
+              <dt className="font-semibold text-[#800020]">Status</dt>
               <dd>
                 <span
                   className={`inline-flex items-center rounded-full border px-2.5 py-1 text-xs font-semibold ${statusClasses[project.status] || "border-slate-300 bg-slate-100 text-slate-700"}`}
@@ -56,10 +56,10 @@ export default function ProjectCard({ project, index = 0 }) {
             {hasPositions && (
               <div className="space-y-2">
                 <div className="flex items-center justify-between gap-3">
-                  <dt className="font-semibold text-[#A64195]">Positions</dt>
+                  <dt className="font-semibold text-[#800020]">Positions</dt>
                   <dd>
                     <span
-                      className="inline-flex items-center rounded-full bg-[#F27405] px-2.5 py-1 text-xs font-semibold text-white"
+                      className="inline-flex items-center rounded-full bg-[#800020] px-2.5 py-1 text-xs font-semibold text-white"
                       aria-label="Positions available"
                     >
                       Available
@@ -70,13 +70,13 @@ export default function ProjectCard({ project, index = 0 }) {
                   <a
                     href="/Vamsi_iit_indore_JRF_advertisement.pdf"
                     download="advertisement.pdf"
-                    className="block w-full rounded-lg bg-[#F27405] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#D66A04]"
+                    className="block w-full rounded-lg bg-[#800020] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#5F0017]"
                   >
                     Download Advertisement
                   </a>
                   <a
                     href="/people#available-positions"
-                    className="block w-full rounded-lg bg-[#A64195] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#964196]"
+                    className="block w-full rounded-lg bg-[#800020] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#5F0017]"
                   >
                     How to Apply
                   </a>
@@ -84,7 +84,7 @@ export default function ProjectCard({ project, index = 0 }) {
               </div>
             )}
             {isOngoing && !hasPositions && (
-              <div className="rounded-lg border border-[#BF7AB4]/40 bg-white px-3 py-2 text-xs font-medium text-[#A64195]">
+              <div className="rounded-lg border border-[#E4B5C0] bg-white px-3 py-2 text-xs font-medium text-[#800020]">
                 Active project in progress
               </div>
             )}

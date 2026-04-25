@@ -27,7 +27,7 @@ export default function Projects() {
           </div>
           <Link
             href="/projects"
-            className={`${inter.className} inline-flex shrink-0 items-center gap-2 rounded-xl border border-[#A64195]/30 bg-white px-5 py-2.5 text-sm font-semibold text-[#0D0D0D] transition-all hover:border-[#A64195] hover:shadow-sm`}
+            className={`${inter.className} inline-flex shrink-0 items-center gap-2 rounded-xl border border-[#E4B5C0] bg-white px-5 py-2.5 text-sm font-semibold text-[#800020] transition-all hover:border-[#800020] hover:shadow-sm`}
           >
             View All Projects
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
@@ -47,14 +47,14 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-8 flex flex-col items-start justify-between gap-3 rounded-2xl border border-[#BF7AB4]/35 bg-[#F2F2F2] px-6 py-5 sm:flex-row sm:items-center"
+          className="mt-8 flex flex-col items-start justify-between gap-3 rounded-2xl border border-[#E4B5C0] bg-[#FFF8FA] px-6 py-5 sm:flex-row sm:items-center"
         >
           <p className={`${inter.className} text-sm text-[#0D0D0D]/80`}>
             <span className="font-semibold text-[#0D0D0D]">{PROJECTS_DATA.length - 3} more projects</span> are available with full funding, duration, and role details.
           </p>
           <Link
             href="/projects"
-            className="inline-flex items-center gap-1.5 rounded-lg bg-[#F27405] px-4 py-2 text-xs font-semibold text-white transition-all hover:scale-[1.02] hover:bg-[#d96804]"
+            className="inline-flex items-center gap-1.5 rounded-lg bg-[#800020] px-4 py-2 text-xs font-semibold text-white transition-all hover:scale-[1.02] hover:bg-[#5F0017]"
           >
             Explore Projects
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" className="h-3 w-3">

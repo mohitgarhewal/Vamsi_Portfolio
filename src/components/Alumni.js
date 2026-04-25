@@ -38,7 +38,7 @@ export default function Alumni() {
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
           <h2
-            className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#A64195] sm:text-[3rem]`}
+            className={`${playfair.className} text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#800020] sm:text-[3rem]`}
           >
             Alumni
           </h2>
@@ -53,7 +53,7 @@ export default function Alumni() {
           {alumniMembers.map((member, index) => (
             <article
               key={member.name}
-              className="rounded-2xl bg-slate-100/70 px-6 py-7 text-center"
+              className="rounded-2xl bg-[#FFF8FA] px-6 py-7 text-center"
             >
               <Image
                 src={member.image}
@@ -64,15 +64,15 @@ export default function Alumni() {
                 style={{ objectPosition: `${34 + index * 14}% 35%` }}
               />
 
-              <h3 className={`${playfair.className} mt-5 text-[1.55rem] font-semibold leading-tight text-[#A64195]`}>
+              <h3 className={`${playfair.className} mt-5 text-[1.55rem] font-semibold leading-tight text-[#800020]`}>
                 {member.name}
               </h3>
 
-              <p className={`${inter.className} mt-2 text-sm font-medium text-[#355178]`}>
+              <p className={`${inter.className} mt-2 text-sm font-medium text-[#6F3141]`}>
                 {member.role}
               </p>
 
-              <p className={`${inter.className} mt-1 text-[0.92rem] text-[#6A7D99]`}>
+              <p className={`${inter.className} mt-1 text-[0.92rem] text-[#8A5A67]`}>
                 {member.batch}
               </p>
             </article>

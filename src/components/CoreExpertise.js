@@ -115,9 +115,9 @@ export default function CoreExpertise() {
           {expertiseItems.map((item) => (
             <article
               key={item.title}
-              className="rounded-2xl bg-[#BF7AB4]/10 px-6 py-6"
+              className="rounded-2xl bg-[#F6E4E8] px-6 py-6"
             >
-                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#BF7AB4]/20 text-[#A64195]">
+                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#E4B5C0] text-[#800020]">
                 <Icon type={item.icon} />
               </div>
 

@@ -7,7 +7,7 @@ import PhotoCarousel from "@/components/PhotoCarousel";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-[#0D0D0D]">
+    <div className="min-h-screen bg-white text-[#4A0013]">
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-6 sm:px-6 md:px-8 lg:px-10">

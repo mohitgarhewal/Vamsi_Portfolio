@@ -17,7 +17,7 @@ const autumnCourses = [
     description:
       "Introduces numerical methods and computational techniques applied to materials science problems. Topics include finite difference methods, molecular dynamics fundamentals, Monte Carlo simulations, and data analysis using Python/MATLAB.",
     topics: ["Numerical Methods", "Molecular Dynamics", "Monte Carlo", "Python / MATLAB"],
-    color: "from-[#800020] to-[#A64195]",
+    color: "from-[#800020] to-[#B24A67]",
     bg: "bg-[#F5ECEF]",
     accent: "text-[#800020]",
     chip: "bg-[#E8D5E0] text-[#800020]",
@@ -34,7 +34,7 @@ const springCourses = [
     description:
       "Covers mechanisms governing plastic deformation at elevated temperatures in metals and alloys. Focuses on creep, dislocation dynamics, planar fault energies, and deformation pathways in superalloys and intermetallics.",
     topics: ["Creep Mechanisms", "Dislocation Dynamics", "Planar Fault Energies", "Superalloys"],
-    color: "from-[#A64195] to-[#C4A5B8]",
+    color: "from-[#800020] to-[#B24A67]",
     bg: "bg-[#F5ECEF]",
     accent: "text-[#800020]",
     chip: "bg-[#E8D5E0] text-[#800020]",
@@ -101,9 +101,9 @@ function CourseCard({ course, index }) {
         <div className="flex items-start justify-between gap-3">
           <div className="flex flex-wrap items-center gap-2">
             <LevelBadge level={course.level} />
-            <span className="text-[11px] text-[#A64195]/70">Since {course.since}</span>
+            <span className="text-[11px] text-[#8A5A67]/70">Since {course.since}</span>
             {course.credits && (
-              <span className="text-[11px] text-[#A64195]/70">· {course.credits} credits</span>
+              <span className="text-[11px] text-[#8A5A67]/70">· {course.credits} credits</span>
             )}
           </div>
           {/* Watermark number */}
@@ -113,7 +113,7 @@ function CourseCard({ course, index }) {
         </div>
 
         {/* Course code */}
-        <p className={`${inter.className} mt-3 text-[11px] font-bold uppercase tracking-[0.12em] text-[#A64195]/70`}>
+        <p className={`${inter.className} mt-3 text-[11px] font-bold uppercase tracking-[0.12em] text-[#8A5A67]/70`}>
           {course.code}
         </p>
 
@@ -161,7 +161,7 @@ export default function Teaching() {
 
         {/* ── Semester Toggle ── */}
         <div className="mt-10 flex justify-center">
-            <div className="relative flex rounded-2xl border border-[#C4A5B8]/40 bg-[#E8D5E0]/30 p-1.5 shadow-inner">
+            <div className="relative flex rounded-2xl border border-[#E4B5C0] bg-[#F6E4E8] p-1.5 shadow-inner">
             {/* Sliding pill */}
             <motion.div
               className="absolute inset-y-1.5 rounded-xl bg-white shadow-[0_2px_8px_rgba(128,0,32,0.12)]"
@@ -202,15 +202,15 @@ export default function Teaching() {
                 key={tab.id}
                 onClick={() => setActive(tab.id)}
                 className={`relative z-10 flex min-w-[160px] items-center justify-center gap-2.5 rounded-xl px-5 py-3 text-sm font-semibold transition-colors duration-200 sm:min-w-[200px] ${
-                  active === tab.id ? tab.activeColor : "text-[#A64195] hover:text-[#800020]"
+                  active === tab.id ? tab.activeColor : "text-[#800020] hover:text-[#5F0017]"
                 }`}
               >
-                <span className={active === tab.id ? tab.activeColor : "text-[#A64195]"}>
+                <span className={active === tab.id ? tab.activeColor : "text-[#800020]"}>
                   {tab.icon}
                 </span>
                 <span className="flex flex-col items-start leading-none">
                   <span className="text-[13px]">{tab.label}</span>
-                  <span className={`mt-0.5 text-[10px] font-normal ${active === tab.id ? "opacity-70" : "text-[#A64195]/60"}`}>
+                  <span className={`mt-0.5 text-[10px] font-normal ${active === tab.id ? "opacity-70" : "text-[#800020]/60"}`}>
                     {tab.sub} · {tab.count} {tab.count === 1 ? "course" : "courses"}
                   </span>
                 </span>
@@ -243,7 +243,7 @@ export default function Teaching() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-10 rounded-2xl border border-[#C4A5B8] bg-[#F5ECEF]/70 px-6 py-6 sm:px-8"
+          className="mt-10 rounded-2xl border border-[#E4B5C0] bg-[#FFF8FA] px-6 py-6 sm:px-8"
         >
           <div className="flex items-center gap-3 mb-5">
             <div className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#E8D5E0] text-[#800020]">
@@ -256,7 +256,7 @@ export default function Teaching() {
               <h3 className={`${playfair.className} text-lg font-semibold text-[#800020]`}>
                 Previous Teaching Experience
               </h3>
-              <p className={`${inter.className} text-xs text-[#A64195]/70`}>@ Indian Institute of Science, Bangalore</p>
+              <p className={`${inter.className} text-xs text-[#8A5A67]/70`}>@ Indian Institute of Science, Bangalore</p>
             </div>
           </div>
 
@@ -269,7 +269,7 @@ export default function Teaching() {
                 <ul className="space-y-2.5">
                   {group.items.map((item) => (
                     <li key={item} className="flex items-start gap-2.5">
-                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#A64195]" />
+                      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#800020]" />
                       <span className={`${inter.className} text-[0.875rem] leading-snug text-[#0D0D0D]/75`}>
                         {item}
                       </span>

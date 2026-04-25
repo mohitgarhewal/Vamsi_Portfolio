@@ -22,6 +22,7 @@ const workExperience = [
     id: 1,
     title: "Assistant Professor",
     org: "IIT Indore",
+    logo: "/iiti-logo.jpg",
     dept: "Department of Metallurgical Engineering and Materials Science (MEMS)",
     period: "Mar 2023 – Present",
     type: "academic",
@@ -33,6 +34,7 @@ const workExperience = [
     id: 2,
     title: "Consultant",
     org: "TCS Research, Tata Consultancy Services",
+    logo: "/logos/tcs.jpeg",
     dept: "ICME Group",
     period: "Apr 2022 – Mar 2023",
     type: "industry",
@@ -44,6 +46,7 @@ const workExperience = [
     id: 3,
     title: "Postdoctoral Researcher",
     org: "University of California Santa Barbara",
+    logo: "/logos/pollock.gif",
     dept: "Pollock Group, Materials Department",
     period: "Dec 2018 – Mar 2022",
     type: "research",
@@ -55,6 +58,7 @@ const workExperience = [
     id: 4,
     title: "Research Assistant",
     org: "Indian Institute of Science, Bangalore",
+    logo: "/logos/pspm.jpeg",
     dept: "DMMG & PSPM Groups",
     period: "2017 – 2018",
     type: "research",
@@ -66,6 +70,7 @@ const workExperience = [
     id: 5,
     title: "Researcher",
     org: "TATA Steel",
+    logo: "/logos/tata.jpeg",
     dept: "Materials Modelling and Product Development Group, TATA Steel R&D",
     period: "2009 – 2010",
     type: "industry",
@@ -77,6 +82,7 @@ const workExperience = [
     id: 6,
     title: "Senior Engineer",
     org: "ISPAT Industries Ltd.",
+    logo: "/logos/ispat.png",
     dept: "Raw Materials Handling Department",
     period: "2006 – 2007",
     type: "industry",
@@ -108,21 +114,15 @@ const education = [
 ];
 
 const typeColors = {
-  academic: "bg-blue-100 text-blue-700 border-blue-200",
-  research: "bg-emerald-100 text-emerald-700 border-emerald-200",
-  industry: "bg-amber-100 text-amber-700 border-amber-200",
+  academic: "bg-[#F6E4E8] text-[#800020] border-[#E4B5C0]",
+  research: "bg-[#F2D7DE] text-[#6F001B] border-[#D89AA9]",
+  industry: "bg-[#EBC7D0] text-[#8E1733] border-[#C86F8A]",
 };
 
 const typeLabels = {
   academic: "Academia",
   research: "Research",
   industry: "Industry",
-};
-
-const typeDotColors = {
-  academic: "bg-blue-500",
-  research: "bg-emerald-500",
-  industry: "bg-amber-500",
 };
 
 function IconMail() {
@@ -202,18 +202,18 @@ const fadeUp = {
 
 export default function FacultyPage() {
   return (
-    <div className={`${inter.className} min-h-screen bg-white text-slate-800`}>
+    <div className={`${inter.className} min-h-screen bg-white text-[#4A0013]`}>
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
         {/* Breadcrumb */}
-        <nav className="mb-8 flex items-center gap-2 text-sm text-slate-500">
-          <Link href="/" className="hover:text-slate-800 transition-colors">Home</Link>
+        {/* <nav className="mb-8 flex items-center gap-2 text-sm text-[#8A5A67]">
+          <Link href="/" className="transition-colors hover:text-[#800020]">Home</Link>
           <span>/</span>
-          <Link href="/#people" className="hover:text-slate-800 transition-colors">Team</Link>
+          <Link href="/#people" className="transition-colors hover:text-[#800020]">Team</Link>
           <span>/</span>
-          <span className="text-slate-800 font-medium">Dr. K. V. Vamsi</span>
-        </nav>
+          <span className="font-medium text-[#800020]">Dr. K. V. Vamsi</span>
+        </nav> */}
 
         {/* Profile Header Card */}
         <motion.div
@@ -221,11 +221,12 @@ export default function FacultyPage() {
           initial="initial"
           animate="animate"
           transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-          className="rounded-2xl border border-slate-200 bg-white shadow-[0_2px_20px_rgba(15,23,42,0.07)] overflow-hidden mb-8"
+          className="mb-8 overflow-hidden rounded-2xl border border-[#E4B5C0] bg-white shadow-[0_2px_20px_rgba(128,0,32,0.08)]"
         >
           {/* Banner */}
-          <div className="h-32 bg-gradient-to-br from-[#0D1733] via-[#1B2B53] to-[#2a4580] relative">
-            <div className="absolute inset-0 opacity-20"
+          <div className="relative h-32 bg-gradient-to-br from-[#5F0017] via-[#800020] to-[#B24A67]">
+            <div
+              className="absolute inset-0 opacity-18"
               style={{
                 backgroundImage: "radial-gradient(circle at 20% 50%, rgba(255,255,255,0.15) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 40%)",
               }}
@@ -235,9 +236,9 @@ export default function FacultyPage() {
           <div className="px-6 pb-6 sm:px-8 sm:pb-8">
             {/* Avatar */}
             <div className="relative -mt-14 mb-4">
-              <div className="h-24 w-24 rounded-full border-4 border-white shadow-md overflow-hidden bg-slate-200 sm:h-28 sm:w-28">
+              <div className="h-24 w-24 overflow-hidden rounded-full border-4 border-white bg-[#F3DDE3] shadow-md sm:h-28 sm:w-28">
                 <Image
-                  src="/photo.png"
+                  src="/vamsi_pfp.jpeg"
                   alt="Dr. K. V. Vamsi"
                   width={112}
                   height={112}
@@ -252,18 +253,18 @@ export default function FacultyPage() {
                   <h1 className={`${playfair.className} text-2xl font-bold text-[#800020] sm:text-3xl`}>
                     Dr. K. V. Vamsi
                   </h1>
-                  <span className="rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-semibold text-blue-700 border border-blue-200">
+                  <span className="rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-2.5 py-0.5 text-xs font-semibold text-[#800020]">
                     Principal Investigator
                   </span>
                 </div>
 
-                <p className="mt-1 text-base font-medium text-[#355178]">
+                <p className="mt-1 text-base font-medium text-[#6F3141]">
                   Assistant Professor · Department of Metallurgical Engineering and Materials Science
                 </p>
-                <p className="text-sm text-slate-500">Indian Institute of Technology Indore</p>
+                <p className="text-sm text-[#8A5A67]">Indian Institute of Technology Indore</p>
 
-                <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-600">
-                  <a href="mailto:kvvamsi@iiti.ac.in" className="flex items-center gap-1.5 hover:text-[#0D1733] transition-colors">
+                <div className="mt-4 flex flex-wrap gap-4 text-sm text-[#7F4B59]">
+                  <a href="mailto:kvvamsi@iiti.ac.in" className="flex items-center gap-1.5 transition-colors hover:text-[#800020]">
                     <IconMail /> kvvamsi@iiti.ac.in
                   </a>
                   <span className="flex items-center gap-1.5">
@@ -279,7 +280,7 @@ export default function FacultyPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 hover:bg-[#0D1733] hover:text-white transition-all"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F5E3E7] text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
                 >
                   <IconLinkedIn />
                 </a>
@@ -288,7 +289,7 @@ export default function FacultyPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Google Scholar"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 hover:bg-[#0D1733] hover:text-white transition-all"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F5E3E7] text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
                 >
                   <IconScholar />
                 </a>
@@ -297,7 +298,7 @@ export default function FacultyPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="ResearchGate"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 hover:bg-[#0D1733] hover:text-white transition-all"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F5E3E7] text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
                 >
                   <IconResearchGate />
                 </a>
@@ -306,7 +307,7 @@ export default function FacultyPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Twitter / X"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 hover:bg-[#0D1733] hover:text-white transition-all"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F5E3E7] text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
                 >
                   <IconTwitter />
                 </a>
@@ -325,10 +326,10 @@ export default function FacultyPage() {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="rounded-2xl border border-slate-200 bg-white px-6 py-6 shadow-[0_2px_14px_rgba(15,23,42,0.06)] sm:px-8"
+              className="rounded-2xl border border-[#E4B5C0] bg-white px-6 py-6 shadow-[0_2px_14px_rgba(128,0,32,0.06)] sm:px-8"
             >
               <h2 className={`${playfair.className} mb-4 text-xl font-semibold text-[#800020]`}>About</h2>
-              <div className="space-y-3 text-[0.97rem] leading-relaxed text-[#4B607E]">
+              <div className="space-y-3 text-[0.97rem] leading-relaxed text-[#6F3141]">
                 <p>
                   Welcome to my profile! I am Dr. K. V. Vamsi, an Assistant Professor in the Department of
                   Metallurgical Engineering and Materials Science at the Indian Institute of Technology Indore, India.
@@ -359,10 +360,10 @@ export default function FacultyPage() {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-              className="rounded-2xl border border-slate-200 bg-white px-6 py-6 shadow-[0_2px_14px_rgba(15,23,42,0.06)] sm:px-8"
+              className="rounded-2xl border border-[#E4B5C0] bg-white px-6 py-6 shadow-[0_2px_14px_rgba(128,0,32,0.06)] sm:px-8"
             >
               <div className="mb-6 flex items-center gap-3">
-                <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100 text-[#0D1733]">
+                <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#F5E3E7] text-[#800020]">
                   <IconBriefcase />
                 </div>
                 <h2 className={`${playfair.className} text-xl font-semibold text-[#800020]`}>Work Experience</h2>
@@ -370,7 +371,7 @@ export default function FacultyPage() {
 
               <div className="relative">
                 {/* Vertical line */}
-                <div className="absolute left-[9px] top-2 bottom-2 w-[2px] bg-slate-200" />
+                <div className="absolute left-[15px] top-2 bottom-2 w-[2px] bg-[#E4B5C0]" />
 
                 <ol className="space-y-0">
                   {workExperience.map((item, index) => (
@@ -379,33 +380,41 @@ export default function FacultyPage() {
                       initial={{ opacity: 0, x: -12 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 0.4, delay: 0.2 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
-                      className="relative pl-8 pb-8 last:pb-0"
+                      className="relative pl-10 pb-8 last:pb-0"
                     >
-                      {/* Dot */}
-                      <div className={`absolute left-0 top-1 h-5 w-5 rounded-full border-[3px] border-white shadow-sm ${typeDotColors[item.type]} ${item.current ? "ring-2 ring-offset-1 ring-blue-400" : ""}`} />
+                      {/* Organization logo marker */}
+                      <div className={`absolute left-0 top-1 inline-flex h-8 w-8 items-center justify-center overflow-hidden rounded-full border border-[#E4B5C0] bg-white p-0.5 shadow-sm ${item.current ? "ring-2 ring-offset-1 ring-[#800020]/35" : ""}`}>
+                        <Image
+                          src={item.logo}
+                          alt={`${item.org} logo`}
+                          width={28}
+                          height={28}
+                          className="h-full w-full object-contain"
+                        />
+                      </div>
 
-                      <div className="rounded-xl border border-slate-100 bg-slate-50/60 px-4 py-4 hover:border-slate-200 hover:bg-white transition-all duration-200">
+                      <div className="rounded-xl border border-[#F1DCE2] bg-[#FFF8FA] px-4 py-4 transition-all duration-200 hover:border-[#E4B5C0] hover:bg-white">
                         <div className="flex flex-wrap items-start justify-between gap-2">
                           <div className="min-w-0">
                             <div className="flex flex-wrap items-center gap-2">
                               <h3 className="text-[1rem] font-semibold text-[#800020]">{item.title}</h3>
                               {item.current && (
-                                <span className="rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-700 uppercase tracking-wide">
+                                <span className="rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-2 py-0.5 text-[10px] font-bold uppercase tracking-wide text-[#800020]">
                                   Current
                                 </span>
                               )}
                             </div>
-                            <p className="mt-0.5 text-sm font-medium text-[#355178]">{item.org}</p>
-                            <p className="text-xs text-slate-500">{item.dept}</p>
+                            <p className="mt-0.5 text-sm font-medium text-[#6F3141]">{item.org}</p>
+                            <p className="text-xs text-[#8A5A67]">{item.dept}</p>
                           </div>
                           <div className="flex items-center gap-2 shrink-0">
                             <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${typeColors[item.type]}`}>
                               {typeLabels[item.type]}
                             </span>
-                            <span className="text-xs text-slate-400 whitespace-nowrap">{item.period}</span>
+                            <span className="whitespace-nowrap text-xs text-[#A06A78]">{item.period}</span>
                           </div>
                         </div>
-                        <p className="mt-2.5 text-[0.88rem] leading-relaxed text-[#4B607E]">{item.description}</p>
+                        <p className="mt-2.5 text-[0.88rem] leading-relaxed text-[#6F3141]">{item.description}</p>
                       </div>
                     </motion.li>
                   ))}
@@ -419,17 +428,17 @@ export default function FacultyPage() {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="rounded-2xl border border-slate-200 bg-white px-6 py-6 shadow-[0_2px_14px_rgba(15,23,42,0.06)] sm:px-8"
+              className="rounded-2xl border border-[#E4B5C0] bg-white px-6 py-6 shadow-[0_2px_14px_rgba(128,0,32,0.06)] sm:px-8"
             >
               <div className="mb-6 flex items-center gap-3">
-                <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-slate-100 text-[#0D1733]">
+                <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#F5E3E7] text-[#800020]">
                   <IconGraduate />
                 </div>
                 <h2 className={`${playfair.className} text-xl font-semibold text-[#800020]`}>Education</h2>
               </div>
 
               <div className="relative">
-                <div className="absolute left-[9px] top-2 bottom-2 w-[2px] bg-slate-200" />
+                <div className="absolute left-[9px] top-2 bottom-2 w-[2px] bg-[#E4B5C0]" />
 
                 <ol className="space-y-0">
                   {education.map((item, index) => (
@@ -440,19 +449,19 @@ export default function FacultyPage() {
                       transition={{ duration: 0.4, delay: 0.3 + index * 0.07, ease: [0.22, 1, 0.36, 1] }}
                       className="relative pl-8 pb-8 last:pb-0"
                     >
-                      <div className="absolute left-0 top-1 h-5 w-5 rounded-full border-[3px] border-white bg-[#0D1733] shadow-sm" />
+                      <div className="absolute left-0 top-1 h-5 w-5 rounded-full border-[3px] border-white bg-[#800020] shadow-sm" />
 
-                      <div className="rounded-xl border border-slate-100 bg-slate-50/60 px-4 py-4 hover:border-slate-200 hover:bg-white transition-all duration-200">
+                      <div className="rounded-xl border border-[#F1DCE2] bg-[#FFF8FA] px-4 py-4 transition-all duration-200 hover:border-[#E4B5C0] hover:bg-white">
                         <div className="flex flex-wrap items-start justify-between gap-2">
                           <div className="min-w-0">
                             <h3 className="text-[1rem] font-semibold text-[#800020]">{item.degree}</h3>
-                            <p className="mt-0.5 text-sm font-medium text-[#355178]">{item.institution}</p>
+                            <p className="mt-0.5 text-sm font-medium text-[#6F3141]">{item.institution}</p>
                           </div>
-                          <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-600 shrink-0">
+                          <span className="shrink-0 rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-2.5 py-0.5 text-xs font-semibold text-[#800020]">
                             {item.year}
                           </span>
                         </div>
-                        <p className="mt-2.5 text-[0.88rem] leading-relaxed text-[#4B607E]">{item.description}</p>
+                        <p className="mt-2.5 text-[0.88rem] leading-relaxed text-[#6F3141]">{item.description}</p>
                       </div>
                     </motion.li>
                   ))}
@@ -470,7 +479,7 @@ export default function FacultyPage() {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5, delay: 0.25, ease: [0.22, 1, 0.36, 1] }}
-              className="rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-[0_2px_14px_rgba(15,23,42,0.06)]"
+              className="rounded-2xl border border-[#E4B5C0] bg-white px-5 py-5 shadow-[0_2px_14px_rgba(128,0,32,0.06)]"
             >
               <h2 className={`${playfair.className} mb-4 text-lg font-semibold text-[#800020]`}>Research Interests</h2>
               <ul className="space-y-2.5">
@@ -485,8 +494,8 @@ export default function FacultyPage() {
                   "Materials Informatics & Data-Driven Design",
                 ].map((interest) => (
                   <li key={interest} className="flex items-start gap-2.5">
-                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#0D1733]" />
-                    <span className="text-[0.875rem] leading-snug text-[#4B607E]">{interest}</span>
+                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-[#800020]" />
+                    <span className="text-[0.875rem] leading-snug text-[#6F3141]">{interest}</span>
                   </li>
                 ))}
               </ul>
@@ -498,7 +507,7 @@ export default function FacultyPage() {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
-              className="rounded-2xl border border-slate-200 bg-[#0D1733] px-5 py-5 shadow-[0_2px_14px_rgba(15,23,42,0.12)]"
+              className="rounded-2xl border border-[#6F001B] bg-gradient-to-br from-[#6F001B] via-[#800020] to-[#9E2F4F] px-5 py-5 shadow-[0_2px_14px_rgba(128,0,32,0.15)]"
             >
               <h2 className={`${playfair.className} mb-4 text-lg font-semibold text-white`}>Quick Facts</h2>
               <div className="space-y-3">
@@ -508,8 +517,8 @@ export default function FacultyPage() {
                   { label: "Institutions", value: "4" },
                   { label: "Research Focus", value: "Superalloys & MPEAs" },
                 ].map((stat) => (
-                  <div key={stat.label} className="flex items-center justify-between rounded-lg bg-white/10 px-3 py-2.5">
-                    <span className="text-xs text-slate-300">{stat.label}</span>
+                  <div key={stat.label} className="flex items-center justify-between rounded-lg bg-white/12 px-3 py-2.5">
+                    <span className="text-xs text-[#F6E4E8]">{stat.label}</span>
                     <span className="text-sm font-semibold text-white">{stat.value}</span>
                   </div>
                 ))}
@@ -522,7 +531,7 @@ export default function FacultyPage() {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-              className="rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-[0_2px_14px_rgba(15,23,42,0.06)]"
+              className="rounded-2xl border border-[#E4B5C0] bg-white px-5 py-5 shadow-[0_2px_14px_rgba(128,0,32,0.06)]"
             >
               <h2 className={`${playfair.className} mb-4 text-lg font-semibold text-[#800020]`}>External Profiles</h2>
               <div className="space-y-2.5">
@@ -537,11 +546,11 @@ export default function FacultyPage() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 rounded-lg border border-slate-100 bg-slate-50 px-3 py-2.5 text-sm font-medium text-[#355178] transition-all hover:border-slate-300 hover:bg-white hover:text-[#0D1733]"
+                    className="flex items-center gap-3 rounded-lg border border-[#F1DCE2] bg-[#FFF8FA] px-3 py-2.5 text-sm font-medium text-[#6F3141] transition-all hover:border-[#E4B5C0] hover:bg-white hover:text-[#800020]"
                   >
-                    <span className="text-[#0D1733]">{link.icon}</span>
+                    <span className="text-[#800020]">{link.icon}</span>
                     {link.label}
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="ml-auto h-3.5 w-3.5 text-slate-400">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="ml-auto h-3.5 w-3.5 text-[#B18A94]">
                       <path d="M14 5h5v5M10 14 19 5M19 13v6H5V5h6" />
                     </svg>
                   </a>
@@ -555,15 +564,15 @@ export default function FacultyPage() {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.5, delay: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="rounded-2xl border border-slate-200 bg-white px-5 py-5 shadow-[0_2px_14px_rgba(15,23,42,0.06)]"
+              className="rounded-2xl border border-[#E4B5C0] bg-white px-5 py-5 shadow-[0_2px_14px_rgba(128,0,32,0.06)]"
             >
               <h2 className={`${playfair.className} mb-2 text-lg font-semibold text-[#800020]`}>Interested in joining?</h2>
-              <p className="mb-4 text-sm text-[#4B607E] leading-relaxed">
+              <p className="mb-4 text-sm leading-relaxed text-[#6F3141]">
                 We are actively looking for PhD students and postdoctoral researchers in computational materials science.
               </p>
               <a
                 href="#contact"
-                className="inline-flex w-full h-10 items-center justify-center rounded-xl bg-[#0D1733] text-sm font-semibold text-white transition-colors hover:bg-[#172650]"
+                className="inline-flex h-10 w-full items-center justify-center rounded-xl bg-[#800020] text-sm font-semibold text-white transition-colors hover:bg-[#5F0017]"
               >
                 Get in Touch
               </a>

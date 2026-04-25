@@ -78,21 +78,21 @@ export default function ContactSection() {
 
             <div className="mt-7 space-y-6">
               <div className="flex items-start gap-4">
-                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#BF7AB4]/15 text-[#A64195]">
+                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020]">
                   <IconMail />
                 </div>
                 <div>
-                  <p className="text-base font-semibold text-[#A64195]">Email</p>
+                  <p className="text-base font-semibold text-[#800020]">Email</p>
                   <p className="mt-1 text-base text-[#0D0D0D]/75">kvamsi@iiti.ac.in</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#BF7AB4]/15 text-[#A64195]">
+                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020]">
                   <IconMap />
                 </div>
                 <div>
-                  <p className="text-base font-semibold text-[#A64195]">Office Address</p>
+                  <p className="text-base font-semibold text-[#800020]">Office Address</p>
                   <p className="mt-1 text-base leading-relaxed text-[#0D0D0D]/75">
                     FC-504, 4th Floor<br />
                     Learning Resource Centre<br />
@@ -103,11 +103,11 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#BF7AB4]/15 text-[#A64195]">
+                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020]">
                   <IconOffice />
                 </div>
                 <div>
-                  <p className="text-base font-semibold text-[#A64195]">Department Office</p>
+                  <p className="text-base font-semibold text-[#800020]">Department Office</p>
                   <p className="mt-1 text-base leading-relaxed text-[#0D0D0D]/75">
                     Metallurgical Engineering and Materials Science<br />
                     Indian Institute of Technology Indore<br />
@@ -118,7 +118,7 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="mt-8 border-t border-[#BF7AB4]/30 pt-7">
+            <div className="mt-8 border-t border-[#E4B5C0] pt-7">
               <h4 className="text-[1.1rem] font-semibold text-[#800020]">Connect With Us</h4>
               <div className="mt-4 flex items-center gap-3">
                 <motion.a
@@ -126,7 +126,7 @@ export default function ContactSection() {
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   aria-label="LinkedIn"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#BF7AB4]/15 text-[#A64195] transition-colors hover:text-[#964196]"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
                 >
                   <IconLinkedIn />
                 </motion.a>
@@ -135,7 +135,7 @@ export default function ContactSection() {
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   aria-label="Twitter"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#BF7AB4]/15 text-[#A64195] transition-colors hover:text-[#964196]"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
                 >
                   <IconTwitter />
                 </motion.a>
@@ -144,7 +144,7 @@ export default function ContactSection() {
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   aria-label="Scholar"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#BF7AB4]/15 text-[#A64195] transition-colors hover:text-[#964196]"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
                 >
                   <IconScholar />
                 </motion.a>
@@ -156,7 +156,7 @@ export default function ContactSection() {
             <motion.div
               whileHover={{ y: -2 }}
               transition={{ duration: 0.22, ease: "easeOut" }}
-              className="rounded-3xl border border-[#BF7AB4]/30 bg-white overflow-hidden shadow-[0_6px_26px_rgba(166,65,149,0.05)] md:p-0"
+              className="rounded-3xl border border-[#E4B5C0] bg-white overflow-hidden shadow-[0_6px_26px_rgba(128,0,32,0.05)] md:p-0"
             >
               <h3 className="text-[2rem] font-semibold text-[#800020] p-6 md:p-8 pb-2">Location</h3>
               
@@ -180,7 +180,7 @@ export default function ContactSection() {
                   href="/gallery"
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
-                  className="flex items-center justify-between rounded-xl border border-[#A64195]/30 bg-[#BF7AB4]/5 px-4 py-3 text-center font-semibold text-[#800020] transition-all hover:border-[#A64195] hover:bg-[#A64195]/10"
+                  className="flex items-center justify-between rounded-xl border border-[#E4B5C0] bg-[#FFF8FA] px-4 py-3 text-center font-semibold text-[#800020] transition-all hover:border-[#800020] hover:bg-[#F6E4E8]"
                 >
                   <span className="flex-1">Explore Our Gallery</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 ml-2">

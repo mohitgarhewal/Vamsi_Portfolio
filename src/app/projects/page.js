@@ -9,7 +9,7 @@ import { PROJECTS_DATA } from "@/lib/projectsData";
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white text-[#4A0013]">
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
@@ -26,7 +26,7 @@ export default function ProjectsPage() {
         </div>
 
         {/* <p className="mb-6 text-sm text-[#0D0D0D]/70">
-          Showing <span className="font-semibold text-[#A64195]">{PROJECTS_DATA.length}</span> funded projects
+          Showing <span className="font-semibold text-[#800020]">{PROJECTS_DATA.length}</span> funded projects
         </p> */}
 
         <motion.div

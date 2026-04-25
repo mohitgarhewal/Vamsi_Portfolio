@@ -108,7 +108,7 @@ function Icon({ type }) {
 
 export default function PeoplePage() {
   return (
-    <div className="min-h-screen bg-white text-[#0D0D0D] mb-2 pb-2">
+    <div className="min-h-screen bg-white text-[#4A0013] mb-2 pb-2">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <section className="my-4 py-2 ">
@@ -118,23 +118,23 @@ export default function PeoplePage() {
         <section className="mt-8">
           <div className="mb-5 flex items-center justify-between gap-4">
             <div>
-              <h2 className="text-xl font-semibold text-[#1F2937] sm:text-[1.8rem]">Group Leader</h2>
+              <h2 className="text-xl font-semibold text-[#800020] sm:text-[1.8rem]">Group Leader</h2>
               <p className="mt-1 text-sm text-[#0D0D0D]/75">Dr. Vamsi</p>
             </div>
             <Link
               href="/faculty"
-              className="inline-flex items-center rounded-full border border-[#BF7AB4]/40 bg-white px-4 py-2 text-sm font-medium text-[#1F2937] transition-colors hover:border-[#A64195] hover:text-[#A64195]"
+              className="inline-flex items-center rounded-full border border-[#E4B5C0] bg-white px-4 py-2 text-sm font-medium text-[#800020] transition-colors hover:border-[#800020] hover:text-[#5F0017]"
             >
               View full profile
             </Link>
           </div>
 
           <Link href="/faculty" className="group block">
-            <article className="overflow-hidden rounded-2xl border border-[#BF7AB4]/30 bg-white shadow-[0_8px_24px_rgba(15,23,42,0.06)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(15,23,42,0.1)]">
+            <article className="overflow-hidden rounded-2xl border border-[#E4B5C0] bg-white shadow-[0_8px_24px_rgba(128,0,32,0.06)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(128,0,32,0.1)]">
               <div className="grid gap-0 lg:grid-cols-[280px_1fr]">
-                <div className="relative min-h-[260px] bg-slate-100">
+                <div className="relative min-h-[260px] bg-[#F6E4E8]">
                   <Image
-                    src="/photo.png"
+                    src="/vamsi_pfp.jpeg"
                     alt="Dr. K. V. Vamsi"
                     fill
                     sizes="(max-width: 1024px) 100vw, 280px"
@@ -143,10 +143,10 @@ export default function PeoplePage() {
                 </div>
 
                 <div className="p-6 sm:p-8">
-                  <span className="inline-flex rounded-full bg-[#BF7AB4]/15 px-3 py-1 text-xs font-semibold text-[#A64195]">
+                  <span className="inline-flex rounded-full bg-[#F6E4E8] px-3 py-1 text-xs font-semibold text-[#800020]">
                     Principal Investigator
                   </span>
-                  <h3 className="mt-3 text-2xl font-bold tracking-tight text-[#1F2937] sm:text-[2.25rem]">
+                  <h3 className="mt-3 text-2xl font-bold tracking-tight text-[#800020] sm:text-[2.25rem]">
                     Dr. K. V. Vamsi
                   </h3>
                   <p className="mt-2 text-sm font-medium text-[#0D0D0D]/75">
@@ -164,7 +164,7 @@ export default function PeoplePage() {
 
         <section className="mt-10">
           <div className="mb-5">
-            <h2 className="text-2xl font-semibold text-[#1F2937] sm:text-[1.8rem]">Current Team Members</h2>
+            <h2 className="text-2xl font-semibold text-[#800020] sm:text-[1.8rem]">Current Team Members</h2>
             <p className="mt-1 text-sm text-[#0D0D0D]/75">Active students and researchers in the group.</p>
           </div>
 
@@ -172,7 +172,7 @@ export default function PeoplePage() {
             {currentMembers.map((member, index) => (
               <article
                 key={member.name}
-                className="rounded-2xl border border-slate-200 bg-white px-5 py-6 text-center shadow-[0_6px_18px_rgba(15,23,42,0.05)]"
+                className="rounded-2xl border border-[#E4B5C0] bg-white px-5 py-6 text-center shadow-[0_6px_18px_rgba(128,0,32,0.05)]"
               >
                 <Image
                   src={member.image}
@@ -182,7 +182,7 @@ export default function PeoplePage() {
                   className="mx-auto h-24 w-24 rounded-full object-cover"
                   style={{ objectPosition: `${35 + index * 10}% 35%` }}
                 />
-                <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#1F2937]">
+                <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#800020]">
                   {member.name}
                 </h3>
                 <p className="mt-2 text-sm font-medium text-[#0D0D0D]/75">{member.role}</p>
@@ -196,7 +196,7 @@ export default function PeoplePage() {
 
         <section className="mt-10 pb-6">
           <div className="mb-5">
-            <h2 className="text-2xl font-semibold text-[#1F2937] sm:text-[1.8rem]">Alumni</h2>
+            <h2 className="text-2xl font-semibold text-[#800020] sm:text-[1.8rem]">Alumni</h2>
             <p className="mt-1 text-sm text-[#0D0D0D]/75">Former members of the group.</p>
           </div>
 
@@ -204,7 +204,7 @@ export default function PeoplePage() {
             {alumniMembers.map((member, index) => (
               <article
                 key={member.name}
-                className="rounded-2xl border border-slate-200 bg-white px-6 py-7 text-center shadow-[0_6px_18px_rgba(15,23,42,0.05)]"
+                className="rounded-2xl border border-[#E4B5C0] bg-white px-6 py-7 text-center shadow-[0_6px_18px_rgba(128,0,32,0.05)]"
               >
                 <Image
                   src={member.image}
@@ -214,7 +214,7 @@ export default function PeoplePage() {
                   className="mx-auto h-[92px] w-[92px] rounded-full object-cover"
                   style={{ objectPosition: `${35 + index * 10}% 35%` }}
                 />
-                <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#1F2937]">
+                <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#800020]">
                   {member.name}
                 </h3>
                 <p className="mt-2 text-sm font-medium text-[#0D0D0D]/75">{member.role}</p>
@@ -226,11 +226,11 @@ export default function PeoplePage() {
 
         <section className="mt-12 border-t border-slate-200 pt-12">
           <div className="mb-8">
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#A64195]/40 bg-[#A64195]/10 px-5 py-2 text-sm font-semibold text-[#A64195]">
-              <span className="h-2 w-2 rounded-full bg-[#F27405]" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-5 py-2 text-sm font-semibold text-[#800020]">
+              <span className="h-2 w-2 rounded-full bg-[#800020]" />
               Open Roles
             </span>
-            {/* <h2 id="available-positions" className="mt-6 text-2xl font-bold tracking-[-0.02em] text-[#1F2937] sm:text-3xl">Available Positions</h2> */}
+            {/* <h2 id="available-positions" className="mt-6 text-2xl font-bold tracking-[-0.02em] text-[#800020] sm:text-3xl">Available Positions</h2> */}
           </div>
 
           <div className="grid gap-5 md:grid-cols-3">
@@ -245,9 +245,9 @@ export default function PeoplePage() {
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.38, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -3 }}
-                className="rounded-2xl border border-slate-200 bg-white px-6 py-8 text-center shadow-[0_8px_24px_rgba(15,23,42,0.08)] transition-colors hover:border-[#800020]/30 hover:shadow-[0_8px_24px_rgba(128,0,32,0.12)]"
+                className="rounded-2xl border border-[#E4B5C0] bg-white px-6 py-8 text-center shadow-[0_8px_24px_rgba(128,0,32,0.08)] transition-colors hover:border-[#800020]/30 hover:shadow-[0_8px_24px_rgba(128,0,32,0.12)]"
               >
-                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#1F2937]">
+                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#800020]">
                   <Icon type={item.icon} />
                 </div>
                 <h3 className="text-xl font-semibold text-[#800020]">{item.title}</h3>
@@ -261,7 +261,7 @@ export default function PeoplePage() {
               href="/#contact"
               whileHover={{ y: -1 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
-              className="inline-flex h-12 items-center gap-2.5 rounded-full bg-[#A64195] px-8 text-lg font-semibold text-white shadow-[0_6px_24px_rgba(166,65,149,0.3)]"
+              className="inline-flex h-12 items-center gap-2.5 rounded-full bg-[#800020] px-8 text-lg font-semibold text-white shadow-[0_6px_24px_rgba(128,0,32,0.3)]"
             >
               Apply Now
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">

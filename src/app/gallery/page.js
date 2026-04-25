@@ -9,47 +9,47 @@ const galleryImages = [
   {
     id: 1,
     title: "Lab Research",
-    src: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_160c35c9d2da48378c9cf8fbdca1eab4~mv2.jpg.jpeg",
   },
   {
     id: 2,
     title: "Team Collaboration",
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_172401da6fda496888cbe35ad182164d~mv2.jpg.jpeg",
   },
   {
     id: 3,
     title: "Research Facility",
-    src: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_1952824eabaa4768b7f23518c065af59~mv2.jpg.jpeg",
   },
   {
     id: 4,
     title: "Computational Work",
-    src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_2d919bc6ebd6476b967b9223f31fa798~mv2.jpg.jpeg",
   },
   {
     id: 5,
     title: "Materials Testing",
-    src: "https://images.unsplash.com/photo-1576987757859-4f3cd83b0ed4?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_32701bb5973446c39c4e8b0b7614ad71~mv2.jpg.jpeg",
   },
   {
     id: 6,
     title: "Lab Equipment",
-    src: "https://images.unsplash.com/photo-1584308666744-24d5f400f6f1?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_3d268305d30a49e8a670c355b3d88712~mv2.jpg.jpeg",
   },
   {
     id: 7,
     title: "Seminar Discussion",
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_71d5910317d24a8fb2ac242cccf48a85~mv2.jpg.jpeg",
   },
   {
     id: 8,
     title: "Data Analysis",
-    src: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_86eeb0a603974fd181954853c48ba8ef~mv2.jpg.jpeg",
   },
   {
     id: 9,
     title: "Group Meeting",
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop",
+    src: "/gallery/2c19b0_88c1a9506c4a424291e22b5754854fb7~mv2.jpg.jpeg",
   },
 ];
 
@@ -61,9 +61,9 @@ function GalleryCard({ image, index }) {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.4, delay: index * 0.05, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -4, scale: 1.02 }}
-      className="group relative overflow-hidden rounded-2xl bg-slate-100 shadow-[0_4px_16px_rgba(15,23,42,0.08)] transition-all duration-300 hover:shadow-[0_12px_32px_rgba(128,0,32,0.15)]"
+      className="group relative overflow-hidden rounded-2xl bg-[#F6E4E8] shadow-[0_4px_16px_rgba(128,0,32,0.08)] transition-all duration-300 hover:shadow-[0_12px_32px_rgba(128,0,32,0.15)]"
     >
-      <div className="relative h-64 w-full overflow-hidden bg-slate-200">
+      <div className="relative h-64 w-full overflow-hidden bg-[#E4B5C0]">
         <Image
           src={image.src}
           alt={image.title}
@@ -83,7 +83,7 @@ function GalleryCard({ image, index }) {
 
 export default function GalleryPage() {
   return (
-    <div className="min-h-screen bg-white text-[#0D0D0D]">
+    <div className="min-h-screen bg-white text-[#4A0013]">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 py-12 sm:px-6 md:px-8 lg:px-10">
         {/* Header Section */}

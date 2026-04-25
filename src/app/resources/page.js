@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import ResourceCard from "@/components/ResourceCard";
 import Teaching from "@/components/Teaching";
 
-const sectionHeadingClass = "text-xl font-semibold tracking-tight text-[#1F2937] sm:text-2xl";
+const sectionHeadingClass = "text-xl font-semibold tracking-tight text-[#800020] sm:text-2xl";
 const sectionSubtextClass = "mt-1 max-w-3xl text-xs text-[#0D0D0D]/70 sm:text-sm";
 
 const softwareTools = [
@@ -113,14 +113,14 @@ function SectionBlock({ title, subtitle, items }) {
         {items.map((item) => (
           <article
             key={item.title}
-            className="rounded-2xl border border-[#BF7AB4]/25 bg-white p-5 shadow-[0_10px_24px_rgba(15,23,42,0.06)] transition-shadow duration-200 hover:shadow-[0_14px_30px_rgba(15,23,42,0.1)]"
+            className="rounded-2xl border border-[#E4B5C0] bg-white p-5 shadow-[0_10px_24px_rgba(128,0,32,0.06)] transition-shadow duration-200 hover:shadow-[0_14px_30px_rgba(128,0,32,0.1)]"
           >
             <div className="flex items-start justify-between gap-4">
               <div>
-                <div className="inline-flex rounded-full bg-[#BF7AB4]/15 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#A64195]">
+                <div className="inline-flex rounded-full bg-[#F6E4E8] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#800020]">
                   Software
                 </div>
-                <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#1F2937]">
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#800020]">
                   {item.title}
                 </h3>
               </div>
@@ -135,7 +135,7 @@ function SectionBlock({ title, subtitle, items }) {
                     href={linkItem.href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex items-center gap-2 rounded-full border border-[#BF7AB4]/25 bg-white px-3.5 py-2 text-sm font-medium text-[#1F2937] transition-colors hover:border-[#A64195] hover:bg-[#A64195] hover:text-white"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#E4B5C0] bg-white px-3.5 py-2 text-sm font-medium text-[#800020] transition-colors hover:border-[#800020] hover:bg-[#800020] hover:text-white"
                   >
                     <span>{linkItem.label}</span>
                     <svg
@@ -185,12 +185,12 @@ function TemplateSection({ title, subtitle, items }) {
 
 export default function ResourcesPage() {
   return (
-    <div className="min-h-screen bg-white text-[#0D0D0D]">
+    <div className="min-h-screen bg-white text-[#4A0013]">
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
         {/* <nav className="mb-8 flex items-center gap-2 text-sm text-[#0D0D0D]/60">
-          <Link href="/" className="transition-colors hover:text-[#A64195]">
+            <Link href="/" className="transition-colors hover:text-[#800020]">
             Home
           </Link>
           <span>/</span>

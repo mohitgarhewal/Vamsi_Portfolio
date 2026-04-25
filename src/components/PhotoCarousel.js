@@ -34,16 +34,16 @@ export default function PhotoCarousel() {
   }, []);
 
   return (
-    <section className="py-14 sm:py-16 lg:py-20" aria-label="News and events gallery">
+    <section className="py-14 sm:py-16 lg:py-20" aria-label="News gallery">
       <div className="mx-auto max-w-[1180px]">
         <div className="mb-7 text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">News and Events</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">News</h2>
           <p className="mt-3 text-sm text-[#0D0D0D]/75 sm:text-base">
             Gallery updates from group activities, milestones, and announcements.
           </p>
         </div>
 
-        <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-[0_14px_40px_rgba(15,23,42,0.12)]">
+        <div className="relative overflow-hidden rounded-2xl border border-[#E4B5C0] bg-white shadow-[0_14px_40px_rgba(128,0,32,0.12)]">
           <div className="relative h-[280px] sm:h-[360px] md:h-[420px]">
             <AnimatePresence mode="wait">
               <motion.div
@@ -79,7 +79,7 @@ export default function PhotoCarousel() {
                 aria-label={`Show slide ${index + 1}`}
                 onClick={() => setActive(index)}
                 className={`h-2.5 w-2.5 rounded-full transition-all ${
-                  active === index ? "bg-[#1F2937]" : "bg-slate-400"
+                  active === index ? "bg-[#800020]" : "bg-[#D6A0AE]"
                 }`}
               />
             ))}

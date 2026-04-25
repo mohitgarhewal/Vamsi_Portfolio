@@ -107,7 +107,7 @@ export default function Research() {
           {researchItems.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-2xl border border-[#BF7AB4]/30 bg-white shadow-[0_2px_14px_rgba(166,65,149,0.06)]"
+              className="overflow-hidden rounded-2xl border border-[#E4B5C0] bg-white shadow-[0_2px_14px_rgba(128,0,32,0.06)]"
             >
               <div className="grid gap-0 sm:grid-cols-[280px_1fr] lg:grid-cols-[320px_1fr]">
                 <div className="relative h-[220px] sm:h-[260px]">
@@ -120,7 +120,7 @@ export default function Research() {
                 </div>
 
                 <div className="px-6 py-7 sm:px-8 sm:py-8">
-                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#BF7AB4]/15 text-[#A64195]">
+                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#F6E4E8] text-[#800020]">
                     <Icon type={item.icon} />
                   </div>
 
@@ -141,7 +141,7 @@ export default function Research() {
                   >
                     {item.bullets.map((point) => (
                       <li key={point} className="flex gap-2.5">
-                        <span className="text-[#6F87A8]">•</span>
+                        <span className="text-[#800020]">•</span>
                         <span>{point}</span>
                       </li>
                     ))}
