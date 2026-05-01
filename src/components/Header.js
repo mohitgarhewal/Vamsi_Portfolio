@@ -184,15 +184,15 @@ export default function Header() {
         {/* ── Hamburger ── */}
         <button
           type="button"
-          className="inline-flex h-10 w-10 items-center justify-center rounded-md text-[#800020] transition-colors hover:bg-[#F5E3E7] lg:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-md text-[#0f172b] transition-colors hover:bg-[#f1f5f9] lg:hidden"
           aria-label="Toggle navigation"
           aria-expanded={isMobileMenuOpen}
           onClick={() => setIsMobileMenuOpen((p) => !p)}
         >
           <span className="relative block h-[14px] w-[18px]">
-            <span className={`absolute left-0 top-0 block h-[2px] w-full bg-[#800020] transition-all duration-300 ${isMobileMenuOpen ? "translate-y-[6px] rotate-45" : ""}`} />
-            <span className={`absolute left-0 top-[6px] block h-[2px] w-full bg-[#800020] transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`} />
-            <span className={`absolute left-0 top-[12px] block h-[2px] w-full bg-[#800020] transition-all duration-300 ${isMobileMenuOpen ? "-translate-y-[6px] -rotate-45" : ""}`} />
+            <span className={`absolute left-0 top-0 block h-[2px] w-full bg-[#0f172b] transition-all duration-300 ${isMobileMenuOpen ? "translate-y-[6px] rotate-45" : ""}`} />
+            <span className={`absolute left-0 top-[6px] block h-[2px] w-full bg-[#0f172b] transition-all duration-300 ${isMobileMenuOpen ? "opacity-0" : "opacity-100"}`} />
+            <span className={`absolute left-0 top-[12px] block h-[2px] w-full bg-[#0f172b] transition-all duration-300 ${isMobileMenuOpen ? "-translate-y-[6px] -rotate-45" : ""}`} />
           </span>
         </button>
       </div>
@@ -200,14 +200,15 @@ export default function Header() {
       {/* ── Mobile Drawer ── */}
       <AnimatePresence>
         {isMobileMenuOpen && (
-          <motion.nav
-            aria-label="Mobile navigation"
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.22, ease: [0.2, 0.65, 0.3, 0.9] }}
-            className="border-t border-[#0f172b]/20 bg-white/95 px-6 pb-6 pt-4 backdrop-blur-[50px] lg:hidden"
-          >
+          <>
+            <motion.nav
+              aria-label="Mobile navigation"
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.22, ease: [0.2, 0.65, 0.3, 0.9] }}
+              className="relative z-40 border-t border-[#cbd5e1]/20 bg-[#f1f5f9] px-6 pb-6 pt-4 lg:hidden"
+            >
             <ul className="flex flex-col gap-4">
               {NAV_ITEMS.map((item) => (
                 <li key={item.label}>
@@ -217,8 +218,8 @@ export default function Header() {
                         onClick={() => setIsContributionsOpen(!isContributionsOpen)}
                         className={`flex w-full items-center text-sm font-medium tracking-[0.01em] transition-colors ${
                           isActive(item.href)
-                            ? "text-[#800020]"
-                            : "text-black hover:text-[#800020]"
+                            ? "text-[#0f172b]"
+                            : "text-black hover:text-[#0f172b]"
                         }`}
                       >
                         {item.label}
@@ -236,7 +237,7 @@ export default function Header() {
                               <li key={subItem.label}>
                                 <Link
                                   href={subItem.href}
-                                  className="block text-sm font-medium text-black transition-colors hover:text-[#800020]"
+                                  className="block text-sm font-medium text-black transition-colors hover:text-[#0f172b]"
                                   onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                   {subItem.label}
@@ -254,8 +255,8 @@ export default function Header() {
                           href={item.href}
                           className={`block text-sm font-medium tracking-[0.01em] transition-colors ${
                             isActive(item.href)
-                              ? "text-[#800020]"
-                              : "text-black hover:text-[#800020]"
+                              ? "text-[#0f172b]"
+                              : "text-black hover:text-[#0f172b]"
                           }`}
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
@@ -266,21 +267,29 @@ export default function Header() {
                           href={item.href}
                           className={`block text-sm font-medium tracking-[0.01em] transition-colors ${
                             isActive(item.href)
-                              ? "text-[#800020]"
-                              : "text-black hover:text-[#800020]"
+                              ? "text-[#0f172b]"
+                              : "text-black hover:text-[#0f172b]"
                           }`}
                           onClick={() => setIsMobileMenuOpen(false)}
                         >
                           {item.label}
                         </Link>
                       )}
-                      <motion.div className={`fixed inset-0 z-40 bg-[#800020]/10 lg:hidden ${isMobileMenuOpen ? "block" : "hidden"}`} />
                     </>
                   )}
                 </li>
               ))}
             </ul>
           </motion.nav>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.22 }}
+              className="fixed inset-0 z-30 bg-black/20 lg:hidden"
+              onClick={() => setIsMobileMenuOpen(false)}
+            />
+          </>
         )}
       </AnimatePresence>
     </motion.header>

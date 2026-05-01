@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const columnMotion = {
@@ -57,6 +58,16 @@ function IconTwitter() {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" className="h-4 w-4" aria-hidden="true">
       <path d="M22 5.8a8.8 8.8 0 0 1-2.5.7 4.2 4.2 0 0 0 1.8-2.4c-.9.6-2 .9-3 .1a4.3 4.3 0 0 0-7.4 4A12.1 12.1 0 0 1 3 4.9a4.3 4.3 0 0 0 1.3 5.8 4.2 4.2 0 0 1-1.9-.5v.1a4.3 4.3 0 0 0 3.4 4.2c-.4.1-.8.1-1.2 0a4.3 4.3 0 0 0 4 3 8.6 8.6 0 0 1-5.3 1.8c-.3 0-.7 0-1-.1A12.2 12.2 0 0 0 9 21c8 0 12.5-6.8 12.2-12.8A8.8 8.8 0 0 0 22 5.8Z" />
+    </svg>
+  );
+}
+
+function IconGoogleScholar() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4" aria-hidden="true">
+      <path d="M12 4 3 9l9 5 9-5-9-5Z" />
+      <path d="M6 11v4.2c0 1.9 2.7 3.8 6 3.8s6-1.9 6-3.8V11" />
+      <path d="M12 14V9" />
     </svg>
   );
 }
@@ -120,9 +131,11 @@ export default function ContactSection() {
 
             <div className="mt-8 border-t border-[#d2d3d8] pt-7">
               <h4 className="text-[1.1rem] font-semibold text-[#0f172b]">Connect With Us</h4>
-              <div className="mt-4 flex items-center gap-3">
+              <div className="mt-4 flex flex-wrap items-center gap-3">
                 <motion.a
-                  href="#contact"
+                  href="https://www.linkedin.com/in/kvvamsi/"
+                  target="_blank"
+                  rel="noreferrer noopener"
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   aria-label="LinkedIn"
@@ -131,7 +144,9 @@ export default function ContactSection() {
                   <IconLinkedIn />
                 </motion.a>
                 <motion.a
-                  href="#contact"
+                  href="https://x.com/kvvamsi"
+                  target="_blank"
+                  rel="noreferrer noopener"
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   aria-label="Twitter"
@@ -140,18 +155,37 @@ export default function ContactSection() {
                   <IconTwitter />
                 </motion.a>
                 <motion.a
-                  href="#publications"
+                  href="https://www.researchgate.net/profile/K-V-Vamsi"
+                  target="_blank"
+                  rel="noreferrer noopener"
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
-                  aria-label="Scholar"
+                  aria-label="ResearchGate"
+                  className="group inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#f1f5f9] text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
+                >
+                  <Image
+                    src="/Researchgate--Streamline-Simple-Icons.svg"
+                    alt=""
+                    width={16}
+                    height={16}
+                    aria-hidden="true"
+                    className="h-4 w-4 brightness-0 group-hover:invert"
+                  />
+                </motion.a>
+                <motion.a
+                  href="https://scholar.google.co.in/citations?user=ducGUjAAAAAJ&hl=en"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  whileHover={{ y: -1 }}
+                  transition={{ duration: 0.2, ease: "easeOut" }}
+                  aria-label="Google Scholar"
                   className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#f1f5f9] text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
                 >
-                  <IconScholar />
+                  <IconGoogleScholar />
                 </motion.a>
               </div>
             </div>
             
-{/* </div> */}
           </motion.div>
 
           <motion.div {...columnMotion} transition={{ ...columnMotion.transition, delay: 0.08 }}>
@@ -159,7 +193,7 @@ export default function ContactSection() {
               className="rounded-3xl  bg-[#f1f5f9] overflow-hidden  md:p-0"
             >
               <h3 className="text-[1.95rem] font-semibold   ml-2 pl-4 pb-4">Location</h3>
-              
+
               {/* Map */}
               <div className="w-full h-80">
                 <iframe
@@ -169,6 +203,7 @@ export default function ContactSection() {
                   loading="lazy"
                   allowFullScreen=""
                   referrerPolicy="no-referrer-when-downgrade"
+                  allow="unload"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.454568700153!2d75.92313709999999!3d22.524638500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962efcccbce7145%3A0x784e8cb69818596b!2sIndian%20Institute%20of%20Technology%20Indore!5e0!3m2!1sen!2sin!4v1777623614680!5m2!1sen!2sin"
                   title="IIT Indore Location"
                 />
