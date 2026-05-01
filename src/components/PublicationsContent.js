@@ -117,7 +117,7 @@ export default function PublicationsContent() {
     >
       <div className="mx-auto w-full max-w-[1160px]">
         <div>
-          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#800020] md:text-5xl">
+          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#0f172b] md:text-5xl">
             {activeTab === "publications" && "Publications"}
             {activeTab === "proceedings" && "Conference Proceedings"}
             {activeTab === "talks" && "Talks"}
@@ -146,7 +146,7 @@ export default function PublicationsContent() {
               >
                 <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                   <div className="min-w-0 flex-1">
-                    <h3 className="text-[1.1rem] font-semibold leading-snug text-[#800020] md:text-[1.25rem]">
+                    <h3 className="text-[1.1rem] font-semibold leading-snug text-[#0f172b] md:text-[1.25rem]">
                       {item.title}
                     </h3>
                     <p className="mt-2 text-sm text-black md:text-[0.95rem]">{item.authors}</p>
@@ -154,7 +154,7 @@ export default function PublicationsContent() {
                       href={item.scholarUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-3 inline-flex items-center gap-1.5 text-[0.79rem] font-medium text-[#800020] transition-colors hover:text-[#5F0017]"
+                      className="mt-3 inline-flex items-center gap-1.5 text-[0.79rem] font-medium text-[#0f172b] transition-colors hover:text-[#1e293b]"
                     >
                       <ExternalLinkIcon />
                       <span>DOI: {item.doi}</span>
@@ -166,7 +166,7 @@ export default function PublicationsContent() {
                     rel="noopener noreferrer"
                     whileHover={{ y: -1 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
-                    className="inline-flex h-10 items-center justify-center rounded-xl bg-[#800020] px-6 text-sm font-semibold text-white transition-colors hover:bg-[#5F0017] md:min-w-[120px]"
+                    className="inline-flex h-10 items-center justify-center rounded-xl bg-[#0f172b] px-6 text-sm font-semibold text-white transition-colors hover:bg-[#1e293b] md:min-w-[120px]"
                   >
                     View Paper
                   </motion.a>
@@ -180,7 +180,7 @@ export default function PublicationsContent() {
                   href="https://scholar.google.com/citations?user=ducGUjAAAAAJ&hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-[#0f172b] px-6 py-3 text-base font-semibold text-[#800020] transition-colors hover:bg-[#0f172b] hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-lg border border-[#0f172b] px-6 py-3 text-base font-semibold text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
                 >
                   View All Publications
                   <ExternalLinkIcon />
@@ -195,7 +195,7 @@ export default function PublicationsContent() {
                 rel="noopener noreferrer"
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.2, ease: "easeOut" }}
-                className="inline-flex items-center gap-2 rounded-full bg-[#800020] px-8 py-3 text-base font-semibold text-white shadow-[0_4px_12px_rgba(15,23,43,0.2)] transition-all hover:bg-[#5F0017] hover:shadow-[0_8px_20px_rgba(15,23,43,0.3)]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#0f172b] px-8 py-3 text-base font-semibold text-white shadow-[0_4px_12px_rgba(15,23,43,0.2)] transition-all hover:bg-[#1e293b] hover:shadow-[0_8px_20px_rgba(15,23,43,0.3)]"
               >
                 <svg
                   viewBox="0 0 24 24"
@@ -223,7 +223,7 @@ export default function PublicationsContent() {
                 href="https://scholar.google.com/citations?user=ducGUjAAAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#800020] hover:text-[#5F0017] underline"
+                className="text-[#0f172b] hover:text-[#1e293b] underline"
               >
                 View full list on Google Scholar
               </a>

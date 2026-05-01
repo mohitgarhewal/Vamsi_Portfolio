@@ -92,7 +92,7 @@ export default function Research() {
       <div className="mx-auto max-w-[1280px]">
         <div className="ml-2 sm:ml-4 lg:ml-6">
           <h2
-            className="text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#800020] sm:text-[2.9rem]"
+            className="text-[2.25rem] font-bold leading-none tracking-[-0.01em] text-[#0f172b] sm:text-[2.9rem]"
           >
             Research
           </h2>
@@ -125,7 +125,7 @@ export default function Research() {
                   </div>
 
                   <h3
-                    className="text-[1.65rem] font-semibold leading-[1.2] text-[#800020] sm:text-[2rem]"
+                    className="text-[1.65rem] font-semibold leading-[1.2] text-[#0f172b] sm:text[2rem]"
                   >
                     {item.title}
                   </h3>
@@ -141,7 +141,7 @@ export default function Research() {
                   >
                     {item.bullets.map((point) => (
                       <li key={point} className="flex gap-2.5">
-                        <span className="text-[#800020]">•</span>
+                        <span className="text-[#0f172b]">•</span>
                         <span>{point}</span>
                       </li>
                     ))}

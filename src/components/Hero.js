@@ -7,19 +7,19 @@ import Link from "next/link";
 const gallerySlides = [
   {
     src: "/gallery/2c19b0_160c35c9d2da48378c9cf8fbdca1eab4~mv2.jpg.jpeg",
-    title: "Research Group",
+    //title: "Research Group",
   },
   {
     src: "/gallery/2c19b0_172401da6fda496888cbe35ad182164d~mv2.jpg.jpeg",
-    title: "Lab Activities",
+    //title: "Lab Activities",
   },
   {
     src: "/gallery/2c19b0_1952824eabaa4768b7f23518c065af59~mv2.jpg.jpeg",
-    title: "Team Collaboration",
+    //title: "Team Collaboration",
   },
   {
     src: "/gallery/2c19b0_2d919bc6ebd6476b967b9223f31fa798~mv2.jpg.jpeg",
-    title: "Computational Materials Research",
+    //title: "Computational Materials Research",
   },
 ];
 
@@ -76,7 +76,7 @@ export default function Hero() {
               <Image
                 key={slide.src}
                 src={slide.src}
-                alt={slide.title}
+               // alt={slide.title}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 60vw, 700px"
                 className={`absolute inset-0 object-cover transition-opacity duration-500 ${

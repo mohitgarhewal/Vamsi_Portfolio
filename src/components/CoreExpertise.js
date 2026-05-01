@@ -99,7 +99,7 @@ export default function CoreExpertise() {
       <div className="mx-auto max-w-[1280px]">
         <div className="text-center">
           <h2
-            className="text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#800020] sm:text-[3rem]"
+            className="text-[2.2rem] font-bold leading-none tracking-[-0.01em] text-[#0f172b] sm:text-[3rem]"
           >
             Core Expertise
           </h2>

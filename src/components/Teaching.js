@@ -17,10 +17,10 @@ const autumnCourses = [
     description:
       "Introduces numerical methods and computational techniques applied to materials science problems. Topics include finite difference methods, molecular dynamics fundamentals, Monte Carlo simulations, and data analysis using Python/MATLAB.",
     topics: ["Numerical Methods", "Molecular Dynamics", "Monte Carlo", "Python / MATLAB"],
-    color: "from-[#800020] to-[#B24A67]",
-    bg: "bg-[#F5ECEF]",
-    accent: "text-[#800020]",
-    chip: "bg-[#E8D5E0] text-[#800020]",
+    color: "from-[#0f172b] to-[#475569]",
+    bg: "bg-[#f1f5f9]",
+    accent: "text-[#0f172b]",
+    chip: "bg-[#e0e7ff] text-[#0f172b]",
   },
 ];
 
@@ -34,10 +34,10 @@ const springCourses = [
     description:
       "Covers mechanisms governing plastic deformation at elevated temperatures in metals and alloys. Focuses on creep, dislocation dynamics, planar fault energies, and deformation pathways in superalloys and intermetallics.",
     topics: ["Creep Mechanisms", "Dislocation Dynamics", "Planar Fault Energies", "Superalloys"],
-    color: "from-[#800020] to-[#B24A67]",
-    bg: "bg-[#F5ECEF]",
-    accent: "text-[#800020]",
-    chip: "bg-[#E8D5E0] text-[#800020]",
+    color: "from-[#0f172b] to-[#475569]",
+    bg: "bg-[#f1f5f9]",
+    accent: "text-[#0f172b]",
+    chip: "bg-[#e0e7ff] text-[#0f172b]",
   },
   {
     code: "MM 644",
@@ -48,10 +48,10 @@ const springCourses = [
     description:
       "Explores the ICME paradigm for accelerated alloy design. Integrates DFT, CALPHAD thermodynamics, phase-field modelling, and data-driven methods to link processing–structure–property–performance relationships.",
     topics: ["DFT", "CALPHAD", "Phase-field Modelling", "Materials Informatics"],
-    color: "from-[#800020] to-[#600015]",
-    bg: "bg-[#F5ECEF]",
-    accent: "text-[#800020]",
-    chip: "bg-[#E8D5E0] text-[#800020]",
+    color: "from-[#0f172b] to-[#475569]",
+    bg: "bg-[#f1f5f9]",
+    accent: "text-[#0f172b]",
+    chip: "bg-[#e0e7ff] text-[#0f172b]",
   },
 ];
 
@@ -74,9 +74,9 @@ const prevTeaching = [
 
 function LevelBadge({ level }) {
   const map = {
-    UG: "bg-[#E8D5E0] text-[#800020] border-[#C4A5B8]",
-    PG: "bg-[#E8D5E0] text-[#800020] border-[#C4A5B8]",
-    "UG / PG": "bg-[#E8D5E0] text-[#800020] border-[#C4A5B8]",
+    UG: "bg-[#e0e7ff] text-[#0f172b] border-[#bfdbfe]",
+    PG: "bg-[#e0e7ff] text-[#0f172b] border-[#bfdbfe]",
+    "UG / PG": "bg-[#e0e7ff] text-[#0f172b] border-[#bfdbfe]",
   };
   return (
     <span className={`inline-flex rounded-full border px-2.5 py-0.5 text-[11px] font-semibold ${map[level] || map["UG / PG"]}`}>
@@ -118,7 +118,7 @@ function CourseCard({ course, index }) {
         </p>
 
         {/* Title */}
-        <h3 className={`${playfair.className} mt-1 text-[1.22rem] font-semibold leading-snug text-[#800020] sm:text-[1.3rem]`}>
+        <h3 className={`${playfair.className} mt-1 text-[1.22rem] font-semibold leading-snug text-[#0f172b] sm:text-[1.3rem]`}>
           {course.title}
         </h3>
 
@@ -161,7 +161,7 @@ export default function Teaching() {
 
         {/* ── Semester Toggle ── */}
         <div className="mt-10 flex justify-center">
-            <div className="relative flex rounded-2xl border border-[#E4B5C0] bg-[#F6E4E8] p-1.5 shadow-inner">
+            <div className="relative flex rounded-2xl border border-[#cbd5e1] bg-[#f1f5f9] p-1.5 shadow-inner">
             {/* Sliding pill */}
             <motion.div
               className="absolute inset-y-1.5 rounded-xl bg-white shadow-[0_2px_8px_rgba(128,0,32,0.12)]"
@@ -182,7 +182,7 @@ export default function Teaching() {
                     <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
                   </svg>
                 ),
-                activeColor: "text-[#800020]",
+                activeColor: "text-[#0f172b]",
                 count: autumnCourses.length,
               },
               {
@@ -194,7 +194,7 @@ export default function Teaching() {
                     <path d="M12 22V12M12 12C12 7 7 4 2 6M12 12C12 7 17 4 22 6M12 12C9 10 6 11 4 14M12 12C15 10 18 11 20 14" />
                   </svg>
                 ),
-                activeColor: "text-[#800020]",
+                activeColor: "text-[#0f172b]",
                 count: springCourses.length,
               },
             ].map((tab) => (
@@ -202,15 +202,15 @@ export default function Teaching() {
                 key={tab.id}
                 onClick={() => setActive(tab.id)}
                 className={`relative z-10 flex min-w-[160px] items-center justify-center gap-2.5 rounded-xl px-5 py-3 text-sm font-semibold transition-colors duration-200 sm:min-w-[200px] ${
-                  active === tab.id ? tab.activeColor : "text-[#800020] hover:text-[#5F0017]"
+                  active === tab.id ? tab.activeColor : "text-[#0f172b] hover:text-[#1e293b]"
                 }`}
               >
-                <span className={active === tab.id ? tab.activeColor : "text-[#800020]"}>
+                <span className={active === tab.id ? tab.activeColor : "text-[#0f172b]"}>
                   {tab.icon}
                 </span>
                 <span className="flex flex-col items-start leading-none">
                   <span className="text-[13px]">{tab.label}</span>
-                  <span className={`mt-0.5 text-[10px] font-normal ${active === tab.id ? "opacity-70" : "text-[#800020]/60"}`}>
+                  <span className={`mt-0.5 text-[10px] font-normal ${active === tab.id ? "opacity-70" : "text-[#0f172b]/60"}`}>
                     {tab.sub} · {tab.count} {tab.count === 1 ? "course" : "courses"}
                   </span>
                 </span>
@@ -243,17 +243,17 @@ export default function Teaching() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-10 rounded-2xl border border-[#E4B5C0] bg-[#FFF8FA] px-6 py-6 sm:px-8"
+          className="mt-10 rounded-2xl border border-[#cbd5e1] bg-[#f1f5f9] px-6 py-6 sm:px-8"
         >
           <div className="flex items-center gap-3 mb-5">
-            <div className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#E8D5E0] text-[#800020]">
+            <div className="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-[#e0e7ff] text-[#0f172b]">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.9" className="h-4 w-4">
                 <path d="m3 10 9-5 9 5-9 5-9-5Z"/>
                 <path d="M7 12v4c0 1.1 2.2 2 5 2s5-.9 5-2v-4"/>
               </svg>
             </div>
             <div>
-              <h3 className={`${playfair.className} text-lg font-semibold text-[#800020]`}>
+              <h3 className={`${playfair.className} text-lg font-semibold text-[#0f172b]`}>
                 Previous Teaching Experience
               </h3>
               <p className={`${inter.className} text-xs text-black`}>@ Indian Institute of Science, Bangalore</p>

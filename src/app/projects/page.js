@@ -9,7 +9,7 @@ import { PROJECTS_DATA } from "@/lib/projectsData";
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-[#f8fafc] text-black">
       <Header />
 
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
@@ -20,7 +20,7 @@ export default function ProjectsPage() {
         </nav> */}
 
         <div className="my-4 py-2 ">
-          <h1 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-[#0f172b] sm:text-4xl">
             Research Projects
           </h1>
         </div>

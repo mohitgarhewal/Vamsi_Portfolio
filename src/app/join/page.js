@@ -58,11 +58,11 @@ function Icon({ type }) {
 
 export default function JoinPage() {
   return (
-    <div className="min-h-screen bg-white text-black">
+    <div className="min-h-screen bg-[#f8fafc] text-black">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <section className="relative left-1/2 w-screen -translate-x-1/2 py-14 sm:py-16 lg:py-20">
-          <div className="relative overflow-hidden bg-white py-14 sm:py-16 lg:py-20">
+          <div className="relative overflow-hidden bg-[#f8fafc] py-14 sm:py-16 lg:py-20">
             <Image
               src="/hero-placeholder.svg"
               alt="Laboratory background"
@@ -71,12 +71,12 @@ export default function JoinPage() {
               className="object-cover opacity-8"
             />
 
-            <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px]" />
+            <div className="absolute inset-0 bg-[#f8fafc]/80 backdrop-blur-[2px]" />
 
             <div className="relative mx-auto max-w-[1180px] px-6 md:px-10 lg:px-16">
               <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
-                <span className="inline-flex items-center gap-2 rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-5 py-2 text-sm font-semibold text-[#800020]">
-                  <span className="h-2 w-2 rounded-full bg-[#800020]" />
+                <span className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-[#f1f5f9] px-5 py-2 text-sm font-semibold text-[#0f172b]">
+                  <span className="h-2 w-2 rounded-full bg-[#0f172b]" />
                   Open Roles
                 </span>
               </div>
@@ -90,12 +90,12 @@ export default function JoinPage() {
                     viewport={{ once: true, amount: 0.25 }}
                     transition={{ duration: 0.38, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                     whileHover={{ y: -3 }}
-                    className="rounded-2xl border border-[#E4B5C0] bg-white px-5 py-6 text-center shadow-[0_8px_24px_rgba(128,0,32,0.08)] backdrop-blur-md"
+                    className="rounded-2xl border border-[#cbd5e1] bg-white px-5 py-6 text-center shadow-[0_8px_24px_rgba(15,23,43,0.08)] backdrop-blur-md"
                   >
-                    <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#800020]">
+                    <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#0f172b]">
                       <Icon type={item.icon} />
                     </div>
-                    <h3 className="text-xl font-semibold text-[#800020]">{item.title}</h3>
+                    <h3 className="text-xl font-semibold text-[#0f172b]">{item.title}</h3>
                     <p className="mt-2.5 text-sm leading-relaxed text-black">{item.description}</p>
                   </motion.article>
                 ))}
@@ -106,7 +106,7 @@ export default function JoinPage() {
                   href="/#contact"
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
-                  className="inline-flex h-12 items-center gap-2.5 rounded-full bg-[#800020] px-8 text-lg font-semibold text-white shadow-[0_6px_24px_rgba(128,0,32,0.3)]"
+                  className="inline-flex h-12 items-center gap-2.5 rounded-full bg-[#0f172b] px-8 text-lg font-semibold text-white shadow-[0_6px_24px_rgba(15,23,43,0.3)]"
                 >
                   Apply Now
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5">

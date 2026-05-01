@@ -108,31 +108,31 @@ function Icon({ type }) {
 
 export default function PeoplePage() {
   return (
-    <div className="min-h-screen bg-white text-black mb-2 pb-2">
+    <div className="min-h-screen bg-[#f8fafc] text-black mb-2 pb-2">
       <Header />
       <main className="mx-auto w-full max-w-[1240px] px-4 pt-8 sm:px-6 md:px-8 lg:px-10">
         <section className="my-4 py-2 ">
-          <h1 className="text-5xl font-bold tracking-tight text-[#800020] sm:text-4xl">People</h1>
+          <h1 className="text-5xl font-bold tracking-tight text-[#0f172b] sm:text-4xl">People</h1>
         </section>
 
         <section className="mt-8">
           <div className="mb-5 flex items-center justify-between gap-4">
             <div>
-              <h2 className="text-xl font-semibold text-[#800020] sm:text-[1.8rem]">Group Leader</h2>
+              <h2 className="text-xl font-semibold text-[#0f172b] sm:text-[1.8rem]">Group Leader</h2>
               <p className="mt-1 text-sm text-black">Dr. Vamsi</p>
             </div>
             <Link
               href="/faculty"
-              className="inline-flex items-center rounded-full border border-[#E4B5C0] bg-white px-4 py-2 text-sm font-medium text-[#800020] transition-colors hover:border-[#800020] hover:text-[#5F0017]"
+              className="inline-flex items-center rounded-full border border-[#0f172b] bg-white px-4 py-2 text-sm font-medium text-[#0f172b] transition-colors hover:border-[#0f172b] hover:bg-[#0f172b] hover:text-white"
             >
               View full profile
             </Link>
           </div>
 
           <Link href="/faculty" className="group block">
-            <article className="overflow-hidden rounded-2xl border border-[#E4B5C0] bg-white shadow-[0_8px_24px_rgba(128,0,32,0.06)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(128,0,32,0.1)]">
+            <article className="overflow-hidden rounded-2xl bg-white shadow-[0_8px_24px_rgba(15,23,43,0.08)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(15,23,43,0.12)]">
               <div className="grid gap-0 lg:grid-cols-[280px_1fr]">
-                <div className="relative min-h-[260px] bg-[#F6E4E8]">
+                <div className="relative min-h-[260px] bg-[#f1f5f9]">
                   <Image
                     src="/vamsi_pfp.jpeg"
                     alt="Dr. K. V. Vamsi"
@@ -143,10 +143,10 @@ export default function PeoplePage() {
                 </div>
 
                 <div className="p-6 sm:p-8">
-                  <span className="inline-flex rounded-full bg-[#F6E4E8] px-3 py-1 text-xs font-semibold text-[#800020]">
+                  <span className="inline-flex rounded-full bg-[#f1f5f9] px-3 py-1 text-xs font-semibold text-[#0f172b]">
                     Principal Investigator
                   </span>
-                  <h3 className="mt-3 text-2xl font-bold tracking-tight text-[#800020] sm:text-[2.25rem]">
+                  <h3 className="mt-3 text-2xl font-bold tracking-tight text-[#0f172b] sm:text-[2.25rem]">
                     Dr. K. V. Vamsi
                   </h3>
                   <p className="mt-2 text-sm font-medium text-black">
@@ -164,7 +164,7 @@ export default function PeoplePage() {
 
         <section className="mt-10">
           <div className="mb-5">
-            <h2 className="text-2xl font-semibold text-[#800020] sm:text-[1.8rem]">Current Team Members</h2>
+            <h2 className="text-2xl font-semibold text-[#0f172b] sm:text-[1.8rem]">Current Team Members</h2>
             <p className="mt-1 text-sm text-black">Active students and researchers in the group.</p>
           </div>
 
@@ -172,17 +172,17 @@ export default function PeoplePage() {
             {currentMembers.map((member, index) => (
               <article
                 key={member.name}
-                className="rounded-2xl border border-[#E4B5C0] bg-white px-5 py-6 text-center shadow-[0_6px_18px_rgba(128,0,32,0.05)]"
+                className="rounded-2xl bg-white px-5 py-6 text-center shadow-[0_6px_18px_rgba(15,23,43,0.05)]"
               >
                 <Image
                   src={member.image}
                   alt={member.name}
                   width={96}
                   height={96}
-                  className="mx-auto h-24 w-24 rounded-full object-cover"
+                  className="mx-auto h-[92px] w-[92px] rounded-full object-cover"
                   style={{ objectPosition: `${35 + index * 10}% 35%` }}
                 />
-                <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#800020]">
+                <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#0f172b]">
                   {member.name}
                 </h3>
                 <p className="mt-2 text-sm font-medium text-black">{member.role}</p>
@@ -196,25 +196,25 @@ export default function PeoplePage() {
 
         <section className="mt-10 pb-6">
           <div className="mb-5">
-            <h2 className="text-2xl font-semibold text-[#800020] sm:text-[1.8rem]">Alumni</h2>
+            <h2 className="text-2xl font-semibold text-[#0f172b] sm:text-[1.8rem]">Alumni</h2>
             <p className="mt-1 text-sm text-black">Former members of the group.</p>
           </div>
 
-          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {alumniMembers.map((member, index) => (
               <article
                 key={member.name}
-                className="rounded-2xl border border-[#E4B5C0] bg-white px-6 py-7 text-center shadow-[0_6px_18px_rgba(128,0,32,0.05)]"
+                className="rounded-2xl bg-white px-5 py-6 text-center shadow-[0_6px_18px_rgba(15,23,43,0.05)]"
               >
                 <Image
                   src={member.image}
                   alt={member.name}
-                  width={92}
-                  height={92}
+                  width={96}
+                  height={96}
                   className="mx-auto h-[92px] w-[92px] rounded-full object-cover"
                   style={{ objectPosition: `${35 + index * 10}% 35%` }}
                 />
-                <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#800020]">
+                <h3 className="mt-5 text-[1.35rem] font-semibold leading-tight text-[#0f172b]">
                   {member.name}
                 </h3>
                 <p className="mt-2 text-sm font-medium text-black">{member.role}</p>
@@ -226,8 +226,8 @@ export default function PeoplePage() {
 
         <section className="mt-12 border-t border-slate-200 pt-12">
           <div className="mb-8">
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-5 py-2 text-sm font-semibold text-[#800020]">
-              <span className="h-2 w-2 rounded-full bg-[#800020]" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#0f172b]/20 bg-white px-5 py-2 text-sm font-semibold text-[#0f172b]">
+              <span className="h-2 w-2 rounded-full bg-[#0f172b]" />
               Open Roles
             </span>
             {/* <h2 id="available-positions" className="mt-6 text-2xl font-bold tracking-[-0.02em] text-[#800020] sm:text-3xl">Available Positions</h2> */}
@@ -245,12 +245,12 @@ export default function PeoplePage() {
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.38, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -3 }}
-                className="rounded-2xl border border-[#E4B5C0] bg-white px-6 py-8 text-center shadow-[0_8px_24px_rgba(128,0,32,0.08)] transition-colors hover:border-[#800020]/30 hover:shadow-[0_8px_24px_rgba(128,0,32,0.12)]"
+                className="rounded-2xl bg-white px-6 py-8 text-center shadow-[0_8px_24px_rgba(15,23,43,0.08)] transition-colors hover:shadow-[0_8px_24px_rgba(15,23,43,0.12)]"
               >
-                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#800020]">
+                <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#0f172b]">
                   <Icon type={item.icon} />
                 </div>
-                <h3 className="text-xl font-semibold text-[#800020]">{item.title}</h3>
+                <h3 className="text-xl font-semibold text-[#0f172b]">{item.title}</h3>
                 <p className="mt-2.5 text-sm leading-relaxed text-black">{item.description}</p>
               </motion.a>
             ))}

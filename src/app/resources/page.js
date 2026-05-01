@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import ResourceCard from "@/components/ResourceCard";
 import Teaching from "@/components/Teaching";
 
-const sectionHeadingClass = "text-xl font-semibold tracking-tight text-[#800020] sm:text-2xl";
+const sectionHeadingClass = "text-xl font-semibold tracking-tight text-[#0f172b] sm:text-2xl";
 const sectionSubtextClass = "mt-1 max-w-3xl text-xs text-black sm:text-sm";
 
 const softwareTools = [
@@ -113,14 +113,14 @@ function SectionBlock({ title, subtitle, items }) {
         {items.map((item) => (
           <article
             key={item.title}
-            className="rounded-2xl border border-[#E4B5C0] bg-white p-5 shadow-[0_10px_24px_rgba(128,0,32,0.06)] transition-shadow duration-200 hover:shadow-[0_14px_30px_rgba(128,0,32,0.1)]"
+            className="rounded-2xl border border-[#cbd5e1] bg-white p-5 shadow-[0_10px_24px_rgba(15,23,43,0.06)] transition-shadow duration-200 hover:shadow-[0_14px_30px_rgba(15,23,43,0.1)]"
           >
             <div className="flex items-start justify-between gap-4">
               <div>
-                <div className="inline-flex rounded-full bg-[#F6E4E8] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#800020]">
+                <div className="inline-flex rounded-full bg-[#f1f5f9] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.12em] text-[#0f172b]">
                   Software
                 </div>
-                <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#800020]">
+                <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#0f172b]">
                   {item.title}
                 </h3>
               </div>
@@ -135,7 +135,7 @@ function SectionBlock({ title, subtitle, items }) {
                     href={linkItem.href}
                     target="_blank"
                     rel="noreferrer noopener"
-                    className="inline-flex items-center gap-2 rounded-full border border-[#E4B5C0] bg-white px-3.5 py-2 text-sm font-medium text-[#800020] transition-colors hover:border-[#800020] hover:bg-[#800020] hover:text-white"
+                    className="inline-flex items-center gap-2 rounded-full border border-[#cbd5e1] bg-white px-3.5 py-2 text-sm font-medium text-[#0f172b] transition-colors hover:border-[#0f172b] hover:bg-[#0f172b] hover:text-white"
                   >
                     <span>{linkItem.label}</span>
                     <svg
@@ -198,7 +198,7 @@ export default function ResourcesPage() {
         </nav> */}
 
         <section className="my-4 py-2">
-          <h1 className="text-3xl font-bold tracking-tight text-[#800020] sm:text-4xl">Resources</h1>
+          <h1 className="text-3xl font-bold tracking-tight text-[#0f172b] sm:text-4xl">Resources</h1>
           {/* <p className="mt-3 max-w-4xl text-base leading-relaxed text-black">
             Software, teaching material, and templates to support research activities and collaboration.
           </p> */}
