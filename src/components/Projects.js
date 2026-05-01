@@ -27,7 +27,7 @@ export default function Projects() {
           </div>
           <Link
             href="/projects"
-            className={`${inter.className} inline-flex shrink-0 items-center gap-2 rounded-xl border border-[#E4B5C0] bg-white px-5 py-2.5 text-sm font-semibold text-[#800020] transition-all hover:border-[#800020] hover:shadow-sm`}
+            className={`${inter.className} inline-flex shrink-0 items-center gap-2 rounded-xl border border-[#0f172b] bg-white px-5 py-2.5 text-sm font-semibold text-[#800020] transition-all hover:border-[#800020] hover:shadow-sm`}
           >
             View All Projects
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-4 w-4">
@@ -47,7 +47,7 @@ export default function Projects() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-8 flex flex-col items-start justify-between gap-3 rounded-2xl border border-[#E4B5C0] bg-[#FFF8FA] px-6 py-5 sm:flex-row sm:items-center"
+          className="mt-8 flex flex-col items-start justify-between gap-3 rounded-2xl border border-[#0f172b]/20 bg-white px-6 py-5 sm:flex-row sm:items-center"
         >
           <p className={`${inter.className} text-sm text-black`}>
             <span className="font-semibold text-black">{PROJECTS_DATA.length - 3} more projects</span> are available with full funding, duration, and role details.

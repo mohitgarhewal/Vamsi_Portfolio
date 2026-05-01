@@ -45,7 +45,7 @@ function IconGithub() {
 export default function Footer() {
   return (
     <footer
-      className="border-t border-[#E4B5C0] bg-white px-6 py-10 md:px-10 md:py-12 lg:px-12"
+      className="border-t border-[#0f172b]/20 bg-white px-6 py-10 md:px-10 md:py-12 lg:px-12"
     >
       <div className="mx-auto max-w-[1320px]">
         <div className="grid gap-8 md:grid-cols-[1.35fr_0.7fr_0.7fr] md:items-start md:gap-12 lg:gap-16">
@@ -69,21 +69,21 @@ export default function Footer() {
               <a
                 href="#contact"
                 aria-label="LinkedIn"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#E4B5C0] bg-white text-[#800020] transition-colors hover:bg-[#F6E4E8] hover:text-[#5F0017]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9] text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
               >
                 <IconLinkedIn />
               </a>
               <a
                 href="#contact"
                 aria-label="Twitter"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#E4B5C0] bg-white text-[#800020] transition-colors hover:bg-[#F6E4E8] hover:text-[#5F0017]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9] text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
               >
                 <IconTwitter />
               </a>
               <a
                 href="#contact"
                 aria-label="GitHub"
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-[#E4B5C0] bg-white text-[#800020] transition-colors hover:bg-[#F6E4E8] hover:text-[#5F0017]"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#f1f5f9] text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
               >
                 <IconGithub />
               </a>
@@ -91,30 +91,30 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[15px] font-bold text-[#800020]">
+            <h3 className="text-[15px] font-bold text-[#0f172b]">
               Navigation
             </h3>
             <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-black">
               <li>
-                <Link href="/" className="transition-colors hover:text-[#800020]">
+                <Link href="/" className="transition-colors hover:text-[#0f172b]">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/people" className="transition-colors hover:text-[#800020]">
+                <Link href="/people" className="transition-colors hover:text-[#0f172b]">
                   People
                 </Link>
               </li>
               <li>
                 <Link
                   href="/research"
-                  className="transition-colors hover:text-[#800020]"
+                  className="transition-colors hover:text-[#0f172b]"
                 >
                   Research
                 </Link>
               </li>
               <li>
-                <Link href="/projects" className="transition-colors hover:text-[#800020]">
+                <Link href="/projects" className="transition-colors hover:text-[#0f172b]">
                   Projects
                 </Link>
               </li>
@@ -122,14 +122,14 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[15px] font-bold text-[#800020]">
+            <h3 className="text-[15px] font-bold text-[#0f172b]">
               Resources
             </h3>
             <ul className="mt-4 space-y-2.5 text-[15px] leading-6 text-black">
               <li>
                 <Link
                   href="/publications"
-                  className="transition-colors hover:text-[#800020]"
+                  className="transition-colors hover:text-[#0f172b]"
                 >
                   Contributions
                 </Link>
@@ -137,13 +137,13 @@ export default function Footer() {
               <li>
                 <Link
                   href="/resources"
-                  className="transition-colors hover:text-[#800020]"
+                  className="transition-colors hover:text-[#0f172b]"
                 >
                   Resources
                 </Link>
               </li>
               <li>
-                <Link href="/#contact" className="transition-colors hover:text-[#800020]">
+                <Link href="/#contact" className="transition-colors hover:text-[#0f172b]">
                   Contact
                 </Link>
               </li>
@@ -151,17 +151,17 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-[#E4B5C0] pt-5">
+        <div className="mt-10 border-t border-[#0f172b]/20 pt-5">
           <div className="flex flex-col items-start justify-between gap-3 text-[14px] text-black sm:flex-row sm:items-center">
             <p>© 2026 VAMSI Research Group, IIT Indore. All rights reserved.</p>
-            <div className="flex items-center gap-6">
+            {/* <div className="flex items-center gap-6">
               <a href="#" className="transition-colors hover:text-[#800020]">
                 Privacy Policy
               </a>
               <a href="#" className="transition-colors hover:text-[#800020]">
                 Terms of Use
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

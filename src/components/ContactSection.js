@@ -66,34 +66,34 @@ export default function ContactSection() {
     <section id="contact" className="bg-white px-6 py-16 md:px-10 md:py-20 lg:px-16">
       <div className="mx-auto max-w-[1180px]">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-4xl font-bold tracking-[-0.02em] text-[#800020] md:text-5xl">Get in Touch</h2>
+          <h2 className="text-3xl font-bold tracking-[-0.02em] text-[#0f172b] md:text-4xl">Get in Touch</h2>
           {/* <p className="mt-3 text-base font-medium leading-relaxed text-black md:text-lg">
             Interested in joining our research group or collaborating? We&apos;d love to hear from you.
           </p> */}
         </div>
 
-        <div className="mt-12 grid gap-10 md:mt-14 md:grid-cols-2 md:gap-16">
+        <div className="mt-12 grid gap-10 md:mt-14 md:grid-cols-2 md:gap-16 items-start">
           <motion.div {...columnMotion}>
-            <h3 className="text-[1.95rem] font-semibold text-[#800020]">Contact Information</h3>
+            <h3 className="text-[1.95rem] font-semibold ">Contact Information</h3>
 
             <div className="mt-7 space-y-6">
               <div className="flex items-start gap-4">
-                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020]">
+                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f1f5f9] text-[#0f172b] transition-colors  ">
                   <IconMail />
                 </div>
                 <div>
-                  <p className="text-base font-semibold text-[#800020]">Email</p>
-                  <p className="mt-1 text-base text-black">kvamsi@iiti.ac.in</p>
+                  <p className="text-base font-semibold text-[#0f172b]">Email</p>
+                  <p className="mt-1 text-base text-gray-600 ">kvamsi@iiti.ac.in</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020]">
+                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f1f5f9] text-[#0f172b] transition-colors ">
                   <IconMap />
                 </div>
                 <div>
-                  <p className="text-base font-semibold text-[#800020]">Office Address</p>
-                  <p className="mt-1 text-base leading-relaxed text-black">
+                  <p className="text-base font-semibold text-[#0f172b]">Office Address</p>
+                  <p className="mt-1 text-base text-gray-600 leading-relaxed ">
                     FC-504, 4th Floor<br />
                     Learning Resource Centre<br />
                     IIT Indore, Simrol-453552<br />
@@ -103,12 +103,12 @@ export default function ContactSection() {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020]">
+                <div className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#f1f5f9] text-[#0f172b] transition-colors  ">
                   <IconOffice />
                 </div>
                 <div>
-                  <p className="text-base font-semibold text-[#800020]">Department Office</p>
-                  <p className="mt-1 text-base leading-relaxed text-black">
+                  <p className="text-base font-semibold text-[#0f172b]">Department Office</p>
+                  <p className="mt-1 text-base text-gray-600 leading-relaxed">
                     Metallurgical Engineering and Materials Science<br />
                     Indian Institute of Technology Indore<br />
                     Khandwa Road, Simrol-453552<br />
@@ -118,15 +118,15 @@ export default function ContactSection() {
               </div>
             </div>
 
-            <div className="mt-8 border-t border-[#E4B5C0] pt-7">
-              <h4 className="text-[1.1rem] font-semibold text-[#800020]">Connect With Us</h4>
+            <div className="mt-8 border-t border-[#d2d3d8] pt-7">
+              <h4 className="text-[1.1rem] font-semibold text-[#0f172b]">Connect With Us</h4>
               <div className="mt-4 flex items-center gap-3">
                 <motion.a
                   href="#contact"
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   aria-label="LinkedIn"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#f1f5f9] text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
                 >
                   <IconLinkedIn />
                 </motion.a>
@@ -135,7 +135,7 @@ export default function ContactSection() {
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   aria-label="Twitter"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#f1f5f9] text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
                 >
                   <IconTwitter />
                 </motion.a>
@@ -144,21 +144,21 @@ export default function ContactSection() {
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
                   aria-label="Scholar"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#F6E4E8] text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-xl bg-[#f1f5f9] text-[#0f172b] transition-colors hover:bg-[#0f172b] hover:text-white"
                 >
                   <IconScholar />
                 </motion.a>
               </div>
             </div>
+            
+{/* </div> */}
           </motion.div>
 
           <motion.div {...columnMotion} transition={{ ...columnMotion.transition, delay: 0.08 }}>
-            <motion.div
-              whileHover={{ y: -2 }}
-              transition={{ duration: 0.22, ease: "easeOut" }}
-              className="rounded-3xl border border-[#E4B5C0] bg-white overflow-hidden shadow-[0_6px_26px_rgba(128,0,32,0.05)] md:p-0"
+            <div
+              className="rounded-3xl  bg-[#f1f5f9] overflow-hidden  md:p-0"
             >
-              <h3 className="text-[2rem] font-semibold text-[#800020] p-6 md:p-8 pb-2">Location</h3>
+              <h3 className="text-[1.95rem] font-semibold   ml-2 pl-4 pb-4">Location</h3>
               
               {/* Map */}
               <div className="w-full h-80">
@@ -169,7 +169,7 @@ export default function ContactSection() {
                   loading="lazy"
                   allowFullScreen=""
                   referrerPolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.156484099486!2d75.88208!3d22.309301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396446cc4cd6a9e5%3A0xfe9eaa7e0d1e8d89!2sIndian%20Institute%20of%20Technology%20Indore!5e0!3m2!1sen!2sin!4v1608550000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.454568700153!2d75.92313709999999!3d22.524638500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962efcccbce7145%3A0x784e8cb69818596b!2sIndian%20Institute%20of%20Technology%20Indore!5e0!3m2!1sen!2sin!4v1777623614680!5m2!1sen!2sin"
                   title="IIT Indore Location"
                 />
               </div>
@@ -180,7 +180,7 @@ export default function ContactSection() {
                   href="/gallery"
                   whileHover={{ y: -1 }}
                   transition={{ duration: 0.2, ease: "easeOut" }}
-                  className="flex items-center justify-between rounded-xl border border-[#E4B5C0] bg-[#FFF8FA] px-4 py-3 text-center font-semibold text-[#800020] transition-all hover:border-[#800020] hover:bg-[#F6E4E8]"
+                  className="flex items-center justify-between rounded-xl border border-[#E4B5C0] bg-[#0f172b] px-4 py-3 text-center font-semibold text-white transition-all hover:-translate-y-1 hover:scale-102"
                 >
                   <span className="flex-1">Explore Our Gallery</span>
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="h-5 w-5 ml-2">
@@ -189,7 +189,7 @@ export default function ContactSection() {
                   </svg>
                 </motion.a>
               </div>
-            </motion.div>
+            </div>
           </motion.div>
         </div>
       </div>

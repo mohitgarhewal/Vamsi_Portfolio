@@ -91,7 +91,7 @@ function CourseCard({ course, index }) {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.38, delay: index * 0.1, ease: [0.22, 1, 0.36, 1] }}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-[#C4A5B8]/50 bg-white shadow-[0_2px_14px_rgba(128,0,32,0.08)] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(128,0,32,0.15)] hover:-translate-y-0.5"
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-[#0f172b]/30 bg-white shadow-[0_2px_14px_rgba(15,23,43,0.08)] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(15,23,43,0.15)] hover:-translate-y-0.5"
     >
       {/* Gradient top bar */}
       <div className={`h-1.5 w-full bg-gradient-to-r ${course.color}`} />

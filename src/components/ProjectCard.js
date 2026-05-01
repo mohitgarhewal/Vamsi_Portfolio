@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 
 const statusClasses = {
-  Ongoing: "border-[#E4B5C0] bg-[#F6E4E8] text-[#800020]",
-  Completed: "border-[#E4B5C0] bg-[#FFF8FA] text-black",
+  Ongoing: "border-[#0f172b] bg-white text-[#800020]",
+  Completed: "border-[#0f172b] bg-white text-black",
 };
 
 export default function ProjectCard({ project, index = 0 }) {
@@ -18,7 +18,7 @@ export default function ProjectCard({ project, index = 0 }) {
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.35, delay: index * 0.06, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -4, scale: 1.01 }}
-      className="rounded-2xl border border-[#E4B5C0] bg-white p-5 shadow-[0_6px_16px_rgba(128,0,32,0.08)] transition-shadow duration-300 hover:shadow-[0_14px_24px_rgba(128,0,32,0.12)] sm:p-6"
+      className="rounded-2xl border border-[#0f172b] bg-white p-5 shadow-[0_6px_16px_rgba(15,23,43,0.08)] transition-shadow duration-300 hover:shadow-[0_14px_24px_rgba(15,23,43,0.12)] sm:p-6"
     >
       <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
         <div className="min-w-0 flex-1 lg:max-w-[68%]">
@@ -36,7 +36,7 @@ export default function ProjectCard({ project, index = 0 }) {
           </dl>
         </div>
 
-        <aside className="w-full rounded-xl bg-[#FFF8FA] p-4 lg:w-[30%]" aria-label="Project metadata">
+        <aside className="w-full rounded-xl border border-[#0f172b]/10 bg-white p-4 lg:w-[30%]" aria-label="Project metadata">
           <dl className="space-y-3 text-sm text-black">
             <div className="flex items-center justify-between gap-3">
               <dt className="font-semibold text-[#800020]">Role</dt>
@@ -84,7 +84,7 @@ export default function ProjectCard({ project, index = 0 }) {
               </div>
             )}
             {isOngoing && !hasPositions && (
-              <div className="rounded-lg border border-[#E4B5C0] bg-white px-3 py-2 text-xs font-medium text-[#800020]">
+              <div className="rounded-lg border border-[#0f172b] bg-white px-3 py-2 text-xs font-medium text-[#800020]">
                 Active project in progress
               </div>
             )}

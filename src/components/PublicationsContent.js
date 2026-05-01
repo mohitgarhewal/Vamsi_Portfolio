@@ -142,7 +142,7 @@ export default function PublicationsContent() {
                 viewport={{ once: true, amount: 0.22 }}
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.22, ease: "easeOut" }}
-                className="rounded-2xl border border-[#E4B5C0] bg-white px-5 py-6 shadow-[0_2px_14px_rgba(128,0,32,0.06)] hover:shadow-[0_8px_28px_rgba(128,0,32,0.08)] md:px-6"
+                className="rounded-2xl border border-[#0f172b] bg-white px-5 py-6 shadow-[0_2px_14px_rgba(15,23,43,0.06)] hover:shadow-[0_8px_28px_rgba(15,23,43,0.08)] md:px-6"
               >
                 <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
                   <div className="min-w-0 flex-1">
@@ -180,7 +180,7 @@ export default function PublicationsContent() {
                   href="https://scholar.google.com/citations?user=ducGUjAAAAAJ&hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-[#800020] px-6 py-3 text-base font-semibold text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
+                  className="inline-flex items-center gap-2 rounded-lg border border-[#0f172b] px-6 py-3 text-base font-semibold text-[#800020] transition-colors hover:bg-[#0f172b] hover:text-white"
                 >
                   View All Publications
                   <ExternalLinkIcon />
@@ -188,14 +188,14 @@ export default function PublicationsContent() {
               </div>
             )}
 
-            <div className="mt-12 flex justify-center border-t border-[#E4B5C0]/20 pt-12">
+            <div className="mt-12 flex justify-center border-t border-[#0f172b]/10 pt-12">
               <motion.a
                 href="https://scholar.google.com/citations?user=ducGUjAAAAAJ&hl=en"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -2 }}
                 transition={{ duration: 0.2, ease: "easeOut" }}
-                className="inline-flex items-center gap-2 rounded-full bg-[#800020] px-8 py-3 text-base font-semibold text-white shadow-[0_4px_12px_rgba(128,0,32,0.25)] transition-all hover:bg-[#5F0017] hover:shadow-[0_8px_20px_rgba(128,0,32,0.35)]"
+                className="inline-flex items-center gap-2 rounded-full bg-[#800020] px-8 py-3 text-base font-semibold text-white shadow-[0_4px_12px_rgba(15,23,43,0.2)] transition-all hover:bg-[#5F0017] hover:shadow-[0_8px_20px_rgba(15,23,43,0.3)]"
               >
                 <svg
                   viewBox="0 0 24 24"

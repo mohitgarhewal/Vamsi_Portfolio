@@ -115,20 +115,20 @@ export default function CoreExpertise() {
           {expertiseItems.map((item) => (
             <article
               key={item.title}
-              className="rounded-2xl bg-[#F6E4E8] px-6 py-6"
+              className="rounded-2xl bg-[#0f172b] px-6 py-6"
             >
-                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-[#E4B5C0] text-[#800020]">
+                <div className="mb-5 inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-transparent text-white">
                 <Icon type={item.icon} />
               </div>
 
               <h3
-                className="text-[1.35rem] font-semibold leading-[1.25] text-[#800020]"
+                className="text-[1.35rem] font-semibold leading-[1.25] text-white"
               >
                 {item.title}
               </h3>
 
               <p
-                className="mt-3 text-[0.95rem] leading-[1.5] text-black"
+                className="mt-3 text-[0.95rem] leading-[1.5] text-gray-200"
               >
                 {item.description}
               </p>

@@ -13,7 +13,7 @@ export default function ResourceCard({ title, description, href, actionLabel = "
       viewport={{ once: true, amount: 0.25 }}
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
       whileHover={{ y: -4 }}
-      className="rounded-xl border border-[#E4B5C0] bg-white p-5 shadow-[0_6px_18px_rgba(128,0,32,0.06)] transition-all duration-300 hover:shadow-[0_14px_24px_rgba(128,0,32,0.12)]"
+      className="rounded-xl border border-[#0f172b] bg-white p-5 shadow-[0_6px_18px_rgba(15,23,43,0.06)] transition-all duration-300 hover:shadow-[0_14px_24px_rgba(15,23,43,0.12)]"
     >
       <h3 className="text-lg font-semibold text-[#800020]">{title}</h3>
       <p className="mt-2 text-sm leading-relaxed text-black">{description}</p>
@@ -23,7 +23,7 @@ export default function ResourceCard({ title, description, href, actionLabel = "
           href={href}
           target={isExternal ? "_blank" : undefined}
           rel={isExternal ? "noreferrer noopener" : undefined}
-          className="inline-flex items-center gap-2 rounded-lg border border-[#800020]/30 bg-[#F6E4E8] px-3 py-2 text-sm font-medium text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
+          className="inline-flex items-center gap-2 rounded-lg border border-[#0f172b] bg-white px-3 py-2 text-sm font-medium text-[#800020] transition-all hover:bg-[#800020] hover:text-white"
         >
           <span>{actionLabel}</span>
           <svg

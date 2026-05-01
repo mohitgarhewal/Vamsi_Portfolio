@@ -53,7 +53,7 @@ export default function Alumni() {
           {alumniMembers.map((member, index) => (
             <article
               key={member.name}
-              className="rounded-2xl bg-[#FFF8FA] px-6 py-7 text-center"
+              className="rounded-2xl border border-[#0f172b]/10 bg-white px-6 py-7 text-center"
             >
               <Image
                 src={member.image}

@@ -51,14 +51,14 @@ export default function Header() {
 
   return (
     <motion.header
-      className={`sticky top-0 z-50 w-full border-b transition-all duration-300 ease-out ${
+      className={`sticky top-0 z-50 w-full  transition-all duration-300 ease-out ${
         hasScrolled
-          ? "border-[#E4B5C0]/80 bg-white/80 backdrop-blur-[50px]"
-          : "border-transparent bg-white"
+          ? " bg-white/80 backdrop-blur-[50px] shadow-[0_10px_32px_rgba(15,23,43,0.08)]"
+          : " bg-white"
       }`}
       animate={{
         boxShadow: hasScrolled
-          ? "0 10px 32px rgba(128, 0, 32, 0.08)"
+          ? "0 10px 32px rgba(15, 23, 43, 0.08)"
           : "0 0 0 rgba(0,0,0,0)",
       }}
       transition={{ duration: 0.34, ease: [0.22, 1, 0.36, 1] }}
@@ -93,13 +93,13 @@ export default function Header() {
                       transition={{ duration: 0.22, ease: "easeOut" }}
                       className={`group relative inline-flex items-center text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
                         isActive(item.href)
-                          ? "text-[#800020]"
-                          : "text-black hover:text-[#800020]"
+                          ? "text-[#0f172b]"
+                          : "text-black hover:text-[#0f172b]"
                       }`}
                     >
                       {item.label}
                       <span
-                        className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#800020] transition-transform duration-300 ease-out ${
+                        className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#0f172b] transition-transform duration-300 ease-out ${
                           isActive(item.href)
                             ? "w-full scale-x-100"
                             : "w-full scale-x-0 group-hover:scale-x-100"
@@ -114,14 +114,14 @@ export default function Header() {
                           animate={{ opacity: 1, y: 0 }}
                           exit={{ opacity: 0, y: -8 }}
                           transition={{ duration: 0.22 }}
-                          className="absolute right-0 top-full mt-2 w-56 rounded-lg border border-[#E4B5C0] bg-white shadow-[0_10px_32px_rgba(128,0,32,0.12)] backdrop-blur-md"
+                          className="absolute right-0 top-full mt-2 w-56 rounded-lg bg-white shadow-[0_10px_32px_rgba(15,23,43,0.1)] backdrop-blur-md"
                         >
                           <ul className="space-y-1 p-2">
                             {CONTRIBUTIONS_ITEMS.map((subItem) => (
                               <li key={subItem.label}>
                                 <Link
                                   href={subItem.href}
-                                  className="block rounded-md px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-[#F6E4E8] hover:text-[#800020]"
+                                  className="block rounded-md px-4 py-2.5 text-sm font-medium text-black transition-colors hover:bg-[#f1f5f9] hover:text-[#0f172b]"
                                 >
                                   {subItem.label}
                                 </Link>
@@ -142,13 +142,13 @@ export default function Header() {
                         href={item.href}
                         className={`group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
                           isActive(item.href)
-                            ? "text-[#800020]"
-                            : "text-black hover:text-[#800020]"
+                            ? "text-[#0f172b]"
+                            : "text-black hover:text-[#0f172b]"
                         }`}
                       >
                         {item.label}
                         <span
-                          className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#800020] transition-transform duration-300 ease-out ${
+                          className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#0f172b] transition-transform duration-300 ease-out ${
                             isActive(item.href)
                               ? "w-full scale-x-100"
                               : "w-full scale-x-0 group-hover:scale-x-100"
@@ -160,13 +160,13 @@ export default function Header() {
                         href={item.href}
                         className={`group relative inline-flex text-[12.5px] font-medium tracking-[0.01em] transition-colors duration-300 ${
                           isActive(item.href)
-                            ? "text-[#800020]"
-                            : "text-black hover:text-[#800020]"
+                            ? "text-[#0f172b]"
+                            : "text-black hover:text-[#0f172b]"
                         }`}
                       >
                         {item.label}
                         <span
-                          className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#800020] transition-transform duration-300 ease-out ${
+                          className={`pointer-events-none absolute -bottom-[5px] left-0 h-[1.5px] origin-left bg-[#0f172b] transition-transform duration-300 ease-out ${
                             isActive(item.href)
                               ? "w-full scale-x-100"
                               : "w-full scale-x-0 group-hover:scale-x-100"
@@ -206,7 +206,7 @@ export default function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.22, ease: [0.2, 0.65, 0.3, 0.9] }}
-            className="border-t border-[#E4B5C0] bg-white/95 px-6 pb-6 pt-4 backdrop-blur-[50px] lg:hidden"
+            className="border-t border-[#0f172b]/20 bg-white/95 px-6 pb-6 pt-4 backdrop-blur-[50px] lg:hidden"
           >
             <ul className="flex flex-col gap-4">
               {NAV_ITEMS.map((item) => (

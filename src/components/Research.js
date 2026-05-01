@@ -107,7 +107,7 @@ export default function Research() {
           {researchItems.map((item) => (
             <article
               key={item.title}
-              className="overflow-hidden rounded-2xl border border-[#E4B5C0] bg-white shadow-[0_2px_14px_rgba(128,0,32,0.06)]"
+              className="overflow-hidden rounded-2xl bg-white shadow-[0_2px_14px_rgba(15,23,43,0.06)]"
             >
               <div className="grid gap-0 sm:grid-cols-[280px_1fr] lg:grid-cols-[320px_1fr]">
                 <div className="relative h-[220px] sm:h-[260px]">
@@ -120,7 +120,7 @@ export default function Research() {
                 </div>
 
                 <div className="px-6 py-7 sm:px-8 sm:py-8">
-                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#F6E4E8] text-[#800020]">
+                  <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-[#0f172b] text-white">
                     <Icon type={item.icon} />
                   </div>
 

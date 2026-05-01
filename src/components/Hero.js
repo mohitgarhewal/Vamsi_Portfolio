@@ -63,7 +63,7 @@ export default function Hero() {
           <div className="mx-auto mt-3 w-full px-1 sm:mt-4">
             <Link
               href="/projects"
-              className="block rounded-full border border-[#E4B5C0] bg-[#F6E4E8] px-4 py-2 text-center text-sm font-semibold tracking-wide text-[#800020] transition-colors hover:bg-[#800020] hover:text-white"
+              className="block rounded-full border border-[#0f172b] bg-[#ffffff] px-4 py-2 text-center text-sm font-semibold tracking-wide text-black transition-colors hover:bg-[#0f172b] hover:text-white"
             >
               JRF position available
             </Link>
@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
 
         <div className="relative mx-auto w-full max-w-[820px] lg:-translate-y-1">
-          <div className="relative h-[290px] overflow-hidden rounded-[20px] border border-[#E4B5C0] shadow-[0_10px_28px_rgba(128,0,32,0.12)] sm:h-[360px] lg:h-[420px]">
+          <div className="relative h-[290px] overflow-hidden rounded-[20px] shadow-[0_10px_28px_rgba(15,23,43,0.15)] sm:h-[360px] lg:h-[420px]">
             {gallerySlides.map((slide, index) => (
               <Image
                 key={slide.src}
@@ -86,7 +86,7 @@ export default function Hero() {
               />
             ))}
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#800020]/45 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#0f172b]/45 via-transparent to-transparent" />
 
             <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-3">
               <div className="flex items-center gap-2">
@@ -94,7 +94,7 @@ export default function Hero() {
                   type="button"
                   aria-label="Previous slide"
                   onClick={goToPrevSlide}
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-[#800020] transition-colors hover:bg-white"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-[#0f172b] transition-colors hover:bg-white"
                 >
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-4 w-4" aria-hidden="true">
                     <path d="m15 6-6 6 6 6" />
@@ -104,7 +104,7 @@ export default function Hero() {
                   type="button"
                   aria-label="Next slide"
                   onClick={goToNextSlide}
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-[#800020] transition-colors hover:bg-white"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/90 text-[#0f172b] transition-colors hover:bg-white"
                 >
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" className="h-4 w-4" aria-hidden="true">
                     <path d="m9 6 6 6-6 6" />
@@ -123,7 +123,7 @@ export default function Hero() {
                     aria-label={`Show slide ${index + 1}`}
                     onClick={() => setActiveSlide(index)}
                     className={`h-2 w-2 rounded-full transition-colors ${
-                      activeSlide === index ? "bg-[#800020]" : "bg-[#D6A0AE]"
+                      activeSlide === index ? "bg-[#0f172b]" : "bg-[#d2d3d8]"
                     }`}
                   />
                 ))}
