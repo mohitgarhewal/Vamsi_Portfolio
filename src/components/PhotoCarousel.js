@@ -51,7 +51,7 @@ export default function PhotoCarousel() {
   }, []);
 
   return (
-    <section className="py-14 sm:py-16 lg:py-20" aria-label="News gallery">
+    <section className="py-10 sm:py-12 lg:py-10" aria-label="News gallery">
       <div className="mx-auto max-w-[1180px]">
         <div className="mb-7 text-center">
           <h2 className="text-4xl font-bold tracking-tight text-[#0f172b] sm:text-4xl">News</h2>

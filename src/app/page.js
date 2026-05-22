@@ -16,7 +16,7 @@ export default function Home() {
         <PhotoCarousel />
         <ContactSection />
 
-        <section id="news" className="scroll-mt-28 pt-14" />
+        {/* <section id="news" className="scroll-mt-28 pt-14" /> */}
       </main>
 
       <Footer />

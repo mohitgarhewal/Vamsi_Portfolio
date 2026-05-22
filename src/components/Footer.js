@@ -45,7 +45,7 @@ function IconGithub() {
 export default function Footer() {
   return (
     <footer
-      className="border-t border-[#0f172b]/20 bg-white px-6 py-10 md:px-10 md:py-12 lg:px-12"
+      className="border-t border-[#0f172b]/20 bg-white px-6 py-8 md:px-10 md:py-8 lg:px-12"
     >
       <div className="mx-auto max-w-[1320px]">
         <div className="grid gap-8 md:grid-cols-[1.35fr_0.7fr_0.7fr] md:items-start md:gap-12 lg:gap-16">

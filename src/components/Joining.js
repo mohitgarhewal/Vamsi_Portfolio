@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Joining() {
   return (
-    <section id="positions" className="relative left-1/2 w-screen -translate-x-1/2 py-8 sm:py-14 lg:py-8">
+    <section id="positions" className="relative left-1/2 w-screen -translate-x-1/2 ">
       <div className="relative mx-auto max-w-[1180px] px-6 md:px-10 lg:px-16 rounded-full border border-[#0f172b] bg-[#0f172b] p-4">
         <div className="flex items-center justify-between gap-4">
           <h2 className="text-2xl font-bold tracking-[-0.02em] text-white sm:text-3xl">

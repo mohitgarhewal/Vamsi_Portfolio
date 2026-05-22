@@ -9,9 +9,51 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600"] });
 
 const autumnCourses = [
   {
-    code: "MM 309",
+    code: "MM 203",
+    title: "Physical Metallurgy 1",
+    credits: "2-1-0-3",
+    level: "UG",
+    since: "July 2023",
+    description:
+      "Covers fundamental principles of physical metallurgy including phase diagrams, nucleation and growth, precipitation strengthening, and microstructural evolution. Emphasizes relationships between processing, microstructure, and mechanical properties in metallic systems.",
+    topics: ["Phase Diagrams", "Nucleation & Growth", "Precipitation Hardening", "Microstructure"],
+    color: "from-[#0f172b] to-[#475569]",
+    bg: "bg-[#f1f5f9]",
+    accent: "text-[#0f172b]",
+    chip: "bg-[#e0e7ff] text-[#0f172b]",
+  },
+  {
+    code: "MM 226",
+    title: "Material Informatics",
+    credits: "2-1-0-1.5",
+    level: "UG",
+    since: "July 2023",
+    description:
+      "Introduces data-driven approaches and machine learning techniques applied to materials science. Covers data collection, feature engineering, predictive modeling, and optimization algorithms for accelerating materials discovery and design.",
+    topics: ["Machine Learning", "Data Analysis", "Materials Discovery", "Python / R"],
+    color: "from-[#0f172b] to-[#475569]",
+    bg: "bg-[#f1f5f9]",
+    accent: "text-[#0f172b]",
+    chip: "bg-[#e0e7ff] text-[#0f172b]",
+  },
+  {
+    code: "MM 353",
+    title: "Computational Methods for Materials Lab",
+    credits: "0-0-2-1",
+    level: "UG",
+    since: "July 2023",
+    description:
+      "Hands-on laboratory course exploring computational techniques for materials analysis and simulation. Students implement finite element methods, molecular dynamics simulations, phase-field modeling, and visualization of computational results.",
+    topics: ["FEM", "Molecular Dynamics", "Phase-field Modeling", "Computational Tools"],
+    color: "from-[#0f172b] to-[#475569]",
+    bg: "bg-[#f1f5f9]",
+    accent: "text-[#0f172b]",
+    chip: "bg-[#e0e7ff] text-[#0f172b]",
+  },
+  {
+    code: "MM 309N",
     title: "Computational Methods for Materials",
-    credits: "3-0-2",
+    credits: "2-1-0-3",
     level: "UG",
     since: "July 2023",
     description:

@@ -134,7 +134,7 @@ export default function Hero() {
       </section>
 
       <section id="about" className="scroll-mt-28">
-        <div className="mx-auto max-w-[1160px] px-2 py-12 sm:py-14 lg:py-18">
+        <div className="mx-auto max-w-[1160px] px-2 py-4 sm:py-8 lg:py-8">
           <div className="mx-auto max-w-5xl space-y-6 text-justify text-base font-normal leading-[1.85] text-black sm:text-[1.05rem]">
             <p>
               I am pleased to introduce the Virtual Alloys Modelling, Simulation &amp; Informatics (VAMSI)

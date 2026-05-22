@@ -28,7 +28,7 @@ const workExperience = [
     type: "academic",
     current: true,
     description:
-      "Leading the VAMSI Research Group, focusing on computational design of advanced alloys, multiscale modelling, and materials informatics. Mentoring PhD students, postdoctoral researchers, and undergraduate students.",
+      "Leading the VAMSI Research Group, focusing on computational design of advanced alloys, multiscale modelling, and materials informatics.",
   },
   {
     id: 2,

@@ -74,7 +74,7 @@ function IconGoogleScholar() {
 
 export default function ContactSection() {
   return (
-    <section id="contact" className="bg-white px-6 py-16 md:px-10 md:py-20 lg:px-16">
+    <section id="contact" className="bg-white px-6 py-8 md:px-10 md:py-8 lg:px-16">
       <div className="mx-auto max-w-[1180px]">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-[-0.02em] text-[#0f172b] md:text-4xl">Get in Touch</h2>

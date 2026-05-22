@@ -57,19 +57,20 @@ const alumniMembers = [
 const opportunities = [
   {
     title: "PhD Positions",
-    description: "Full funding available for computational materials science research",
+    description: "Full funding available for computational materials science research. Teaching Assistantship positions are available.",
     icon: "cap",
     href: "https://academic.iiti.ac.in/phdadvt.php",
   },
   {
     title: "Postdoctoral Fellows",
-    description: "Advanced research opportunities in MPEAs and superalloys",
+    description: "Coming soon",
     icon: "microscope",
   },
   {
     title: "JRF",
     description: "Junior Research Fellowship for motivated graduates to contribute to cutting-edge atomistic simulations and alloy design projects",
     icon: "jrf",
+    href: "/projects",
   },
 ];
 
@@ -123,13 +124,13 @@ export default function PeoplePage() {
             </div>
             <Link
               href="/faculty"
-              className="inline-flex items-center rounded-full border border-[#0f172b] bg-white px-4 py-2 text-sm font-medium text-[#0f172b] transition-colors hover:border-[#0f172b] hover:bg-[#0f172b] hover:text-white"
+              className="inline-flex cursor-pointer items-center rounded-full border border-[#0f172b] bg-white px-4 py-2 text-sm font-medium text-[#0f172b] transition-colors hover:border-[#0f172b] hover:bg-[#0f172b] hover:text-white"
             >
               View full profile
             </Link>
           </div>
 
-          <Link href="/faculty" className="group block">
+          <Link href="/faculty" className="group block cursor-pointer">
             <article className="overflow-hidden rounded-2xl bg-white shadow-[0_8px_24px_rgba(15,23,43,0.08)] transition-transform duration-200 hover:-translate-y-0.5 hover:shadow-[0_14px_36px_rgba(15,23,43,0.12)]">
               <div className="grid gap-0 lg:grid-cols-[280px_1fr]">
                 <div className="relative min-h-[260px] bg-[#f1f5f9]">
@@ -237,15 +238,15 @@ export default function PeoplePage() {
             {opportunities.map((item, index) => (
               <motion.a
                 href={item.href}
-                target={item.href ? "_blank" : undefined}
-                rel={item.href ? "noopener noreferrer" : undefined}
+                target={item.href && !item.href.startsWith("/") ? "_blank" : undefined}
+                rel={item.href && !item.href.startsWith("/") ? "noopener noreferrer" : undefined}
                 key={item.title}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.25 }}
                 transition={{ duration: 0.38, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 whileHover={{ y: -3 }}
-                className="rounded-2xl bg-white px-6 py-8 text-center shadow-[0_8px_24px_rgba(15,23,43,0.08)] transition-colors hover:shadow-[0_8px_24px_rgba(15,23,43,0.12)]"
+                className="cursor-pointer rounded-2xl bg-white px-6 py-8 text-center shadow-[0_8px_24px_rgba(15,23,43,0.08)] transition-colors hover:shadow-[0_8px_24px_rgba(15,23,43,0.12)]"
               >
                 <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center text-[#0f172b]">
                   <Icon type={item.icon} />

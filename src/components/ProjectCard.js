@@ -74,12 +74,6 @@ export default function ProjectCard({ project, index = 0 }) {
                   >
                     Download Advertisement
                   </a>
-                  <a
-                    href="/people#available-positions"
-                    className="block w-full rounded-lg bg-[#0f172b] px-3 py-2 text-center text-xs font-semibold text-white transition-colors hover:bg-[#1e293b]"
-                  >
-                    How to Apply
-                  </a>
                 </div>
               </div>
             )}
