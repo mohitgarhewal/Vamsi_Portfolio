@@ -186,8 +186,8 @@ function TemplateSection({ title, subtitle, items }) {
 export default function ResourcesPage() {
   return (
     <div className="min-h-screen bg-white text-black">
-      <Header />
-
+       <Header />
+       
       <main className="mx-auto w-full max-w-[1240px] px-4 py-10 sm:px-6 md:px-8 lg:px-10">
         {/* <nav className="mb-8 flex items-center gap-2 text-sm text-black">
             <Link href="/" className="transition-colors hover:text-[#800020]">
